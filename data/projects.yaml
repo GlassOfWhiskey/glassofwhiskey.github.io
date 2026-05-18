@@ -1,0 +1,100 @@
+projects:
+  european:
+    - start:       2025
+      role:        Participant
+      acronym:     IT4LIA
+      name:        "Italy for Artificial Intelligence"
+      funding:     "EuroHPC JU, G.A. 101234224, total budget: €30M"
+
+    - start:       2024
+      role:        "Local principal investigator and task leader"
+      acronym:     DARE
+      name:        "Digital autonomy for RISC-V in Europe"
+      funding:     "EuroHPC JU, G.A. 101202459, total budget: €240M"
+
+    - start:       2023
+      role:        "Task leader"
+      acronym:     "SPACE CoE"
+      name:        "Centre of excellence on scalable parallel and distributed astrophysical codes for exascale"
+      funding:     "EuroHPC JU, G.A. 101093441, total budget: €8M"
+      achievement: >-
+        We developed the Cross-Facility Federated Learning (xFFL) methodology
+        to train trillion-parameter models across multiple data centers.
+
+    - start:       2022
+      role:        Participant
+      acronym:     EUPEX
+      name:        "European Pilot for Exascale"
+      funding:     "EuroHPC JU, G.A. 101033975, total budget: €41M"
+      achievement: >-
+        StreamFlow has been selected as one of the exploitable
+        results of the project.
+
+    - start:       2021
+      role:        Participant
+      acronym:     EUPILOT
+      name:        "Pilot using independent, local and open technologies"
+      funding:     "EuroHPC JU, G.A. 101034126, total budget: €30M"
+      achievement: >-
+        We delivered the first publicly available RISC-V port of the PyTorch
+        deep learning library.
+
+    - start:       2021
+      end:         2024
+      role:        Participant
+      acronym:     TEXTAROSSA
+      name:        "Towards extreme scale technologies and accelerators for EuroHPC HW/SW supercomputing applications for Exascale"
+      funding:     "EuroHPC JU, G.A. 956831, total budget: €6M"
+
+    - start:       2021
+      end:         2024
+      role:        "Task leader"
+      acronym:     ACROSS
+      name:        "HPC Big Data Artificial Intelligence cross-stack platform toward exascale"
+      funding:     "EuroHPC JU, G.A. 955648, total budget: €8M"
+      achievement: >-
+        StreamFlow plays a central role in the ACROSS software stack, allowing users
+        to easily define application workflows and match them with the most suitable
+        execution environment.
+
+    - start:       2019
+      end:         2021
+      role:        "Task leader"
+      acronym:     DeepHealth
+      name:        "Deep-Learning and HPC to Boost Biomedical Applications for Health"
+      funding:     "Horizon 2020, G.A. 825111, total budget: €14.8M"
+      achievement: >-
+        StreamFlow has been recognized as an exploring technology
+        by the EC Innovation Radar initiative.
+
+  national:
+    - start:       2024
+      end:         2025
+      role:        Participant
+      acronym:     DEVOPS
+      name:        "Prototype and integrate DevOps processes for ML model lifecycle (training, testing, deployment) into a multi cloud and multi-platform enterprise"
+      funding:     "ICSC Spoke 1 Innovation Grant program, total budget: €150k"
+      description: "In collaboration with Sogei SpA."
+
+    - start:       2023
+      end:         2025
+      role:        "Work package and task leader"
+      acronym:     HaMMon
+      name:        "Hazard mapping and vulnerability monitoring"
+      funding:     "ICSC Spoke 1 Innovation Grant program, total cost: €2M"
+      description: "In collaboration with Leithá Srl (Unipol Group)."
+
+    - start:       2023
+      end:         2025
+      role:        "Principal investigator"
+      acronym:     CPFWI
+      name:        "Cross-Platform Full Waveform Inversion"
+      funding:     "ICSC Spoke 1 Innovation Grant program, total budget: €60k"
+      description: "In collaboration with ENI SpA."
+
+    - start:       2022
+      end:         2025
+      role:        Participant
+      acronym:     "ICSC Spoke 1"
+      name:        "Future HPC and Big Data"
+      funding:     "Next Generation EU, total budget: €320M"

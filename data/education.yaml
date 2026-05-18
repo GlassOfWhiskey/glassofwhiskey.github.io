@@ -1,0 +1,18 @@
+education:
+  - start:  2018
+    end:    2022
+    title:  "PhD in Modeling and Data Science"
+    org:    "University of Turin"
+    grade:  "Excellent with honors"
+
+  - start:  2014
+    end:    2017
+    title:  "Master's Degree in Computer Engineering"
+    org:    "Polytechnic University of Turin"
+    grade:  "110/110 cum laude"
+
+  - start:  2011
+    end:    2014
+    title:  "Bachelor's Degree in Computer Engineering"
+    org:    "Polytechnic University of Turin"
+    grade:  "110/110 cum laude"

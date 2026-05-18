@@ -1,0 +1,74 @@
+awards:
+  - year:        2026
+    title:       "Global Young Scientists Summit"
+    org:         "National University of Singapore"
+    description: >-
+      Selected as one of two nominees from the University of Turin to
+      participate in the 2026 Global Young Scientists Summit (GYSS) in
+      Singapore --- a prestigious international forum that brings together
+      leading scientists and young researchers to discuss innovation,
+      technology, and solutions to global challenges.
+
+  - year:        2023
+    title:       "Bando Premialità TO-PEOPLE 2023"
+    org:         "University of Turin"
+    description: >-
+      The University of Turin, in the context of the Three-Year Program
+      2021-2023 TO-PEOPLE, launched an initiative to recognize the skills and
+      scientific productivity of young researchers at the early stage of their
+      academic careers. I was among the winners of the 2023 edition.
+
+  - year:        2023
+    title:       "ITADATA 2023 Best PhD Thesis Award"
+    org:         "CINI Data Science Lab"
+    description: >-
+      The CINI Data Science Lab established a Distinguished Award for the Best
+      PhD Thesis in all fields of Big Data and Data Science successfully
+      defended at an Italian university in 2023. The theses have been
+      evaluated by a committee of experts based on originality and potential
+      impact on the Big Data and Data Science community. My PhD thesis, titled
+      "Workflow models for heterogeneous distributed systems," has been
+      selected as the best thesis among the 18 applications received.
+
+  - year:        2023
+    title:       "EC Innovation Radar exploring technology award"
+    org:         "EC Innovation Radar"
+    description: >-
+      The Innovation Radar is an initiative of the European Commission to
+      identify high-potential innovations and innovators in EU-funded research
+      and innovation projects. In the context of the DeepHealth European
+      project, the StreamFlow framework has been recognized as an "exploring
+      technology."
+
+  - year:        2022
+    title:       "FGCS Fall 2022 Editors' Choice"
+    org:         "Future Generation Computer Systems editors"
+    description: >-
+      Twice a year, the editorial board of the journal Future Generation
+      Computer Systems selects a set of papers for the Editors' Choice.
+      Selected papers have recently been published in the FGCS journal and are
+      capturing the attention of readers. My article titled "Distributed
+      workflows with Jupyter" has been included in the Fall 2022 Editors'
+      Choice list.
+
+  - year:        2019
+    title:       "HPC-Europa3 grant"
+    org:         "HPC-Europa3 Scientific Users Selection Panel"
+    description: >-
+      The HPC-Europa3 Transnational Access programme was a competitive
+      initiative for European research scientists that provided access to HPC
+      infrastructure across Europe. The program offered free access to HPC
+      centers through a single application and an international two-stage
+      peer-review process. The HPC-Europa3 Scientific Users Selection Panel
+      evaluated applications based on scientific merit. I have been awarded an
+      HPC-Europa3 grant for a 13-week visit to the Barcelona Supercomputing
+      Center.
+
+  - year:        2019
+    title:       "ACACES 2019 grant"
+    org:         "High performance, edge and cloud computing (HiPEAC)"
+    description: >-
+      I have been selected as a HiPEAC grant recipient for attending the
+      15^th^ International Summer School on Advanced Computer Architecture and
+      Compilation for High-performance Embedded Systems (ACACES 2019) in
+      Fiuggi, Italy.

@@ -1,0 +1,41 @@
+{{ define "main" }}
+{{- $sw := hugo.Data.cv.software -}}
+{{- /* Build a bibtex lookup map from publications data */ -}}
+{{- $bibMap := dict -}}
+{{- with hugo.Data.publications -}}
+  {{- range .years -}}
+    {{- range .entries -}}
+      {{- $bibMap = $bibMap | merge (dict .key .bibtex) -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+<div>
+  <h1 class="page-title">Software</h1>
+
+  {{ if $sw }}
+  <section class="section">
+    <div class="entry-list">
+      {{- range $i, $e := sort $sw "start" "desc" -}}
+      {{- $bibtex := index $bibMap $e.citation -}}
+      {{- $desc   := partial "fmt-text.html" $e.description -}}
+      {{- $key := printf "sw-%d" $i -}}
+      {{- $btns := slice -}}
+      {{- with $e.website }}{{ $btns = $btns | append (dict "type" "link" "label" "Website" "url" .) }}{{ end -}}
+      {{- with $e.github }}{{ $btns = $btns | append (dict "type" "link" "label" "GitHub" "url" .) }}{{ end -}}
+      {{- with $e.package }}{{ $btns = $btns | append (dict "type" "link" "label" "Package" "url" .) }}{{ end -}}
+      {{- with $bibtex }}{{ $btns = $btns | append (dict "type" "toggle" "label" "Reference" "key" $key "content" . "contentClass" "entry-bibtex-body" "wrapPre" true) }}{{ end -}}
+      {{ partial "list-entry.html" (dict
+        "period"  (printf "%v" .start)
+        "title"   .title
+        "label"   .role
+        "desc"    $desc
+        "buttons" $btns
+      ) }}
+      {{- end }}
+    </div>
+  </section>
+  {{ else }}
+  <p class="pub-empty">No software data found.</p>
+  {{ end }}
+</div>
+{{ end }}

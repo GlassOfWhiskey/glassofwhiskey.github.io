@@ -1,0 +1,17 @@
+baseURL: "https://glassofwhiskey.github.io/"
+title: "Iacopo Colonnelli"
+description: "Assistant Professor — Computer Science Dept., University of Turin, Italy"
+defaultContentLanguage: "en-us"
+
+disableKinds:
+  - taxonomy
+  - term
+  - rss
+  - sitemap
+
+enableRobotsTXT: true
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true

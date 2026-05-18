@@ -1,0 +1,18 @@
+{{- /*
+  fmt-text.html — apply typographic replacements to plain text.
+
+  Replaces:
+    ^text^  → <sup>text</sup>   (superscript)
+    ---     → —                 (em dash)
+    --      → –                 (en dash)
+
+  Usage:
+    {{ partial "fmt-text.html" .someField | safeHTML }}
+*/ -}}
+{{- $s := . -}}
+{{- $s = $s | replaceRE "``([^`]+)``" "<code>$1</code>" -}}
+{{- $s = $s | replaceRE "`([^`]+)`" "<code>$1</code>" -}}
+{{- $s = $s | replaceRE `\^([^^]+)\^` "<sup>$1</sup>" -}}
+{{- $s = $s | replaceRE "---" "—" -}}
+{{- $s = $s | replaceRE "--" "–" -}}
+{{- return $s -}}

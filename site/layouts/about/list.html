@@ -1,0 +1,104 @@
+{{ define "main" }}
+{{- $p  := hugo.Data.cv.personal -}}
+{{- $ex := hugo.Data.cv.experience -}}
+{{- $aw := hugo.Data.cv.awards -}}
+{{- $rs := hugo.Data.cv.research -}}
+{{- $ed := hugo.Data.cv.education -}}
+<div>
+  <h1 class="page-title">About</h1>
+
+  {{- /* ── Biography ── */}}
+  <p class="about-bio">{{ partial "fmt-text.html" $p.bio | safeHTML }}</p>
+
+  {{- /* ── Honors and Awards ── */}}
+  {{ if $aw }}
+  <section class="section">
+    <h2 class="section-heading" id="honors-awards">Honors and Awards <a class="heading-anchor" href="#honors-awards" aria-label="Link to this section">#</a></h2>
+    <div class="entry-list">
+      {{- range sort $aw "year" "desc" -}}
+      {{ partial "list-entry.html" (dict
+        "period"  (printf "%v" .year)
+        "title"   .title
+        "subject" .org
+        "desc"    (partial "fmt-text.html" .description | safeHTML)
+      ) }}
+      {{- end }}
+    </div>
+  </section>
+  {{ end }}
+
+  {{- /* ── Research activity ── */}}
+  {{ if $rs }}
+  <section class="section">
+    <h2 class="section-heading" id="research-activity">Research activity <a class="heading-anchor" href="#research-activity" aria-label="Link to this section">#</a></h2>
+    <div class="entry-list">
+      {{- range $rs -}}
+      {{- $period := "" -}}
+      {{- if .start -}}
+        {{- $period = printf "%v" .start -}}
+        {{- if .end -}}
+          {{- $period = print $period "–" .end -}}
+        {{- else -}}
+          {{- $period = print $period "–present" -}}
+        {{- end -}}
+      {{- else if .year -}}
+        {{- $period = printf "%v" .year -}}
+      {{- end -}}
+      {{ partial "list-entry.html" (dict
+        "period"  $period
+        "title"   .title
+        "subject" .org
+        "desc"    .description
+      ) }}
+      {{- end }}
+    </div>
+  </section>
+  {{ end }}
+
+  {{- /* ── Work experience ── */}}
+  {{ if $ex }}
+  <section class="section">
+    <h2 class="section-heading" id="work-experience">Work experience <a class="heading-anchor" href="#work-experience" aria-label="Link to this section">#</a></h2>
+    <div class="entry-list">
+      {{- range sort $ex "start" "desc" -}}
+      {{- $period := "" -}}
+      {{- if .start -}}
+        {{- $period = printf "%v" .start -}}
+        {{- if .end -}}
+          {{- $period = print $period "–" .end -}}
+        {{- else -}}
+          {{- $period = print $period "–present" -}}
+        {{- end -}}
+      {{- else if .year -}}
+        {{- $period = printf "%v" .year -}}
+      {{- end -}}
+      {{ partial "list-entry.html" (dict
+        "period"  $period
+        "title"   .title
+        "subject" .org
+        "desc"    .description
+      ) }}
+      {{- end }}
+    </div>
+  </section>
+  {{ end }}
+
+  {{- /* ── Education ── */}}
+  {{ if $ed }}
+  <section class="section">
+    <h2 class="section-heading" id="education">Education <a class="heading-anchor" href="#education" aria-label="Link to this section">#</a></h2>
+    <div class="entry-list">
+      {{- range sort $ed "start" "desc" -}}
+      {{ partial "list-entry.html" (dict
+        "period"  (print .start "–" .end)
+        "title"   .title
+        "label"   .org
+        "meta"    .grade
+      ) }}
+      {{- end }}
+    </div>
+  </section>
+  {{ end }}
+
+</div>
+{{ end }}

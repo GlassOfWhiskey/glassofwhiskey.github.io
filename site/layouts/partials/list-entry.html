@@ -1,0 +1,32 @@
+{{- /*
+  list-entry.html
+  Fields: period, title, subtitle, kind, author, subject, label, meta, desc, badge, buttons
+  All text fields are safeHTML (callers may include <em>, <sup>, etc.).
+  Each button: { type: "toggle"|"link", label, id, content, url }
+*/ -}}
+<div class="entry-item">
+  <div class="entry-period">{{ .period | safeHTML }}</div>
+  <div>
+    {{- with .author }}<div class="entry-author">{{ . | safeHTML }}</div>{{ end }}
+    <div class="entry-title">{{ .title | safeHTML }}{{ with .subtitle }} <span class="entry-meta">&middot; {{ . | safeHTML }}</span>{{ end }}{{ with .kind }}<span class="entry-kind">{{ . }}</span>{{ end }}</div>
+    {{- with .subject }}<div class="entry-meta">{{ . | safeHTML }}</div>{{ end }}
+    {{- if or .label .meta }}<div class="entry-meta">{{ with .label }}<em>{{ . | safeHTML }}</em>{{ end }}{{ if and .label .meta }} &middot; {{ end }}{{ with .meta }}{{ . | safeHTML }}{{ end }}</div>{{ end }}
+    {{- with .desc }}<div class="entry-desc">{{ . | safeHTML }}</div>{{ end }}
+    {{- with .badge }}<div class="entry-note"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" class="entry-note-icon"><path d="m8 0 1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864 8 0z"/><path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z"/></svg> {{ . | safeHTML }}</div>{{ end }}
+    {{- with .buttons }}
+    <div class="entry-btn-area">
+      <div class="entry-btn-row">
+        {{- range . }}
+          {{- if eq .type "toggle" }}
+          <details name="details-{{ .key }}" class="entry-details">
+            <summary class="entry-btn">{{ .label }}</summary>
+            <div class="{{ .contentClass | default "entry-abstract-body" }}">{{ if .wrapPre }}<pre>{{ end }}{{ .content }}{{ if .wrapPre }}</pre>{{ end }}</div>
+          </details>
+          {{- end }}
+          {{- if eq .type "link" }}<a class="entry-btn" href="{{ .url }}" target="_blank" rel="noopener">{{ .label }}</a>{{ end }}
+        {{- end }}
+      </div>
+    </div>
+    {{- end }}
+  </div>
+</div>

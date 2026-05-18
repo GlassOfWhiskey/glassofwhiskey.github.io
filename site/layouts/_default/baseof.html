@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="{{ site.Language.Locale | default "en" }}">
+<head>{{ partial "head.html" . }}</head>
+<body>
+<input type="checkbox" id="dark-mode" class="theme-toggle-input">
+<div class="page-wrapper">
+  {{ partial "header.html" . }}
+  <main class="main-content">
+    {{ block "main" . }}{{ end }}
+  </main>
+  {{ partial "footer.html" . }}
+</div>
+</body>
+</html>

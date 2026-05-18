@@ -1,0 +1,704 @@
+// ── CSS custom properties (light mode defaults) ────────────────────────────────
+
+.page-wrapper {
+  // Backgrounds
+  --bg:         #ffffff;
+  --bg-alt:     #f6f8fa;
+  // Text
+  --text:       #1f2328;
+  --muted:      #636c76;
+  // Borders
+  --border:     #d0d7de;
+  // Accent
+  --blue:       #3873B2;
+  --blue-dk:    #2a5990;
+  // Link-button surface
+  --btn-surf:   #ffffff;
+  --btn-border: #d0d7de;
+  --btn-text:   #1f2328;
+  // Publication type badge colours (DBLP palette)
+  --badge-journal:    #c32b72;
+  --badge-conference: #196ca3;
+  --badge-book:       #ef942d;
+  --badge-thesis:     #f8c91f;
+  --badge-poster:     #626a70;
+}
+
+// ── Dark mode via OS preference (checkbox unchecked = follow OS) ────────────────
+
+.theme-toggle-input:checked ~ .page-wrapper {
+  --bg:         #0d1117;
+  --bg-alt:     #161b22;
+  --text:       #e6edf3;
+  --muted:      #8b949e;
+  --border:     #30363d;
+  --blue:       #79b8ff;
+  --blue-dk:    #a5c8ff;
+  --btn-surf:   #21262d;
+  --btn-border: #30363d;
+  --btn-text:   #e6edf3;
+  --badge-journal:    #e86fa5;
+  --badge-conference: #5da9d8;
+  --badge-book:       #f5b05f;
+  --badge-thesis:     #f8c91f;
+  --badge-poster:     #626a70;
+}
+
+@media (prefers-color-scheme: dark) {
+  .page-wrapper {
+    --bg:         #0d1117;
+    --bg-alt:     #161b22;
+    --text:       #e6edf3;
+    --muted:      #8b949e;
+    --border:     #30363d;
+    --blue:       #79b8ff;
+    --blue-dk:    #a5c8ff;
+    --btn-surf:   #21262d;
+    --btn-border: #30363d;
+    --btn-text:   #e6edf3;
+    --badge-journal:    #e86fa5;
+    --badge-conference: #5da9d8;
+    --badge-book:       #f5b05f;
+    --badge-thesis:     #f8c91f;
+    --badge-poster:     #626a70;
+  }
+
+  .theme-toggle-input:checked ~ .page-wrapper {
+    --bg:         #ffffff;
+    --bg-alt:     #f6f8fa;
+    --text:       #1f2328;
+    --muted:      #636c76;
+    --border:     #d0d7de;
+    --blue:       #3873B2;
+    --blue-dk:    #2a5990;
+    --btn-surf:   #ffffff;
+    --btn-border: #d0d7de;
+    --btn-text:   #1f2328;
+    --badge-journal:    #c32b72;
+    --badge-conference: #196ca3;
+    --badge-book:       #ef942d;
+    --badge-thesis:     #f8c91f;
+    --badge-poster:     #626a70;
+  }
+}
+
+// ── Icon visibility: toggle indicator matches current mode ──────────────────────
+
+.icon-sun  { display: none;  }
+.icon-moon { display: block; }
+
+.theme-toggle-input:checked ~ .page-wrapper .icon-sun  { display: block; }
+.theme-toggle-input:checked ~ .page-wrapper .icon-moon { display: none;  }
+
+@media (prefers-color-scheme: dark) {
+  .icon-sun  { display: block; }
+  .icon-moon { display: none;  }
+
+  .theme-toggle-input:checked ~ .page-wrapper .icon-sun  { display: none;  }
+  .theme-toggle-input:checked ~ .page-wrapper .icon-moon { display: block; }
+}
+
+// ── Reset / base ───────────────────────────────────────────────────────────────
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #ffffff; // fallback behind .page-wrapper
+}
+
+.page-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+               Helvetica, Arial, sans-serif;
+  line-height: 1.65;
+  font-size: 16px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.theme-toggle-input { display: none; }
+
+a {
+  color: var(--blue);
+  text-decoration: none;
+}
+a:hover { text-decoration: underline; }
+
+// ── Layout ─────────────────────────────────────────────────────────────────────
+
+$max-w: 960px;
+
+.main-content {
+  flex: 1;
+  max-width: $max-w;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+}
+
+// ── Consolidated section/page components ─────────────────────────────────────────
+
+.section {
+  margin-bottom: 2.5rem;
+}
+
+.subsection {
+  margin-bottom: 1.75rem;
+
+  &:last-child { margin-bottom: 0; }
+}
+
+.section-heading {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--blue);
+  border-bottom: 2px solid var(--border);
+  padding-bottom: 0.35rem;
+  margin-bottom: 1.25rem;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.subsection-heading {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--muted);
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.2rem;
+  margin-bottom: 0.85rem;
+  transition: border-color 0.2s ease;
+}
+
+.page-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--text);
+}
+
+// ── Header / Nav ───────────────────────────────────────────────────────────────
+
+.site-header {
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.nav-toggle-input { display: none; }
+
+.nav-toggle-label {
+  display: none;
+  align-items: center;
+  cursor: pointer;
+  color: var(--text);
+  padding: 4px;
+  border-radius: 6px;
+  transition: color 0.15s;
+
+  &:hover { color: var(--blue); }
+}
+
+.nav-toggle-close { display: none; }
+
+.nav {
+  max-width: $max-w;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-brand {
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--text);
+  white-space: nowrap;
+
+  &:hover { text-decoration: none; color: var(--blue); }
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.75rem;
+
+  li a {
+    font-size: 0.92rem;
+    color: var(--muted);
+    font-weight: 500;
+    padding-bottom: 2px;
+    border-bottom: 2px solid transparent;
+    transition: color 0.15s, border-color 0.15s;
+
+    &:hover { color: var(--blue); text-decoration: none; }
+    &.active { color: var(--blue); border-bottom-color: var(--blue); }
+  }
+}
+
+// Theme toggle button
+.theme-toggle-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--btn-surf);
+  color: var(--text);
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: border-color 0.15s, color 0.15s, background 0.2s ease;
+
+  &:hover { border-color: var(--blue); color: var(--blue); }
+}
+
+// ── Footer ─────────────────────────────────────────────────────────────────────
+
+.site-footer {
+  background: var(--bg-alt);
+  border-top: 1px solid var(--border);
+  font-size: 0.875rem;
+  color: var(--muted);
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.footer-inner {
+  max-width: $max-w;
+  margin: 0 auto;
+  padding: 1.1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.footer-copy {
+  font-size: 0.85rem;
+}
+
+.footer-icons {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+
+  a {
+    display: flex;
+    align-items: center;
+    color: var(--muted);
+    transition: color 0.15s;
+
+    &:hover { color: var(--blue); text-decoration: none; }
+  }
+}
+
+// ── Buttons ────────────────────────────────────────────────────────────────────
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 1.25rem;
+  padding: 0.55rem 1.25rem;
+  background: var(--blue);
+  color: #fff;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.92rem;
+  transition: background 0.15s;
+
+  &:hover { background: var(--blue-dk); text-decoration: none; color: #fff; }
+}
+
+.link-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.28rem 0.65rem;
+  border: 1px solid var(--btn-border);
+  border-radius: 6px;
+  font-size: 0.8rem;
+  color: var(--btn-text);
+  background: var(--btn-surf);
+  font-weight: 500;
+  transition: border-color 0.15s, color 0.15s, background 0.2s ease;
+
+  &:hover { border-color: var(--blue); color: var(--blue); text-decoration: none; }
+}
+
+// ── Hero ───────────────────────────────────────────────────────────────────────
+
+.hero {
+  display: flex;
+  gap: 2.5rem;
+  align-items: flex-start;
+  padding: 2.5rem 0 2rem;
+}
+
+.hero-photo {
+  flex-shrink: 0;
+
+  img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--border);
+    display: block;
+    transition: border-color 0.2s ease;
+  }
+}
+
+.hero-info { flex: 1; }
+
+.hero-name {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 0.25rem;
+  color: var(--text);
+}
+
+.hero-title {
+  font-size: 1.05rem;
+  color: var(--muted);
+  margin-bottom: 0.1rem;
+}
+
+.hero-affil {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-bottom: 1rem;
+}
+
+.hero-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+// ── Publications ───────────────────────────────────────────────────────────────
+
+.pub-legend {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem 1.25rem;
+  font-size: 0.82rem;
+  color: var(--muted);
+  margin-bottom: 2.25rem;
+  padding: 0.65rem 0.9rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg-alt);
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+// Year section
+.pub-list {
+  list-style: none;
+  padding: 0;
+
+  li + li { margin-top: 0.85rem; }
+}
+
+// Each entry: number | badge | body
+.pub-entry {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  font-size: 0.925rem;
+  line-height: 1.6;
+}
+
+.pub-number {
+  flex-shrink: 0;
+  width: 3.2rem;
+  text-align: right;
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-variant-numeric: tabular-nums;
+  padding-top: 0.18em; // align with first line of text
+}
+
+// Type badge: small vertical coloured bar (DBLP style)
+.pub-badge {
+  flex-shrink: 0;
+  display: inline-block;
+  width: 5px;
+  height: 1.05em;
+  border-radius: 2px;
+  margin-top: 0.28em;
+  align-self: flex-start;
+
+  &.pub-badge--journal    { background: var(--badge-journal);    }
+  &.pub-badge--conference { background: var(--badge-conference); }
+  &.pub-badge--book       { background: var(--badge-book);       }
+  &.pub-badge--thesis     { background: var(--badge-thesis);     }
+  &.pub-badge--poster     { background: var(--badge-poster);     }
+}
+
+// Legend badges sit inline with text
+.pub-legend .pub-badge {
+  width: 5px;
+  height: 0.9em;
+  margin-top: 0;
+  align-self: auto;
+  vertical-align: middle;
+}
+
+.pub-body { flex: 1; min-width: 0; position: relative; }
+
+.pub-authors,
+.pub-venue { color: var(--muted); }
+
+.highlight-author {
+  color: var(--blue);
+  font-weight: 700;
+}
+
+// Links row (DOI, BibTeX) below each citation
+.entry-btn-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-top: 0.4rem;
+  align-items: flex-start;
+  position: relative;
+}
+
+.entry-btn {
+  font-size: 0.78rem;
+  padding: 0.1rem 0.4rem;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  color: var(--blue);
+  transition: border-color 0.15s;
+
+  &:hover { border-color: var(--blue); text-decoration: none; }
+}
+
+.entry-note {
+  color: var(--blue);
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-top: 0.3rem;
+}
+
+.entry-note-icon {
+  vertical-align: -0.15em;
+  margin-right: 0.2em;
+}
+
+.pub-empty {
+  color: var(--muted);
+  font-style: italic;
+}
+
+// ── Teaching ───────────────────────────────────────────────────────────────────
+
+.entry-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.entry-item {
+  display: grid;
+  grid-template-columns: 7rem 1fr;
+  gap: 0 1.25rem;
+  font-size: 0.925rem;
+  line-height: 1.55;
+}
+
+.entry-period {
+  font-size: 0.82rem;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+  padding-top: 0.12em;
+}
+
+.entry-title,
+.entry-title {
+  font-weight: 600;
+  color: var(--text);
+}
+
+.entry-kind {
+  display: inline-block;
+  font-size: 0.73rem;
+  font-weight: 500;
+  color: var(--muted);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  padding: 0 0.3rem;
+  margin-left: 0.45rem;
+  vertical-align: middle;
+  line-height: 1.5;
+  transition: border-color 0.2s ease;
+}
+
+.entry-meta {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: var(--muted);
+  margin-top: 0.1rem;
+}
+
+.entry-desc {
+  font-size: 0.875rem;
+  color: var(--text);
+  margin-top: 0.25rem;
+}
+
+
+.entry-author {
+  color: var(--text);
+}
+
+// ── Talks ────────────────────────────────────────────────────────────────────────
+
+.entry-btn-area {
+  margin-top: 0.4rem;
+}
+
+.entry-details {
+  display: inline-block;
+  vertical-align: top;
+
+  summary {
+    cursor: pointer;
+    list-style: none;
+    display: inline-block;
+
+    &::-webkit-details-marker { display: none; }
+  }
+
+  &[open] .entry-abstract-body,
+  &[open] .entry-bibtex-body {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: calc(100% + 0.35rem);
+    z-index: 10;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-left: 2px solid var(--blue);
+    border-radius: 4px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    margin-top: 0;
+  }
+}
+
+.entry-abstract-body,
+.entry-bibtex-body {
+  font-size: 0.875rem;
+  color: var(--text);
+  line-height: 1.55;
+  padding: 0.5rem 0.65rem;
+  border-left: 2px solid var(--border);
+  margin-top: 0.35rem;
+
+  pre {
+    font-size: 0.75rem;
+    line-height: 1.35;
+    margin: 0;
+    white-space: pre-wrap;
+    word-break: break-all;
+  }
+}
+
+.about-bio {
+  margin-bottom: 2.5rem;
+}
+
+// ── Section heading anchors ────────────────────────────────────────────────────
+
+.heading-anchor {
+  opacity: 0;
+  margin-left: 0.4em;
+  font-size: 0.8em;
+  font-weight: 400;
+  text-decoration: none;
+  color: var(--muted);
+  transition: opacity 0.15s;
+
+  &:hover { text-decoration: none; color: var(--blue); }
+}
+
+h2:hover .heading-anchor,
+h3:hover .heading-anchor { opacity: 1; }
+
+// ── Responsive ─────────────────────────────────────────────────────────────────
+
+@media (max-width: 830px) {
+  .nav-toggle-label { display: flex; }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+    flex-direction: column;
+    padding: 0.5rem 1.5rem 1rem;
+    z-index: 99;
+    transition: background 0.2s ease, border-color 0.2s ease;
+
+    li a {
+      display: block;
+      padding: 0.5rem 0;
+      border-bottom: none;
+    }
+  }
+
+  .site-header:has(.nav-toggle-input:checked) {
+    .nav-links { display: flex; }
+    .nav-toggle-label svg:first-child { display: none; }
+    .nav-toggle-label .nav-toggle-close { display: block; }
+  }
+
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+    padding-top: 1.75rem;
+  }
+
+  .hero-links { justify-content: center; }
+
+  .hero-photo img { width: 130px; height: 130px; }
+
+  .footer-inner { flex-direction: column; align-items: flex-start; }
+
+  .pub-number { width: 2.5rem; }
+
+  .entry-item {
+    grid-template-columns: 1fr;
+    gap: 0.15rem;
+  }
+
+  .entry-period { text-align: left; }
+}

@@ -1,0 +1,79 @@
+review:
+  projects:
+    - year:        2025
+      title:       "SNSF Ambizione"
+      description: >-
+        Reviewer of a project proposal under the "2025 SNSF Ambizione" funding
+        program of the Swiss National Science Foundation (SNSF).
+
+    - year:        2024
+      title:       "EuroHPC Joint Undertaking"
+      description: >-
+        Reviewer of the "An Optimization and Co-design Framework for Sparse
+        Computation" (SparCity) European project (G.A. 956213, total budget:
+        €2.6M).
+
+    - year:        2023
+      title:       "2023 CINECA ISCRA program"
+      description: >-
+        Reviewer of two project proposals under the "Italian SuperComputing
+        Resource Allocation" (ISCRA) initiative of the CINECA consortium.
+
+    - year:        2022
+      title:       "2022 IFAB Call for Projects"
+      description: >-
+        Reviewer of three project proposals under the "2022 IFAB Call for
+        Projects" funding program of the International Foundation Big Data and
+        Artificial Intelligence for Human Development (IFAB).
+
+  journals:
+    - title:  "BMC Bioinformatics"
+      editor: "Springer"
+      issn:   "1471-2105"
+
+    - title:  "Future Generation Computer Systems"
+      editor: "Elsevier"
+      issn:   "0167-739X"
+
+    - title: "F1000Research"
+      issn:  "2046-1402"
+
+    - title:  "IEEE Transactions on Network and Service Management"
+      editor: "IEEE"
+      issn:   "1932-4537"
+
+    - title:  "International Journal of Parallel Programming"
+      editor: "Springer"
+      issn:   "1573-7640"
+
+    - title:  "International Journal of Intelligent Systems"
+      editor: "Hindawi"
+      issn:   "1098-111X"
+
+    - title:  "Journal of Parallel and Distributed Computing"
+      editor: "Elsevier"
+      issn:   "1096-0848"
+
+    - title:  "Nature Scientific Reports"
+      editor: "Springer"
+      issn:   "2045-2322"
+
+    - title:  "Parallel Computing"
+      editor: "Elsevier"
+      issn:   "0167-8191"
+
+    - title:  "SoftwareX"
+      editor: "Elsevier"
+      issn:   "2352-7110"
+
+    - title:  "Software and Systems Modeling"
+      editor: "Springer"
+      issn:   "1619-1374"
+
+    - title:  "Scientific Programming"
+      editor: "Hindawi"
+      issn:   "1875-919X"
+
+    - title:  "The Journal of Supercomputing"
+      editor: "Springer"
+      issn:   "1573-0484"

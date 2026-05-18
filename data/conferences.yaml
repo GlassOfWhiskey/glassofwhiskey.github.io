@@ -1,0 +1,395 @@
+conferences:
+  chairs:
+  - year: 2026
+    role: Posters and demo chair
+    acronym: Euro-Par 2026
+    name: 32^nd^ International European Conference on Parallel and Distributed Computing
+      (Euro-Par 2026)
+    location: Pisa, Italy
+  - year: 2025
+    role: General chair
+    acronym: HiPES 2025
+    name: 2^nd^ Workshop about High-Performance e-Science
+    location: Dresden, Germany
+    description: Co-located with the 31^st^ International European Conference on Parallel
+      and Distributed Computing (Euro-Par 2025).
+  - year: 2025
+    role: General and program chair
+    acronym: PDP 2025
+    name: 33^rd^ Euromicro International Conference on Parallel, Distributed, and
+      Network-Based Processing
+    location: Turin, Italy
+  - year: 2024
+    role: General chair
+    acronym: CWLCon 2024
+    name: 4^th^ CWL Conference
+    location: Amsterdam, Netherlands
+  - year: 2024
+    role: General chair
+    acronym: HiPES 2024
+    name: 1^st^ Workshop about High-Performance e-Science
+    location: Madrid, Spain
+    description: Co-located with the 30^th^ International European Conference on Parallel
+      and Distributed Computing (Euro-Par 2024).
+  - year: 2024
+    role: General chair
+    acronym: WiDE 2024
+    name: 2^nd^ International Workshop on Workflows in Distributed Environments
+    location: Athens, Greece
+    description: Co-located with the 19^th^ European Conference on Computer Systems
+      (EuroSys 2024).
+  - year: 2023
+    role: General chair
+    acronym: WiDE 2023
+    name: 1^st^ International Workshop on Workflows in Distributed Environments
+    location: Turin, Italy
+    description: Co-located with the 7^th^ Annual Computers, Software, and Applications
+      Conference (COMPSAC 2023).
+  - year: 2023
+    role: Local chair
+    acronym: COMPSAC 2023
+    name: 47^th^ Annual Computers, Software, and Applications Conference
+    location: Turin, Italy
+  committee:
+  - years:
+    - 2026
+    acronym: Middleware
+    name: ACM/IFIP International Middleware Conference
+  - years:
+    - 2024
+    - 2025
+    acronym: ICPP
+    name: International Conference on Parallel Processing
+  - years:
+    - 2024
+    - 2025
+    acronym: SC
+    name: International Conference for High Performance Computing, Networking, Storage,
+      and Analysis
+  - years:
+    - 2024
+    - 2025
+    acronym: ReWords
+    name: Workshop on Reproducible Workflows, Data Management, and Security
+  - years:
+    - 2024
+    - 2025
+    acronym: WORKS
+    name: Workshop on Workflows in Support of Large-Scale Science
+  - years:
+    - 2024
+    acronym: FRAME
+    name: Workshop on Flexible Resource and Application Management on the Edge
+  - years:
+    - 2024
+    acronym: IWAHPCE
+    name: 'International Workshop on Arm-based HPC: Practice & Experience'
+  - years:
+    - 2023
+    - 2024
+    - 2025
+    acronym: SBAC-PAD
+    name: International Symposium on Computer Architecture and High Performance Computing
+  - years:
+    - 2023
+    acronym: PAW-ATM
+    name: Annual Parallel Applications Workshop, Alternatives To MPI+X
+  - years:
+    - 2023
+    acronym: PDP
+    name: Euromicro International Conference on Parallel, Distributed, and Network-Based
+      Processing
+  - years:
+    - 2022
+    - 2023
+    - 2024
+    acronym: HLPP
+    name: International Symposium on High-level Parallel Programming and Applications
+  - years:
+    - 2022
+    - 2023
+    acronym: HPCMALL
+    name: International Workshop on Malleability Techniques Applications in High-Performance
+      Computing
+  - years:
+    - 2021
+    - 2022
+    - 2023
+    acronym: Euro-Par
+    name: International European Conference on Parallel and Distributed Computing
+  - years:
+    - 2020
+    - 2024
+    - 2025
+    acronym: HiPC
+    name: IEEE International Conference on High Performance Computing, Data, and Analytics
+  - years:
+    - 2019
+    - 2022
+    acronym: IPTA
+    name: International Conference on Image Processing Theory, Tools and Applications
+  talks:
+    invited:
+    - year: 2024
+      role: Keynote speaker
+      acronym: WSCC 2024
+      name: Scientific Workflows in the Continuum Era
+      location: Madrid, Spain
+      author: Iacopo Colonnelli
+      abstract: >-
+        Thanks to their generality, workflow models represent a powerful abstraction for designing complex
+        applications and executing them on large-scale distributed architectures. However, several
+        additional challenges appear when transitioning from cloud/HPC environments to the entire compute
+        continuum. Continuum execution environments are fully distributed and modular, and modules can be
+        heterogeneous and independent of each other. In addition, continuum workflows often rely on multiple
+        intercommunicating agents that form complex micro-services architectures. Different agents deal with
+        different communication and parallelization paradigms: network-based stream processing at the edge
+        and file-based batch processing on HPC facilities. Finally, support for efficient interactive
+        workflows in the continuum remains an open research problem. This talk explores these challenges and
+        provides insights on how to deal with them. A ready-to-use software library accompanies each
+        proposed solution to facilitate the reproducibility and reusability of the presented concepts.
+      url: https://datacloud.di.unito.it/index.php/s/PkqYA3p38XLKgrt
+    - year: 2024
+      role: Invited speaker
+      name: Cross-Facility Federated Learning - Part II
+      location: Helsinki, Finland
+      author: Iacopo Colonnelli, Robert Birke, Giulio Malenza, Gianluca Mittone, Alberto
+        Mulone, Marco Aldinucci
+      url: https://datacloud.di.unito.it/index.php/s/7HonBpcWPxotXLX
+    - year: 2024
+      role: Invited speaker
+      name: CWL in the HPC Ecosystem
+      location: CERN, Meyrin, Switzerland
+      author: Iacopo Colonnelli
+      url: https://datacloud.di.unito.it/index.php/s/PRmqdwWHt6P2PH7
+    - year: 2023
+      role: Invited speaker
+      acronym: ITADATA 2023
+      name: Workflow models for heterogeneous distributed systems
+      location: Naples, Italy
+      author: Iacopo Colonnelli
+      url: https://datacloud.di.unito.it/index.php/s/6RqcaJ4djqFNDC8
+    - year: 2023
+      role: Invited speaker
+      acronym: OSA2Micro
+      name: Workflows and the Common Workflow Language (CWL)
+      location: Turin, Italy
+      author: Iacopo Colonnelli
+      url: https://datacloud.di.unito.it/index.php/s/NHWWzMMaQgAsA52
+    - year: 2023
+      role: Invited speaker
+      name: Standardised Workflows at EBRAINS
+      location: Marseille, France
+      author: Sofia Karvounari, Eleni Mathioulaki, Michael R. Crusoe, Iacopo Colonnelli
+      abstract: >-
+        A hands-on training offer for Standardised Workflows in EBRAINS. A short presentation will be used
+        as an introduction, while the main hands-on session will provide information about Writing and
+        Executing Standardised Workflows. TC will give some guidelines, so attendees can experiment with
+        writing CWL tools and workflows and then they will be given access to VM to execute these workflows.
+        The Workflows Dashboard will be also presented during the same session, offering to the attendees
+        the opportunity to understand the different functionalities, use it with TC support and provide
+        useful comments.
+      url: https://datacloud.di.unito.it/index.php/s/K5YQKTsX9N7NLT8
+    - year: 2023
+      role: Invited speaker
+      acronym: CWLCon 2023
+      name: 'CWL for HPC: are we there yet?'
+      location: EMBL, Heidelberg, Germany
+      author: Iacopo Colonnelli
+      abstract: >-
+        Modern HPC applications are becoming so heterogeneous and complex that a modular approach to their
+        design, deployment and orchestration is now necessary. This talk explores the benefits of using a
+        vendor-agnostic workflow language (CWL) coupled with a hybrid workflow management system
+        (StreamFlow) in the HPC ecosystem. Also, it will examine the requirements needed to model HPC
+        applications effectively, the CWL’s readiness to meet such requirements, and the proposals made to
+        improve the language where needed. Four real use cases will drive the discussion: the ACROSS Project
+        (G.A. n. 955648), where CWL is the primary interface to model three HPC workflows, and the EUPEX
+        Project (G.A. n. 101033975), where StreamFlow will be used for the rapid prototyping of a seismic
+        engineering HPC application for a Modular Supercomputing Architecture (MSA) system.
+      url: https://datacloud.di.unito.it/index.php/s/CMCd5LiZeXsxwEg
+    - year: 2022
+      role: Invited speaker
+      name: 'CINI HPC-KTT: HPC Key Technologies and Tools National Lab'
+      location: Casalecchio di Reno, Italy
+      author: Iacopo Colonnelli, Marco Aldinucci
+      url: https://datacloud.di.unito.it/index.php/s/9EQniZ2dGzdJ26f
+    - year: 2022
+      role: Invited speaker
+      acronym: 2^nd^ HealthyCloud Workshop
+      name: 'Dossier: multi-tenant distributed Jupyter Notebooks'
+      location: Virtual event
+      author: Iacopo Colonnelli, Dario Tranchitella
+      abstract: >-
+        When providing data analysis as a service, one must tackle several problems. Data privacy and
+        protection by design are crucial when working on sensitive data. Performance and scalability are
+        fundamental for compute-intensive workloads, e.g. training Deep Neural Networks. User-friendly
+        interfaces and fast prototyping tools are essential to allow domain experts to experiment with new
+        techniques. Portability and reproducibility are necessary to assess the actual value of results.
+        Kubernetes is the best platform to provide reliable, elastic, and maintainable services. However,
+        Kubernetes alone is not enough to achieve large-scale multi-tenant reproducible data analysis. OOTB
+        support for multi-tenancy is too rough, with only two levels of segregation (i.e. the single
+        namespace or the entire cluster). Offloading computation to off-cluster resources is non-trivial and
+        requires the user's manual configuration. Also, Jupyter Notebooks per se cannot provide much
+        scalability (they execute locally and sequentially) and reproducibility (users can run cells in any
+        order and any number of times). The Dossier platform allows system administrators to manage multi-
+        tenant distributed Jupyter Notebooks at the cluster level in the Kubernetes way, i.e. through CRDs.
+        Namespaces are aggregated in Tenants, and all security and accountability aspects are managed at
+        that level. Each Notebook spawns into a user-dedicated namespace, subject to all Tenant-level
+        constraints. Users can rely on provisioned resources, either in-cluster worker nodes or external
+        resources like HPC facilities. Plus, they can plug their computing nodes in a BYOD fashion.
+        Notebooks are interpreted as distributed workflows, where each cell is a task that one can offload
+        to a different location in charge of its execution.
+      url: https://datacloud.di.unito.it/index.php/s/RNqTGmTqWS66qHT
+    - year: 2021
+      role: Invited speaker
+      acronym: CWLCon 2021
+      name: The Universal Cloud-HPC Pipeline for the AI-Assisted Explainable Diagnosis
+        of COVID-19 Pneumonia
+      location: Virtual event
+      author: Marco Aldinucci, Iacopo Colonnelli
+      abstract: >-
+        We'll present a methodology to run DNN pipelines on hybrid cloud+HPC infrastructure. We'll also
+        define a "universal pipeline" for medical images. The pipeline can reproduce all state-of-the-art
+        DNNs to diagnose COVID-19 pneumonia, which appeared in the literature during the first Italian
+        lockdown and following months. We can run all of them (across cloud+HPC platforms) and compare their
+        performance in terms of sensitivity and specificity to set a baseline to evaluate future progress in
+        the automated diagnosis of COVID-19. Also, the pipeline makes existing DNNs explainable by way of
+        adversarial training. The pipeline is easily portable and can run across different infrastructures,
+        adapting the performance-urgency trade-off. The methodology builds onto two novel software programs:
+        the streamflow workflow system and the AI-sandbox concept (parallel container with user-space
+        encrypted file system). We reach over 92% accuracy in diagnosing COVID pneumonia.
+      url: https://datacloud.di.unito.it/index.php/s/AkQLbPpEEtDzbbm
+    regular:
+    - acronym: eScience 2025
+      location: Chicago, IL, USA
+      name: 'BookedSlurm: meeting user needs for advanced resource reservations in Slurm'
+      author: Sandro Gepiro Contaldo, Lorenzo Bosio, Janneth Estefania Hoyos Rea,
+        Elisa Li Perottino, Sergio Rabellino, Marco Aldinucci, Marco Beccuti, Iacopo
+        Colonnelli
+      abstract: >-
+        Modern scientific discovery is frequently backed by large-scale scientific experiments, which cannot
+        prescind from the unparalleled computational capabilities provided by high-performance computing
+        systems. However, large data centers usually prioritize system efficiency over user accessibility,
+        posing challenges for researchers without advanced computer science expertise. This work introduces
+        BookedSlurm, a secure and user-focused extension of the Slurm workload manager, aiming to
+        democratize HPC access across interdisciplinary research domains. BookedSlurm enables a partially
+        decentralized regulation of fine-grained advanced resource reservations through a novel credit-based
+        framework, ensuring fair and predictable access to computing resources. Its modular architecture
+        leverages dedicated microservices to manage reservations, credit handling, and accounting. These
+        components are exposed through a secure REST API and an intuitive web-based dashboard, enhancing
+        system usability for novice and expert users. While the dashboard simplifies interactions for non-
+        specialists, advanced users can directly access agent-level APIs for more complex and automated
+        operations. The effectiveness of BookedSlurm is validated on a real-world bioinformatics use case
+        from the SUS-MIRRI.IT project, showcasing its ability to enhance usability, optimize job scheduling,
+        and streamline execution workflows.
+      url: https://datacloud.di.unito.it/index.php/s/xT58tKdAjJDKy59
+    - location: Milan, Italy
+      name: 2025 ICSC Spoke 1 Event
+    - acronym: EuroHPC 2024
+      location: Amsterdam, Netherlands
+      name: Towards a European AI Platform
+      author: Petr Taborsky, Iacopo Colonnelli, Krzysztof Kurowski, Rakesh Sarma,
+        Niels Henrik Pontoppidan, Branislav Jansík, Nicki Skafte Detlefsen, Jens Egholm
+        Pedersen, Rasmus Larsen, Lars Kai Hansen
+      url: https://datacloud.di.unito.it/index.php/s/nbk6YiABGsZXPp4
+    - acronym: CWLCon 2024
+      location: Amsterdam, Netherlands
+      name: CWL Working Groups
+      author: Iacopo Colonnelli
+      url: https://datacloud.di.unito.it/index.php/s/zZDKdL8deLd4jSi
+      abstract: >-
+        This presentation introduces the new CWL Working Groups initiative, describing what a Working Group
+        actually is, which Working Groups already exist in the CWL community, and how anybody can create a
+        new officially recognized Working Group. Then, the presentation will explore the CWL4HPC Working
+        Group, using it as an example of how a CWL Working Group can actually work.
+    - acronym: EuroHPC 2023
+      location: Bruxelles, Belgium
+      name: Cross-Facility Federated Learning
+      author: Iacopo Colonnelli, Robert Birke, Giulio Malenza, Gianluca Mittone, Alberto
+        Mulone, Marco Aldinucci, Valerio Basile, Marco Antonio Stranisci, Viviana
+        Patti, Jeroen Galjaard, Lydia Y. Chen, Sanzio Bassini, Massimiliano Guarrasi,
+        Gabriella Scipione, Jan Martinovič, Vit Vondrák
+      url: https://datacloud.di.unito.it/index.php/s/DDAz4QkJP3WZ68M
+    - location: Denver, CO, USA
+      name: '2023 Workflows Community BoF: Modern Workflows for Continuum and Cross-Facility
+        Computing'
+    - acronym: WORKS 2023
+      location: Denver, CO, USA
+      name: A Systematic Mapping Study of Italian Research on Workflows
+      author: Marco Aldinucci, Elena Baralis, Valeria Cardellini, Iacopo Colonnelli,
+        Marco Danelutto, Sergio Decherchi, Giuseppe Di Modica, Luca Ferrucci, Marco
+        Gribaudo, Francesco Iannone, Marco Lapegna, Doriana Medić, Giuseppa Muscianisi,
+        Francesca Righetti, Eva Sciacca, Nicola Tonellotto, Mauro Tortonesi, Paolo
+        Trunfio, Tullio Vardanega
+      url: https://datacloud.di.unito.it/index.php/s/2kgooG43pGCykji
+      abstract: >-
+        An entire ecosystem of methodologies and tools revolves around scientific workflow management. They
+        cover crucial non-functional requirements that standard workflow models fail to target, such as
+        interactive execution, energy efficiency, performance portability, Big Data management, and
+        intelligent orchestration in the Computing Continuum. Characterizing and monitoring this ecosystem
+        is crucial to developing an informed view of current and future research directions. This work
+        conducts a systematic mapping study of the Italian workflow research community, analyzing 25 tools
+        and 10 applications from several scientific domains in the context of the “National Research Centre
+        for HPC, Big Data, and Quantum Computing” (ICSC). The study aims to outline the main current
+        research directions and determine how they address the critical needs of modern scientific
+        applications. The findings highlight a variegated research ecosystem of tools, with a prominent
+        interest in advanced workflow orchestration and still immature but promising efforts toward energy
+        efficiency.
+    - location: Pisa, Italy
+      name: 2023 CINI HPC-KTT National Assembly
+    - acronym: EAGE 2022
+      location: Milan, Italy
+      name: Hybrid Workflows For Large-Scale Scientific Applications
+      author: Iacopo Colonnelli, Marco Aldinucci
+      abstract: >-
+        Large-scale scientific applications are facing an irreversible transition from monolithic, high-
+        performance oriented codes to modular and polyglot deployments of specialised (micro-)services. The
+        reasons behind this transition are many: coupling of standard solvers with Deep Learning techniques,
+        offloading of data analysis and visualisation to Cloud, and the advent of specialised hardware
+        accelerators. Topology-aware Workflow Management Systems (WMSs) play a crucial role. In particular,
+        topology-awareness allows an explicit mapping of workflow steps onto heterogeneous locations,
+        allowing automated executions on top of hybrid architectures (e.g., cloud+HPC or classical+quantum).
+        Plus, topology-aware WMSs can offer non-functional requirements OOTB, e.g. components’ life-cycle
+        orchestration, secure and efficient data transfers, fault tolerance, and cross-cluster execution of
+        urgent workloads. Augmenting interactive Jupyter Notebooks with distributed workflow capabilities
+        allows domain experts to prototype and scale applications using the same technological stack, while
+        relying on a feature-rich and user-friendly web interface. This abstract will showcase how these
+        general methodologies can be applied to a typical geoscience simulation pipeline based on the Full
+        Wavefront Inversion (FWI) technique. In particular, a prototypical Jupyter Notebook will be executed
+        interactively on Cloud. Preliminary data analyses and post-processing will be executed locally,
+        while the computationally demanding optimisation loop will be scheduled on a remote HPC cluster.
+      url: https://datacloud.di.unito.it/index.php/s/GScPS5LCPdt6Yoo
+    - acronym: ITWSHPC 2022
+      location: Torino, Italy
+      name: Hybrid workflows for heterogeneous distributed computing
+      author: Iacopo Colonnelli, Barbara Cantalupo, Doriana Medić, Marco Aldinucci
+      url: https://datacloud.di.unito.it/index.php/s/ienbcA2DJ26aioE
+    - location: Malaga, Spain
+      name: J on The Beach 2022
+    - location: Rome, Italy
+      name: 'JupyterFlow: Jupyter Notebooks su larga scala'
+      author: Iacopo Colonnelli, Sergio Rabellino
+      abstract: >-
+        I Jupyter Notebook sono largamente utilizzati sia in ambito industriale che accademico come
+        strumento di didattica, prototipazione e analisi esplorative. Purtroppo il sistema runtime standard
+        di Jupyter non è abbastanza potente per sostenere un carichi di lavoro reali e spesso l'unica
+        soluzione è quella di riscrivere il codice da zero in una tecnologia con supporto HPC. Intrgrando lo
+        stack Jupyter con StreamFlow (https://streamflow.di.unito.it/) è possibile creare i Notebook tramite
+        un'interfaccia web su cloud ed eseguirli in maniera trasparente in remoto su una VM con GPU o su
+        nodi HPC.
+      url: https://datacloud.di.unito.it/index.php/s/ASPEmyXAj5QscgC
+    - location: Rome, Italy
+      name: Workshop GARR 2019
+    - acronym: PDP 2019
+      location: Pavia, Italy
+      name: Deep Learning at Scale
+      author: Iacopo Colonnelli
+      abstract: >-
+        This work presents a novel approach to distributed training of deep neural networks (DNNs) that aims
+        to overcome the issues related to mainstream approaches to data parallel training. Established
+        techniques for data parallel training are discussed from both a parallel computing and deep learning
+        perspective, then a different approach is presented that is meant to allow DNN training to scale
+        while retaining good convergence properties. Moreover, an experimental implementation is presented
+        as well as some preliminary results.
+      url: https://datacloud.di.unito.it/index.php/s/nRW9M69C3AtpDoM
+

@@ -1,0 +1,13 @@
+editorial:
+  - start:       2025
+    role:        "Subject area editor"
+    journal:     "Parallel Computing"
+    publisher:   Elsevier
+
+  - start:       2024
+    end:         2025
+    role:        "Guest editor"
+    journal:     "Future Generation Computer Systems"
+    publisher:   Elsevier
+    issue: >-
+      High-Performance eScience key technologies, tools, and applications

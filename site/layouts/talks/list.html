@@ -1,0 +1,59 @@
+{{ define "main" }}
+{{- $talks := hugo.Data.cv.conferences.talks -}}
+<div>
+  <h1 class="page-title">Talks</h1>
+
+  {{- /* ── Invited Talks ── */}}
+  {{ if $talks.invited }}
+  <section class="section">
+    <h2 class="section-heading" id="invited-talks">Invited Talks <a class="heading-anchor" href="#invited-talks" aria-label="Link to this section">#</a></h2>
+    <div class="entry-list">
+      {{- range $i, $talk := sort $talks.invited "year" "desc" -}}
+      {{- $aid := printf "abstract-i-%d" $i -}}
+      {{- $ttl := partial "fmt-text.html" $talk.name | safeHTML -}}
+      {{- $sub := "" -}}
+      {{- if $talk.acronym }}{{ $ttl = partial "fmt-text.html" $talk.acronym | safeHTML }}{{ $sub = partial "fmt-text.html" $talk.name | safeHTML }}{{ end -}}
+      {{- $btns := slice -}}
+      {{- if $talk.abstract }}{{ $btns = $btns | append (dict "type" "toggle" "label" "Abstract" "id" $aid "content" $talk.abstract) }}{{ end -}}
+      {{- if $talk.url }}{{ $btns = $btns | append (dict "type" "link" "label" "Slides" "url" $talk.url) }}{{ end -}}
+      {{ partial "list-entry.html" (dict
+        "period"  (printf "%v" $talk.year)
+        "title"   $ttl
+        "subject" $sub
+        "label"   $talk.role
+        "meta"    $talk.location
+        "buttons" $btns
+      ) }}
+      {{- end }}
+    </div>
+  </section>
+  {{ end }}
+
+  {{- /* ── Regular Talks ── */}}
+  {{ if $talks.regular }}
+  <section class="section">
+    <h2 class="section-heading" id="regular-talks">Regular Talks <a class="heading-anchor" href="#regular-talks" aria-label="Link to this section">#</a></h2>
+    <div class="entry-list">
+      {{- range $i, $talk := $talks.regular -}}
+      {{- $aid := printf "abstract-r-%d" $i -}}
+      {{- $yr := index (findRE `\b20\d{2}\b` (printf "%s %s %s" $talk.acronym $talk.name $talk.location)) 0 -}}
+      {{- $ttl := partial "fmt-text.html" $talk.name | safeHTML -}}
+      {{- $sub := "" -}}
+      {{- if $talk.acronym }}{{ $ttl = partial "fmt-text.html" $talk.acronym | safeHTML }}{{ $sub = partial "fmt-text.html" $talk.name | safeHTML }}{{ end -}}
+      {{- $btns := slice -}}
+      {{- if $talk.abstract }}{{ $btns = $btns | append (dict "type" "toggle" "label" "Abstract" "id" $aid "content" $talk.abstract) }}{{ end -}}
+      {{- if $talk.url }}{{ $btns = $btns | append (dict "type" "link" "label" "Slides" "url" $talk.url) }}{{ end -}}
+      {{ partial "list-entry.html" (dict
+        "period"  (or $yr "&nbsp;")
+        "title"   $ttl
+        "subject" $sub
+        "meta"    $talk.location
+        "buttons" $btns
+      ) }}
+      {{- end }}
+    </div>
+  </section>
+  {{ end }}
+
+</div>
+{{ end }}

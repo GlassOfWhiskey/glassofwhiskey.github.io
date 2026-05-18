@@ -1,0 +1,9 @@
+[project]
+name = "cv-pipeline"
+version = "0.1.0"
+description = "CV pipeline: .bib → Hugo YAML and related tooling"
+requires-python = ">=3.11"
+dependencies = [
+    "PyYAML>=6.0",
+    "check-jsonschema>=0.28",
+]

@@ -1,0 +1,85 @@
+{{- /*
+  render-years.html
+  Renders a slice of years as collapsed ranges, matching the CV's render_years logic.
+
+  Integer calendar years:
+    contiguous    → "2021–2023"
+    non-contiguous → "2020, 2024–2025"
+
+  String academic years (e.g. "2022/2023"):
+    consecutive (start years differ by 1) → "2022/2023–2024/2025"
+    non-consecutive                        → "2022/2023, 2024/2025"
+
+  Input (.) : the .years slice from a YAML entry (all integers or all strings).
+*/ -}}
+{{- $sorted := sort . -}}
+{{- $groups := slice -}}
+{{- if $sorted -}}
+  {{- $first := printf "%v" (index $sorted 0) -}}
+  {{- if strings.Contains $first "/" -}}
+    {{- /* ── String academic years ── */}}
+    {{- /* Build [{raw, start}] sorted by start year (lexicographic sort already correct). */}}
+    {{- $items := slice -}}
+    {{- range $sorted -}}
+      {{- $s  := printf "%v" . -}}
+      {{- $sy := int (index (split $s "/") 0) -}}
+      {{- $items = $items | append (dict "raw" $s "start" $sy) -}}
+    {{- end -}}
+    {{- $gstart_raw := "" -}}
+    {{- $gend_raw   := "" -}}
+    {{- $gend_start := 0 -}}
+    {{- range $i, $item := $items -}}
+      {{- if eq $i 0 -}}
+        {{- $gstart_raw = $item.raw -}}
+        {{- $gend_raw   = $item.raw -}}
+        {{- $gend_start = $item.start -}}
+      {{- else if eq $item.start (add $gend_start 1) -}}
+        {{- $gend_raw   = $item.raw -}}
+        {{- $gend_start = $item.start -}}
+      {{- else -}}
+        {{- if eq $gstart_raw $gend_raw -}}
+          {{- $groups = $groups | append $gstart_raw -}}
+        {{- else -}}
+          {{- $groups = $groups | append (print $gstart_raw "–" $gend_raw) -}}
+        {{- end -}}
+        {{- $gstart_raw = $item.raw -}}
+        {{- $gend_raw   = $item.raw -}}
+        {{- $gend_start = $item.start -}}
+      {{- end -}}
+    {{- end -}}
+    {{- /* Flush last group */}}
+    {{- if eq $gstart_raw $gend_raw -}}
+      {{- $groups = $groups | append $gstart_raw -}}
+    {{- else -}}
+      {{- $groups = $groups | append (print $gstart_raw "–" $gend_raw) -}}
+    {{- end -}}
+  {{- else -}}
+    {{- /* ── Integer calendar years ── */}}
+    {{- $gstart := 0 -}}
+    {{- $gend   := 0 -}}
+    {{- range $i, $y := $sorted -}}
+      {{- $yn := int $y -}}
+      {{- if eq $i 0 -}}
+        {{- $gstart = $yn -}}
+        {{- $gend   = $yn -}}
+      {{- else if eq $yn (add $gend 1) -}}
+        {{- $gend = $yn -}}
+      {{- else -}}
+        {{- if eq $gstart $gend -}}
+          {{- $groups = $groups | append (printf "%d" $gstart) -}}
+        {{- else -}}
+          {{- $groups = $groups | append (printf "%d–%d" $gstart $gend) -}}
+        {{- end -}}
+        {{- $gstart = $yn -}}
+        {{- $gend   = $yn -}}
+      {{- end -}}
+    {{- end -}}
+    {{- /* Flush last group */}}
+    {{- if eq $gstart $gend -}}
+      {{- $groups = $groups | append (printf "%d" $gstart) -}}
+    {{- else -}}
+      {{- $groups = $groups | append (printf "%d–%d" $gstart $gend) -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- delimit $groups ", " -}}

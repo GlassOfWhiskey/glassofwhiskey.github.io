@@ -1,0 +1,66 @@
+research:
+  - start:       2024
+    title:       "Founder and coordinator of the CWL4HPC working group"
+    description: >-
+      The CWL4HPC working group aims to identify workflow patterns for
+      modeling large-scale scientific applications and to implement the related
+      Common Workflow Language (CWL) enhancement proposals. I am the leading
+      proponent of the CWL Loop feature to model iterative workflow patterns,
+      which has been accepted for inclusion in CWL v1.3.
+
+  - start:       2022
+    title:       "Member of the Workflow Run RO-Crate working group"
+    description: >-
+      Workflow Run RO-Crate is a working group for defining RO-Crate profiles
+      for capturing the provenance of an execution of a computational
+      workflow. Since 2022, I have been a member of the working group, and
+      together we developed the first version of the Workflow Run RO-Crate
+      (WRROC) profile collection, which led to a joint scientific publication
+      on the PLOS One journal, titled "Recording provenance of workflow runs
+      with RO-Crate."
+
+  - start:       2022
+    title:       "Member of the Common Workflow Language Technical Committee"
+    description: >-
+      The Common Workflow Language (CWL) is an open standard for describing
+      how to run command-line tools and connect them to create workflows. As a
+      member of the technical committee, I am initially responsible for
+      approving new versions of the CWL standards before the proposal goes to
+      the CWL Leadership Team.
+
+  - start:       2021
+    title:       "Member of the CINI HPC-KTT National Laboratory"
+    description: >-
+      The CINI HPC Key Technologies and Tools (HPC-KTT) National Laboratory
+      focuses on programming and execution models and tools, system software,
+      high-performance software engineering, energy consumption reduction, and
+      cloud computing. As a member of the Laboratory, I participated in four
+      European projects funded by the EuroHPC Joint Undertaking: ACROSS
+      (G.A. 955648, total budget: €8M), TEXTAROSSA (G.A. 956831, total
+      budget: €6M), EUPEX (G.A. 101033975, total budget: €41M), and EUPILOT
+      (G.A. 101034126, total budget: €30M).
+
+  - year:        2020
+    title:       "Visiting Researcher at the Predictable Parallel Computing Group"
+    org:         "Barcelona Supercomputing Center"
+    description: >-
+      The Predictable Parallel Computing research group, led by Dr. Eduardo
+      Quiñones Moreno, aims to converge the High-Performance Computing and
+      critical real-time embedded systems domains. I participated in the
+      group's activities under the HPC-Europa3 grant program for 13 weeks,
+      developing methods and tools for high-performance data analysis within
+      the DeepHealth European project (G.A. 825111, total budget: €14.8M).
+
+  - start:       2018
+    title:       "Member of the Alpha Parallel Computing Group"
+    org:         "University of Turin"
+    description: >-
+      The Parallel Computing research group (alpha) at the University of
+      Torino, led by Prof. Marco Aldinucci, investigates and develops
+      programming models, languages, and tools in parallel and distributed
+      programming, high-performance computing, and federated learning. As a
+      member of the group, I published 40+ research articles in peer-reviewed
+      scientific journals and conferences and participated in 10+ national and
+      international funded research projects. As an Assistant Professor, I am
+      coordinating research on distributed workflows, distributed confidential
+      computing, and low-level support for high-performance I/O.

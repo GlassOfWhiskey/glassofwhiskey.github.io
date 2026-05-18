@@ -1,0 +1,61 @@
+software:
+  - start:       2024
+    title:       SWIRL
+    role:        "Designer and maintainer"
+    description: >-
+      SWIRL is an intermediate representation language for distributed and
+      decentralized scientific workflows. The `swirlc` compiler can be used
+      to translate a traditional workflow instance (written in Galaxy, CWL, or
+      Pegasus) into a low-level, fully distributed executable targeting edge
+      and fog computing environments.
+    github:       "https://github.com/alpha-unito/swirlc"
+    citation:     "2024:fm:colonnelli"
+    package:      "https://pypi.org/project/swirlc"
+
+  - start:       2021
+    title:       "Jupyter Workflow"
+    role:        "Designer and maintainer"
+    description: >-
+      Jupyter Workflow is a JupyterLab extension designed to support
+      distributed literate workflows and to execute them on hybrid cloud/HPC
+      infrastructures. It is now part of the DARE Project's software stack.
+      Its associated publication in the Future Generation Computer Systems
+      journal, titled "Distributed workflows with Jupyter," has been included
+      in the "FGCS Fall 2022 Editors' Choice" list.
+    website:      "https://jupyter-workflow.di.unito.it"
+    github:       "https://github.com/alpha-unito/jupyter-workflow"
+    citation:     "2022:fgcs:colonnelli"
+    package:      "https://pypi.org/project/jupyter-workflow"
+
+  - start:       2020
+    title:       CAPIO
+    role:        "Developer and maintainer"
+    description: >-
+      CAPIO is a middleware that injects I/O streaming capabilities into
+      file-based workflows, improving the computation-I/O overlap without
+      requiring changes to the application code. Until now, it has served five
+      funded research projects and is part of several scientific collaborations
+      with academic and industrial partners (INAF, Eni SpA, Morfo Srl, INGV).
+    website:      "https://capio.hpc4ai.it"
+    github:       "https://github.com/high-performance-io/capio"
+    citation:     "2026:fgcs:santimaria"
+
+  - start:       2019
+    title:       StreamFlow
+    role:        "Designer and maintainer"
+    description: >-
+      StreamFlow is a container-native Workflow Management System based on the
+      Common Workflow Language standard that supports hybrid workflows and
+      their execution across cloud/HPC infrastructures. Until now, it has
+      served eight National and International research projects and is part of
+      several scientific collaborations with academic and industrial partners
+      (INAF, INGV, EBRAINS, ASTRON, IBM, Sogei SpA, Eni SpA). It was
+      recognized as an "emerging technology" by the EC Innovation Radar
+      initiative in 2023 and selected as one of the three exploitable results
+      of the EUPEX project. Its associated publication in the IEEE Transactions
+      on Emerging Topics in Computing journal, titled "StreamFlow:
+      cross-breeding cloud with HPC," counts 120+ citations on Google Scholar.
+    website:      "https://streamflow.di.unito.it"
+    github:       "https://github.com/alpha-unito/streamflow"
+    citation:     "2021:tetc:colonnelli"
+    package:      "https://pypi.org/project/streamflow"

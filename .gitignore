@@ -1,0 +1,35 @@
+# Generated artifacts
+cv.yaml
+*.pdf
+*.tex
+
+# LaTeX auxiliary files
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.bbl
+*.bcf
+*.blg
+*.run.xml
+
+# OS / editor noise
+.DS_Store
+.vscode/
+
+# Python
+.venv/
+
+# Hugo generated output and generated data files
+site/.hugo_build.lock
+site/public/
+site/resources/
+site/data/cv.yaml
+site/data/publications.yaml
+site/data/teaching.yaml
+site/static/cv.pdf

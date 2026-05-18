@@ -1,0 +1,77 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+\moderncvcolor{blue}
+\definecolor{color2}{RGB}{56, 115, 178}
+\moderncvstyle{classic}
+
+\usepackage[scale=0.75]{geometry}
+\usepackage{eurosym}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage[
+  style        = ieee,
+  backend      = biber,
+  defernumbers = true,
+  doi          = true,
+  giveninits   = true,
+  maxbibnames  = 99,
+  isbn         = false,
+  url          = false,
+  sorting      = ydnt
+]{biblatex}
+
+\addbibresource{publications.bib}
+
+% Use "1." label format instead of "[1]"
+\DeclareFieldFormat{labelnumberwidth}{#1.}
+
+\renewcommand*{\mkbibnamegiven}[1]{%
+  \ifitemannotation{highlight}
+    {\textcolor{color2}{\textbf{#1}}}
+    {#1}}
+
+\renewcommand*{\mkbibnamefamily}[1]{%
+  \ifitemannotation{highlight}
+    {\textcolor{color2}{\textbf{#1}}}
+    {#1}}
+
+\renewbibmacro*{addendum+pubstate}{%
+  \textcolor{color2}{\textbf{\printfield{addendum}}}%
+  \newunit\newblock
+  \printfield{pubstate}}
+
+\defbibheading{cvsubsection}[\bibname]{%
+  \par\addvspace{3.2ex plus 0.5ex minus 0.5ex}%
+  \noindent{\subsectionstyle{#1}}\par%
+  \nobreak\addvspace{0.5ex plus 0.2ex minus 0.2ex}}
+
+\name{\Huge\textcolor{color2}{$personal.first$}}{\Huge\textcolor{color2}{$personal.last$}}
+\address{$personal.address1$}{$personal.address2$}
+\email{$personal.email$}
+\homepage{$personal.homepage$}
+
+\social[github]{$personal.github$}
+\social[orcid]{$personal.orcid$}
+\social[googlescholar]{$personal.googlescholar$}
+
+\photo[$personal.photo_height$][$personal.photo_frame$]{$personal.photo$}
+
+\begin{document}
+\makecvtitle
+
+$body$
+
+\pagebreak
+
+\section{Publications}
+
+\nocite{*}
+
+\printbibliography[keyword=journal,title={Journal articles},heading=cvsubsection]
+\printbibliography[keyword=conference,title={Conference proceedings},heading=cvsubsection]
+\printbibliography[keyword=book,title={Book chapters},heading=cvsubsection]
+\printbibliography[keyword=poster,title={Posters},heading=cvsubsection]
+\printbibliography[keyword=thesis,title={Theses},heading=cvsubsection]
+
+\end{document}

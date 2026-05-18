@@ -1,0 +1,216 @@
+{{ define "main" }}
+{{- $t := hugo.Data.cv.teaching -}}
+<div>
+  <h1 class="page-title">Teaching</h1>
+
+  {{- /* ── University Courses ── */}}
+  {{ if $t.courses }}
+  {{- /* Two-pass sort: start/end entries (by end desc) first, then year entries (by year desc) */}}
+  {{- $start_courses := slice -}}
+  {{- $year_courses  := slice -}}
+  {{- range $t.courses -}}
+    {{- if .start -}}
+      {{- $start_courses = $start_courses | append . -}}
+    {{- else -}}
+      {{- $year_courses = $year_courses | append . -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $start_courses = sort $start_courses "end" "desc" -}}
+  {{- $year_courses  = sort $year_courses  "year" "desc" -}}
+  {{- $all_courses   := $start_courses | append $year_courses -}}
+  <section class="section">
+    <h2 class="section-heading" id="courses">University Courses <a class="heading-anchor" href="#courses" aria-label="Link to this section">#</a></h2>
+    <div class="entry-list">
+      {{- range $all_courses -}}
+      {{- $year  := .year  -}}
+      {{- $start := .start -}}
+      {{- $end   := .end   -}}
+      {{- $period := "" -}}
+      {{- if $year -}}
+        {{- $period = printf "%v" $year -}}
+      {{- else if $start -}}
+        {{- $period = printf "%v" $start -}}
+        {{- if $end -}}
+          {{- $period = print $period "–" $end -}}
+        {{- else -}}
+          {{- $period = print $period "–present" -}}
+        {{- end -}}
+      {{- end -}}
+      {{- $mods := slice -}}
+      {{- range .modules }}{{ $mods = $mods | append .name }}{{ end -}}
+      {{- $mods = delimit $mods ", " -}}
+      {{ partial "list-entry.html" (dict
+        "period"  $period
+        "title"   (partial "fmt-text.html" .course | safeHTML)
+        "kind"    .kind
+        "subject" $mods
+        "label"   .role
+        "meta"    .institution
+      ) }}
+      {{- end }}
+    </div>
+  </section>
+  {{ end }}
+
+  {{- /* ── Master's Programs ── */}}
+  {{ if $t.masters }}
+  <section class="section">
+    <h2 class="section-heading" id="masters">Master&rsquo;s Programs <a class="heading-anchor" href="#masters" aria-label="Link to this section">#</a></h2>
+    <div class="entry-list">
+      {{- range $t.masters -}}
+      {{- $mods := slice -}}
+      {{- range .modules }}{{ $mods = $mods | append .name }}{{ end -}}
+      {{- $mods = delimit $mods ", " -}}
+      {{ partial "list-entry.html" (dict
+        "period"  (partial "render-years.html" .years)
+        "title"   (partial "fmt-text.html" .program | safeHTML)
+        "subject" $mods
+        "label"   .role
+        "meta"    .institution
+      ) }}
+      {{- end }}
+    </div>
+  </section>
+  {{ end }}
+
+  {{- /* ── Summer & Winter Schools ── */}}
+  {{ if $t.schools }}
+  <section class="section">
+    <h2 class="section-heading" id="schools">Summer &amp; Winter Schools <a class="heading-anchor" href="#schools" aria-label="Link to this section">#</a></h2>
+    <div class="entry-list">
+      {{- range sort $t.schools "year" "desc" -}}
+      {{- $mods := slice -}}
+      {{- range .modules }}{{ $mods = $mods | append .name }}{{ end -}}
+      {{- $mods = delimit $mods ", " -}}
+      {{ partial "list-entry.html" (dict
+        "period"  (printf "%v" .year)
+        "title"   (partial "fmt-text.html" .program | safeHTML)
+        "subject" $mods
+        "label"   .role
+        "meta"    .institution
+      ) }}
+      {{- end }}
+    </div>
+  </section>
+  {{ end }}
+
+  {{- /* ── Mentorship ── */}}
+  {{ if $t.mentorships }}
+  {{- $phd      := where $t.mentorships "kind" "PhD student" -}}
+  {{- $master   := where $t.mentorships "kind" "Master's thesis" -}}
+  {{- $bachelor := where $t.mentorships "kind" "Bachelor's thesis" -}}
+  {{- $known    := slice "PhD student" "Master's thesis" "Bachelor's thesis" -}}
+  {{- $others   := where $t.mentorships "kind" "not in" $known -}}
+  <section class="section">
+    <h2 class="section-heading" id="mentorship">Mentorship <a class="heading-anchor" href="#mentorship" aria-label="Link to this section">#</a></h2>
+
+     {{- if $phd }}
+    <div class="subsection">
+      <h3 class="subsection-heading" id="phd-theses">PhD Theses <a class="heading-anchor" href="#phd-theses" aria-label="Link to this section">#</a></h3>
+      <div class="entry-list">
+        {{- range sort $phd "start" "desc" -}}
+        {{- $period := "" -}}
+        {{- if .year -}}{{- $period = printf "%v" .year -}}
+        {{- else if .start -}}{{- $period = printf "%v" .start -}}
+          {{- if .end -}}{{- $period = print $period "–" .end -}}
+          {{- else -}}{{- $period = print $period "–present" -}}{{- end -}}
+        {{- end -}}
+        {{- $btns := slice -}}
+        {{- if .abstract }}{{ $btns = $btns | append (dict "type" "toggle" "label" "Abstract" "id" (printf "abstract-%s" (.topic | anchorize)) "content" .abstract) }}{{ end -}}
+        {{ partial "list-entry.html" (dict
+          "period"  $period
+          "author" .student
+          "title"   (partial "fmt-text.html" .topic | safeHTML)
+          "label"   .role
+          "meta"    .institution
+          "buttons" $btns
+        ) }}
+        {{- end }}
+      </div>
+    </div>
+    {{- end }}
+
+    {{- if $master }}
+    <div class="subsection">
+      <h3 class="subsection-heading" id="masters-theses">Master&rsquo;s Theses <a class="heading-anchor" href="#masters-theses" aria-label="Link to this section">#</a></h3>
+      <div class="entry-list">
+        {{- range sort $master "year" "desc" -}}
+        {{- $period := "" -}}
+        {{- if .year -}}{{- $period = printf "%v" .year -}}
+        {{- else if .start -}}{{- $period = printf "%v" .start -}}
+          {{- if .end -}}{{- $period = print $period "–" .end -}}
+          {{- else -}}{{- $period = print $period "–present" -}}{{- end -}}
+        {{- end -}}
+        {{- $btns := slice -}}
+        {{- if .abstract }}{{ $btns = $btns | append (dict "type" "toggle" "label" "Abstract" "id" (printf "abstract-%s" (.topic | anchorize)) "content" .abstract) }}{{ end -}}
+        {{ partial "list-entry.html" (dict
+          "period"  $period
+          "author" .student
+          "title"   (partial "fmt-text.html" .topic | safeHTML)
+          "label"   .role
+          "meta"    .institution
+          "buttons" $btns
+        ) }}
+        {{- end }}
+      </div>
+    </div>
+    {{- end }}
+
+    {{- if $bachelor }}
+    <div class="subsection">
+      <h3 class="subsection-heading" id="bachelors-theses">Bachelor&rsquo;s Theses <a class="heading-anchor" href="#bachelors-theses" aria-label="Link to this section">#</a></h3>
+      <div class="entry-list">
+        {{- range sort $bachelor "year" "desc" -}}
+        {{- $period := "" -}}
+        {{- if .year -}}{{- $period = printf "%v" .year -}}
+        {{- else if .start -}}{{- $period = printf "%v" .start -}}
+          {{- if .end -}}{{- $period = print $period "–" .end -}}
+          {{- else -}}{{- $period = print $period "–present" -}}{{- end -}}
+        {{- end -}}
+        {{- $btns := slice -}}
+        {{- if .abstract }}{{ $btns = $btns | append (dict "type" "toggle" "label" "Abstract" "id" (printf "abstract-%s" (.topic | anchorize)) "content" .abstract) }}{{ end -}}
+        {{ partial "list-entry.html" (dict
+          "period"  $period
+          "author" .student
+          "title"   (partial "fmt-text.html" .topic | safeHTML)
+          "label"   .role
+          "meta"    .institution
+          "buttons" $btns
+        ) }}
+        {{- end }}
+      </div>
+    </div>
+    {{- end }}
+
+    {{- if $others }}
+    <div class="subsection">
+      <h3 class="subsection-heading" id="others">Others <a class="heading-anchor" href="#others" aria-label="Link to this section">#</a></h3>
+      <div class="entry-list">
+        {{- range sort $others "year" "desc" -}}
+        {{- $period := "" -}}
+        {{- if .year -}}{{- $period = printf "%v" .year -}}
+        {{- else if .start -}}{{- $period = printf "%v" .start -}}
+          {{- if .end -}}{{- $period = print $period "–" .end -}}
+          {{- else -}}{{- $period = print $period "–present" -}}{{- end -}}
+        {{- end -}}
+        {{- $btns := slice -}}
+        {{- if .abstract }}{{ $btns = $btns | append (dict "type" "toggle" "label" "Abstract" "id" (printf "abstract-%s" (.topic | anchorize)) "content" .abstract) }}{{ end -}}
+        {{ partial "list-entry.html" (dict
+          "period"  $period
+          "author" .student
+          "title"   (partial "fmt-text.html" .topic | safeHTML)
+          "kind"    .kind
+          "label"   .role
+          "meta"    .institution
+          "buttons" $btns
+        ) }}
+        {{- end }}
+      </div>
+    </div>
+    {{- end }}
+
+  </section>
+  {{ end }}
+
+</div>
+{{ end }}

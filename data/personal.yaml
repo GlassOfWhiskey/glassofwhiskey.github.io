@@ -1,0 +1,36 @@
+personal:
+  first:         Iacopo
+  last:          Colonnelli
+  address1:      "Computer Science Dept."
+  address2:      "University of Turin, Italy"
+  email:         "iacopo.colonnelli@unito.it"
+  homepage:      "glassofwhiskey.github.io"
+  github:        GlassOfWhiskey
+  orcid:         "0000-0001-9290-2017"
+  googlescholar: yFutTsMAAAAJ
+  linkedin:      iacopo-colonnelli-13867815b
+  scopus:        "57208128139"
+  wos:           AAK-3784-2021
+  photo:         "pictures/picture"
+  photo_height:  "90pt"
+  photo_frame:   "0.4pt"
+  bio: >-
+    Iacopo Colonnelli is an Assistant Professor in the Department of Computer
+    Science at the University of Turin, Italy. He is a member of the HiPEAC
+    community, a member of the CINI HPC-KTT National Laboratory, serves on the
+    Technical Committee of the Common Workflow Language (CWL), and is a founding
+    coordinator of the CWL4HPC working group. He earned his Ph.D. in Modeling and
+    Data Science with honors from the University of Turin, where his thesis on
+    novel workflow models for heterogeneous distributed systems received the
+    ITADATA 2023 Best PhD Thesis Award. He has co-authored over 40 peer-reviewed
+    publications in national and international journals and conferences, and has
+    contributed to more than 10 funded research projects. He is currently the
+    local Principal Investigator for the DARE European project (total budget:
+    €240M). He is also the designer and maintainer of the StreamFlow workflow
+    manager (120+ citations on Google Scholar as of May 2026, recognized as an
+    emerging technology by the EC Innovation Radar initiative) and has developed
+    several other frameworks and libraries for workflow management and
+    high-performance computing. His research interests include workflow modeling
+    and management in heterogeneous distributed architectures, high-performance
+    computing and I/O, distributed confidential computing, and large-scale data
+    science.

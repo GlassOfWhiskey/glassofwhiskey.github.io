@@ -1,0 +1,1303 @@
+@article{2026:fgcs:mulone,
+  title        = {A formal framework for fault tolerance in hybrid scientific workflows},
+  author       = {Alberto Mulone and
+                  Doriana Medi\'{c} and
+                  Iacopo Colonnelli and
+                  Marco Aldinucci},
+  journal      = {Future Generation Computer Systems},
+  year         = {2026},
+  volume       = {176},
+  pages        = {108188},
+  doi          = {10.1016/j.future.2025.108188},
+  url          = {https://iris.unito.it/retrieve/3c3f2e5c-af57-4be4-9584-b7045106dcd4/1-s2.0-S0167739X25004820-main.pdf},
+  issn         = {0167-739X},
+  keywords     = {journal},
+  author+an    = {3=highlight},
+  abstract     = {In large-scale distributed systems, failures are routine events whose occurrences increase with the number of computational tasks and execution locations. The advantage of representing an application as a workflow is the possibility of exploiting Workflow Management System (WMS) features such as portability, scalability, and, crucially, reliability. Among these, reliability is essential for ensuring robust execution in dynamic and failure-prone environments. In recent years, the emergence of hybrid workflows has posed new and intriguing challenges by increasing the possibility of distributing computations involving heterogeneous and independent environments. Consequently, the number of possible points of failure during the execution increased, creating a need for sophisticated fault tolerance mechanisms capable of addressing the specific requirements of hybrid systems. This work introduces a formal framework for a fault tolerance mechanism in hybrid workflows, enabling failure recovery through a rollback approach. The framework is rigorously defined by adapting and extending an existing workflow semantics tailored for hybrid execution. Our method leverages provenance data from workflow execution up to the point of failure, and creates a recovery workflow that spans multiple infrastructures. The rollback approach provides a robust and reliable strategy to ensure resilience against step failures and potential data loss. We then implement this mechanism in the StreamFlow WMS, and evaluate it using two case studies: the 1000 Genomes workflow and a synthetic workflow featuring iterative patterns. Experiments showcase the conceptual validity of our approach and assess the overhead introduced by the mechanism, including data availability checks.},
+}
+
+@inproceedings{2025:escience:gepiro-contaldo,
+  title        = {{BookedSlurm}: meeting user needs for advanced resource reservations
+                  in {Slurm}},
+  author       = {Sandro Gepiro Contaldo and
+                  Lorenzo Bosio and
+                  Janneth Estefania Hoyos Rea and
+                  Elisa Li Perottino and
+                  Sergio Rabellino and
+                  Marco Aldinucci and
+                  Marco Beccuti and
+                  Iacopo Colonnelli},
+  booktitle    = {{IEEE} International Conference on eScience, eScience 2025},
+  year         = {2025},
+  pages        = {250--259},
+  month        = sep,
+  doi          = {10.1109/ESCIENCE65000.2025.00037},
+  url          = {https://iris.unito.it/retrieve/30ac58c8-ecde-4143-8248-e4b0a1da0fe5/IEEE___Slurm.pdf},
+  publisher    = {{IEEE}},
+  location     = {Chicago, IL, USA},
+  keywords     = {conference},
+  author+an    = {8=highlight},
+  abstract     = {Modern scientific discovery is frequently backed by largescale scientific experiments, which cannot prescind from the unparalleled computational capabilities provided by highperformance computing systems. However, large data centers usually prioritize system efficiency over user accessibility, posing challenges for researchers without advanced computer science expertise. This work introduces BookedSlurm, a secure and userfocused extension of the Slurm workload manager, aiming to democratize HPC access across interdisciplinary research domains. BookedSlurm enables a partially decentralized regulation of finegrained advanced resource reservations through a novel creditbased framework, ensuring fair and predictable access to computing resources. Its modular architecture leverages dedicated microservices to manage reservations, credit handling, and accounting. These components are exposed through a secure REST API and an intuitive webbased dashboard, enhancing system usability for novice and expert users. While the dashboard simplifies interactions for nonspecialists, advanced users can directly access agentlevel APIs for more complex and automated operations. The effectiveness of BookedSlurm is validated on a realworld bioinformatics use case from the SUSMIRRI.IT project, showcasing its ability to enhance usability, optimize job scheduling, and streamline execution workflows.},
+}
+
+@article{2026:fgcs:santimaria,
+  title        = {Dynamic transparent streaming in file-based workflows with {CAPIO}},
+  author       = {Santimaria, Marco Edoardo and
+                  Colonnelli, Iacopo and
+                  Cantalupo, Barbara and
+                  Torquati, Massimo and
+                  Medi\'{c}, Doriana and
+                  Tuccari, Nicola and
+                  Sciacca, Eva and
+                  Aldinucci, Marco},
+  journal      = {Future Generation Computer Systems},
+  year         = {2026},
+  pages        = {108159},
+  doi          = {10.1016/j.future.2025.108159},
+  url          = {https://iris.unito.it/retrieve/3e5288f7-7740-4550-8f80-c65ea9db5be5/1-s2.0-S0167739X25004534-main.pdf},
+  issn         = {0167-739X},
+  publisher    = {Elsevier},
+  keywords     = {journal},
+  author+an    = {2=highlight},
+  abstract     = {Advances in big data and the growth in complexity of modern applications highlight the necessity for optimizing workflow executions on different levels, such as hybrid workflow executions, automatic optimization of data movements, and efficient use of IO. Following this line, streaming features are the desired capabilities for file-based workflows as they can reduce overall execution times. Expanding workflows with streaming capabilities usually requires rewriting the application, which is time-consuming and requires deep knowledge of the application. With this work, we introduce the Cross-Application Programmable IO (CAPIO) methodology, of which the stack is composed of two parts: the CAPIO-CL coordination language and the CAPIO middleware (which implements the semantics expressed by the CAPIO-CL coordination language). The CAPIO-CL coordination language annotates synchronization semantics between files produced and consumed by workflow steps. At the same time, the CAPIO middleware improves the performance of file-based workflows, leveraging the information provided by the CAPIO-CL language while not having to change (recompile) the code of the original workflow steps. By design, the CAPIO middleware supports multiple backends and can be extended to support more. It is dynamic, and it supports dynamic job scheduling. Benchmarks, done on both microbenchmarks and real-life workflows, prove that with CAPIO, it is possible to reduce the workflow execution time by up to 50},
+}
+
+@inproceedings{2025:cf:shukla,
+  title        = {{EuroHPC} {SPACE} {CoE}: Redesigning Scalable Parallel Astrophysical Codes
+                  for Exascale. Invited Paper},
+  author       = {Nitin Shukla and
+                  Alessandro Romeo and
+                  Caterina Caravita and
+                  Lubomir Riha and
+                  Ondrej Vysocky and
+                  Petr Strakos and
+                  Milan Jaros and
+                  Jo{\~{a}}o Barbosa and
+                  Radim Vavr{\'{\i}}k and
+                  Andrea Mignone and
+                  Marco Rossazza and
+                  Stefano Truzzi and
+                  Vittoria Berta and
+                  Iacopo Colonnelli and
+                  Doriana Medic and
+                  Elisabetta Boella and
+                  Daniele Gregori and
+                  Eva Sciacca and
+                  Luca Tornatore and
+                  Giuliano Taffoni and
+                  Pranab J. Deka and
+                  Fabio Bacchini and
+                  Rostislav{-}Paul Wilhelm and
+                  Georgios Doulis and
+                  Khalil Pierre and
+                  Luciano Rezzolla and
+                  Tine Colman and
+                  Beno{\^{\i}}t Commer{\c{c}}on and
+                  Othman Bouizi and
+                  Matthieu Kuhn and
+                  Erwan Raffin and
+                  Marc Sergent and
+                  Robert Wissing and
+                  Guillermo Marin and
+                  Klaus Dolag and
+                  Geray S. Karademir and
+                  Gino Perna and
+                  Marisa Zanotti and
+                  Sebastian Trujillo{-}Gomez},
+  booktitle    = {Proceedings of the 22nd {ACM} International Conference on Computing
+               Frontiers: Workshops and Special Sessions, {CF} 2025},
+  year         = {2025},
+  pages        = {177--184},
+  month        = may,
+  doi          = {10.1145/3706594.3728892},
+  url          = {https://iris.unito.it/retrieve/19b66690-ba5c-42d9-b56d-bb096e375b1d/SpaceCF2025Preprint.pdf},
+  publisher    = {{ACM}},
+  location     = {Cagliari, Italy},
+  keywords     = {conference},
+  author+an    = {14=highlight},
+  abstract     = {High Performance Computing (HPC) based simulations are crucial in Astrophysics \& Cosmology (A\&C), helping scientists investigate and understand complex astrophysical phenomena. Taking advantage of exascale computing capabilities is essential for these efforts. However, the unprecedented architectural complexity of exascale systems impacts legacy codes. The SPACE Centre of Excellence (CoE) aims to re-engineer key astrophysical codes to tackle new computational challenges by adopting innovative programming paradigms and software (SW) solutions. SPACE brings together scientists, code developers, HPC experts, hardware (HW) manufacturers, and SW developers. This collaboration enhances exascale A C applications, promoting the use of exascale and post-exascale computing capabilities. Additionally, SPACE addresses high-performance data analysis for the massive data outputs from exascale simulations and modern observations, using machine learning (ML) and visualisation tools. The project facilitates application deployment across platforms by focusing on code repositories and data sharing, integrating European astrophysical communities around exascale computing with standardised SW and data protocols.},
+}
+
+@inproceedings{2025:eurospw:brescia,
+  title        = {End-To-End Confidentiality with Sev-Snp Leveraging in-Memory Storage},
+  author       = {Brescia, Lorenzo and
+                  Colonnelli, Iacopo and
+                  Schiavoni, Valerio and
+                  Felber, Pascal and
+                  Aldinucci, Marco},
+  booktitle    = {2025 IEEE European Symposium on Security and Privacy Workshops (EuroS\&PW)},
+  year         = {2025},
+  pages        = {414-421},
+  doi          = {10.1109/EuroSPW67616.2025.00054},
+  url          = {https://iris.unito.it/retrieve/709d45d8-183f-40c6-b486-bb812b4abfa2/systex25-final82.pdf},
+  publisher    = {IEEE Computer Society},
+  address      = {Los Alamitos, CA, USA},
+  keywords     = {conference},
+  author+an    = {2=highlight},
+  abstract     = {Confidential computing ensures data in-use protection in untrusted cloud environments, yet securing data atrest typically relies on Full Disk Encryption (FDE), which imposes significant performance overhead. This work proposes an alternative in-memory storage approach that eliminates FDE by leveraging SEV-SNP confidential virtual machines (CVMs). Our framework extends SNPGuard, an open-source platform for booting and attesting SEV-SNP VMs, to manage workload execution using temporary file systems (tmpfs), inherently secured by CVM memory encryption. By enabling seamless deployment of Docker based applications, our approach improves runtime and throughput by 20},
+}
+
+@article{2026:fgcs:brescia,
+  title        = {A comprehensive performance evaluation of {TEEs} for confidential {DNA} alignment},
+  author       = {Lorenzo Brescia and
+                  Iacopo Colonnelli and
+                  Robert Birke and
+                  Valerio Schiavoni and
+                  Pascal Felber and
+                  Marco Aldinucci},
+  journal      = {Future Generation Computer Systems},
+  year         = {2026},
+  pages        = {108031},
+  doi          = {10.1016/j.future.2025.108031},
+  issn         = {0167-739X},
+  url          = {https://iris.unito.it/retrieve/c4c635a3-4b06-4b75-9bdb-c36abb43ae76/1-s2.0-S0167739X25003267-main.pdf},
+  keywords     = {journal},
+  author+an    = {2=highlight},
+  abstract     = {Data confidentiality is crucial when processing sensitive information, often limiting user interactions and shared computing services like the cloud. While Trusted Execution Environments (TEEs) offer a means to ensure privacy in untrusted environments, they frequently introduce significant computational overhead. DNA alignment, a key step in bioinformatics workflows, is privacy-sensitive and computationally intensive. Given its parallelizable nature, it is a compelling case study for evaluating the performance impact and scalability of various TEEs. This study assesses three TEEs – Intel SGX, Intel TDX, and AMD SEV-SNP – by evaluating their overhead through real-world bioinformatics workloads and system-level microbenchmarks. Our evaluation shows that SGX-based solutions incur substantial overhead, particularly for small workloads, with slowdowns ranging from 283},
+}
+
+@article{2026:fgcs:suter,
+  title        = {A terminology for scientific workflow systems},
+  author       = {Fr\'{e}d\'{e}ric Suter and
+                  Tain\~{a} Coleman and
+                  \.{I}lkay Altinta\c{s} and
+                  Rosa M. Badia and
+                  Bartosz Balis and
+                  Kyle Chard and
+                  Iacopo Colonnelli and
+                  Ewa Deelman and
+                  Paolo {Di Tommaso} and
+                  Thomas Fahringer and
+                  Carole Goble and
+                  Shantenu Jha and
+                  Daniel S. Katz and
+                  Johannes K\"{o}ster and
+                  Ulf Leser and
+                  Kshitij Mehta and
+                  Hilary Oliver and
+                  J.-Luc Peterson and
+                  Giovanni Pizzi and
+                  Lo\"{i}c Pottier and
+                  Ra\"{u}l Sirvent and
+                  Eric Suchyta and
+                  Douglas Thain and
+                  Sean R. Wilkinson and
+                  Justin M. Wozniak and
+                  Rafael {Ferreira da Silva}},
+  journal      = {Future Generation Computer Systems},
+  year         = {2026},
+  volume       = {174},
+  pages        = {107974},
+  doi          = {10.1016/j.future.2025.107974},
+  issn         = {0167-739X},
+  url          = {https://www.arxiv.org/pdf/2506.07838},
+  keywords     = {journal},
+  author+an    = {7=highlight},
+  abstract     = {The term ``scientific workflow'' has evolved over the last two decades to encompass a broad range of compositions of interdependent compute tasks and data movements. It has also become an umbrella term for processing in modern scientific applications. Today, many scientific applications can be considered as workflows made of multiple dependent steps, and hundreds of workflow systems have been developed to manage and run these scientific workflows. However, no turnkey solution has emerged from the field to address the diversity of scientific processes and the infrastructure on which they are supposed to be implemented. Instead, new research problems requiring the execution of scientific workflows with some novel feature often lead to the development of an entirely new workflow system. A direct consequence of this situation is that many existing workflow management systems (WMSs) share some salient features, offer similar functionalities, and can manage the same categories of workflows but at the same time also have some distinct capabilities that can be important for specific applications. This situation makes researchers who develop workflows face the complex question of selecting a WMS. This selection can be driven by technical considerations, to find the system that is the most appropriate for their application and for the computing and storage resources available to them, or other factors such as reputation, adoption, strong community support, or long-term sustainability. To address this problem, a group of WMS developers and practitioners joined their efforts to produce a community-based terminology of WMSs. This paper summarizes their findings and introduces this new terminology to characterize WMSs. This terminology is composed of fives axes: workflow structure and characteristics, composition, orchestration, data management, and metadata capture. Each axis comprises several concepts that capture the prominent features of WMSs. Based on this terminology, this paper also presents a classification of 23 existing WMSs according to the proposed axes and terms.},
+}
+
+@inproceedings{2025:pdp:imbrosciano,
+  title        = {The Cloud-{HPC} infrastructure for Hazard Mapping and vulnerability Monitoring ({HaMMon})},
+  author       = {Mauro Imbrosciano and
+                  Eva Sciacca and
+                  Fabio Vitello and
+                  Leonardo Pelonero and
+                  Francesco Franchina and
+                  Ugo Becciani and
+                  Iacopo Colonnelli and
+                  Doriana Medi\'{c}},
+  booktitle    = {2025 33rd Euromicro International Conference on Parallel, Distributed, and Network-Based Processing (PDP)},
+  year         = {2025},
+  pages        = {309--316},
+  doi          = {10.1109/PDP66500.2025.00050},
+  issn         = {2377-5750},
+  url          = {https://iris.unito.it/retrieve/36a223d5-7134-4469-80a0-705c0060a5d4/PDP_2025_HaMMON.pdf},
+  publisher    = {IEEE},
+  keywords     = {conference},
+  author+an    = {7=highlight},
+  abstract     = {The HaMMon project is the outcome of an industrial partnership that includes many Italian research institutions and private companies. It is led by UnipolSai and Leitha, and funded by the ICSC, the Italian National Research Center for High Performance Computing, Big Data and Quantum Computing.The ambition of HaMMon is to build a flexible and scalable platform to analyze the hydrogeological and atmospheric balance of the Italian territory. The project aims to expand the current knowledge in hazard mapping, monitoring, and forecasting from an industrial perspective by leveraging innovative technologies and the interdisciplinary activities carried out by the ICSC.In this work, we present the cloud-HPC infrastructure deployed in the High-Performance Computing for Artificial Intelligence (HPC4AI) green data center of the University of Turin which supports the testing and development of HaMMon's applications and services. We describe the current activities and preliminary results related to the integration of Photogrammetry techniques, Data Visualization and Artificial Intelligence technologies, applied on aerial images, to assess extreme natural events and evaluate their impact on risk-exposed assets.},
+}
+
+@inproceedings{2025:pdp:tuccari,
+  title        = {High Performance Visualization for Astrophysics and Cosmology},
+  author       = {Nicola Tuccari and
+                  Eva Sciacca and
+                  Fabio Vitello and
+                  Iacopo Colonnelli and
+                  Yolanda Becerra and
+                  Enric Sosa Cintero and
+                  Guillermo Marin and
+                  Milan Jaros and
+                  Lubomir Riha and
+                  Petr Strakos and
+                  Sebastian Trujillo-Gomez and
+                  Emiliano Tramontana and
+                  Robert Wissing},
+  booktitle    = {2025 33rd Euromicro International Conference on Parallel, Distributed, and Network-Based Processing (PDP)},
+  year         = {2025},
+  pages        = {443--450},
+  doi          = {10.1109/PDP66500.2025.00069},
+  issn         = {2377-5750},
+  url          = {https://iris.unito.it/retrieve/994fe11b-b282-4267-80c9-6d60821ba2cb/PDP2025___WP3_SPACE_Vis.pdf},
+  publisher    = {IEEE},
+  keywords     = {conference},
+  author+an    = {4=highlight},
+  abstract     = {Modern Astrophysics and Cosmology (A\&C) projects produce immense data volumes, necessitating advanced software tools for data access, storage, and analysis. Visualization Interface for the Virtual Observatory (VisIVO) is one such tool enabling multi-dimensional data analysis and knowledge discovery across complex astrophysical datasets. Leveraging containerization and virtualization, VisIVO has been deployed on various distributed computing platforms. Additionally, Blender, an open-source 3D suite, provides robust tools for rendering and processing volumetric data, making it suitable for visualizing complex datasets. At the SPACE Center of Excellence these tools are being adapted for high-performance visualization of cosmological simulations performed with GADGET and ChaNGa on pre-exascale systems. However, implementing high-performance visualization on diverse HPC platforms presents several challenges, including hardware and software compatibility, data management, scalability, performance portability, and efficient resource allocation. This paper outlines strategies to integrate VisIVO with workflow frameworks and streaming platforms to address these challenges. Workflow frameworks enhance portability, scheduling, and reproducibility of visualization workflows on pre-exascale systems used in A\&C simulations. We also discuss the use of streaming platforms to enable concurrent (i.e. in-situ) analysis and visualization of simulations, reducing the need to store full simulation data by leveraging distributed databases that stream the output data in real time. Lastly, we present an adaptation of Blender to handle large-scale particle-based astrophysical data, offering high-quality visualization with interactive exploration capabilities.},
+}
+
+@article{2025:eurohpc:taborsky,
+  title        = {Towards a European {HPC}/{AI} ecosystem: a community-driven report},
+  author       = {Petr Taborsky and
+                  Iacopo Colonnelli and
+                  Krzysztof Kurowski and
+                  Rakesh Sarma and
+                  Niels Henrik Pontoppidan and
+                  Branislav Jans{\'\i}k and
+                  Nicki Skafte Detlefsen and
+                  Jens Egholm Pedersen and
+                  Rasmus Larsen and
+                  Lars Kai Hansen},
+  booktitle    = {Proceedings of the Second EuroHPC user day},
+  journal      = {Procedia Computer Science},
+  year         = {2025},
+  volume       = {255},
+  pages        = {140--149},
+  doi          = {10.1016/j.procs.2025.02.269},
+  issn         = {1877-0509},
+  url          = {https://iris.unito.it/retrieve/5b0b7fb2-3a25-4d09-b8a1-1c3673a18bb7/1-s2.0-S1877050925006301-main.pdf},
+  publisher    = {Elsevier},
+  address      = {Amsterdam, Netherlands},
+  keywords     = {conference},
+  author+an    = {2=highlight},
+  abstract     = {The rapid advancements in AI and Machine Learning necessitate a robust computational infrastructure to support cutting-edge research and industrial applications. From the academic and industrial AI community perspective, voiced in the recent ELISE project, the European AI platform is recommended to center around the EuroHPC growing ecosystem. It should be user-driven, easily accessible, powerful, and compliant with European regulations. AI-optimized and dedicated supercomputers for the European AI community are also coming, in addition to upgrading partitions of existing EuroHPC systems to 'AI enabled' stage. Related calls have been initiated in September 2024. Further, conventional EuroHPC systems are suggested to be extended with quantum computing, edge AI, and neuromorphic computing to cater to AI models deployed on network edge devices and sustainability in the long run. The challenges are presented in three case studies, ranging from training Transformers on HPC to LLMs trained federally across three different Euro HPC systems to recent results on hybrid classical-quantum application. This paper concludes with case studies results-informed next steps believed to benefit AI practitioners and the broader AI community.},
+}
+
+@article{2025:ijpp:santimaria,
+  title        = {{CAPIO-CL}: The {CAPIO} Coordination Language},
+  author       = {Santimaria, Marco Edoardo and
+                  Martinelli, Alberto Riccardo and
+                  Colonnelli, Iacopo and
+                  Cantalupo, Barbara and
+                  Torquati, Massimo and
+                  Aldinucci, Marco},
+  journal      = {International Journal of Parallel Programming},
+  year         = {2025},
+  volume       = {53},
+  number       = {2},
+  pages        = {10},
+  doi          = {10.1007/s10766-025-00789-0},
+  isbn         = {1573-7640},
+  url          = {https://iris.unito.it/retrieve/394564b0-5c77-402c-8192-0aa8bc0114d8/s10766-025-00789-0.pdf},
+  keywords     = {journal},
+  author+an    = {3=highlight},
+  abstract     = {The performance bottleneck in file-based workflows remains a pressing issue in the realm of I/O-based workflows. To address this challenge, a novel annotation language has been developed. CAPIO-CL is positioned as an innovative I/O coordination language, enabling users to annotate data dependencies within file-based workflows with synchronization semantics pertinent to the involved files and directories. Through the information provided by the language, optimization opportunities arise in streaming and preemptive data movement. This paper serves to illustrate the semantics and syntax enabling CAPIO-CL to enhance the performance of in situ workflows without necessitating the rewriting or modification of the original workflow application steps. Finally, an analysis of CAPIO-CL is provided, taking into consideration both language expressiveness and application performance enhancement.},
+  id           = {Santimaria2025},
+}
+
+@inproceedings{2024:itadata:brescia,
+  title        = {Performance Analysis on {DNA} Alignment Workload with Intel {SGX} Multithreading},
+  author       = {Brescia, Lorenzo and
+                  Colonnelli, Iacopo and
+                  Aldinucci, Marco},
+  booktitle    = {Proceedings of BigHPC2024: Special Track on Big Data and High-Performance Computing, co-located with the 3\textsuperscript{rd} Italian Conference on Big Data and Data Science, ITADATA2024},
+  year         = {2024},
+  volume       = {3785},
+  url          = {https://ceur-ws.org/Vol-3785/paper107.pdf},
+  publisher    = {CEUR-WS.org},
+  series       = {{CEUR} Workshop Proceedings},
+  keywords     = {conference},
+  author+an    = {2=highlight},
+  abstract     = {Data confidentiality is a critical issue in the digital age, impacting interactions between users and public services and between scientific computing organizations and Cloud and HPC providers. Performance in parallel computing is essential, yet techniques for establishing Trusted Execution Environments (TEEs) to ensure privacy in remote environments often negatively impact execution time. This paper aims to analyze the performance of a parallel bioinformatics workload for DNA alignment (Bowtie2) executed within the confidential enclaves of Intel SGX processors. The results provide encouraging insights regarding the feasibility of using SGX-based TEEs for parallel computing on large datasets. The findings indicate that, under conditions of high parallelization and with twice as many threads, workloads executed within SGX enclaves perform, on average, 15\% faster than non-confidential execution. This empirical demonstration supports the potential of SGX-based TEEs to effectively balance the need for privacy with the demands of high-performance computing.},
+}
+
+@article{2024:plos-one:leo,
+  title        = {Recording provenance of workflow runs with {RO-Crate}},
+  author       = {Simone Leo and
+                  Michael R. Crusoe and
+                  Laura Rodr\'{i}guez-Navas and
+                  Ra\"{u}l Sirvent and
+                  Alexander Kanitz and
+                  Paul De Geest and
+                  Rudolf Wittner and
+                  Luca Pireddu and
+                  Daniel Garijo and
+                  Jos\'{e} M. Fern\'{a}ndez and
+                  Iacopo Colonnelli and
+                  Matej Gallo and
+                  Tazro Ohta and
+                  Hirotaka Suetake and
+                  Salvador Capella-Gutierrez and
+                  Renske de Wit and
+                  Bruno P. Kinoshita and
+                  Stian Soiland-Reyes},
+  journal      = {PLoS ONE},
+  year         = {2024},
+  volume       = {19},
+  number       = {9},
+  pages        = {1--35},
+  doi          = {10.1371/journal.pone.0309210},
+  url          = {https://iris.unito.it/retrieve/57752f7b-9f8f-4013-8cef-5b498703d882/journal.pone.0309210.pdf},
+  publisher    = {Public Library of Science},
+  keywords     = {journal},
+  author+an    = {11=highlight},
+  abstract     = {Recording the provenance of scientific computation results is key to the support of traceability, reproducibility and quality assessment of data products. Several data models have been explored to address this need, providing representations of workflow plans and their executions as well as means of packaging the resulting information for archiving and sharing. However, existing approaches tend to lack interoperable adoption across workflow management systems. In this work we present Workflow Run RO-Crate, an extension of RO-Crate (Research Object Crate) and Schema.org to capture the provenance of the execution of computational workflows at different levels of granularity and bundle together all their associated objects (inputs, outputs, code, etc.). The model is supported by a diverse, open community that runs regular meetings, discussing development, maintenance and adoption aspects. Workflow Run RO-Crate is already implemented by several workflow management systems, allowing interoperable comparisons between workflow runs from heterogeneous systems. We describe the model, its alignment to standards such as W3C PROV, and its implementation in six workflow systems. Finally, we illustrate the application of Workflow Run RO-Crate in two use cases of machine learning in the digital image analysis domain.},
+}
+
+@inproceedings{2024:fm:colonnelli,
+  title        = {Introducing {SWIRL}: An Intermediate Representation Language for Scientific Workflows},
+  author       = {Iacopo Colonnelli and
+                  Doriana Medi\'{c} and
+                  Alberto Mulone and
+                  Viviana Bono and
+                  Luca Padovani and
+                  Marco Aldinucci},
+  booktitle    = {Formal Methods. FM 2024},
+  year         = {2024},
+  volume       = {14933},
+  pages        = {226--244},
+  month        = sep,
+  doi          = {10.1007/978-3-031-71162-6_12},
+  url          = {https://iris.unito.it/retrieve/b39a6f09-a8d3-4974-abf6-c109916694fa/PDFEditoriale.pdf},
+  publisher    = {Springer Nature Switzerland},
+  address      = {Milano, Italy},
+  series       = {Lecture Notes in Computer Science},
+  keywords     = {conference},
+  author+an    = {1=highlight},
+  abstract     = {In the ever-evolving landscape of scientific computing, properly supporting the modularity and complexity of modern scientific applications requires new approaches to workflow execution, like seamless interoperability between different workflow systems, distributed-by-design workflow models, and automatic optimisation of data movements. In order to address this need, this article introduces SWIRL, an intermediate representation language for scientific workflows. In contrast with other product-agnostic workflow languages, SWIRL is not designed for human interaction but to serve as a low-level compilation target for distributed workflow execution plans. The main advantages of SWIRL semantics are low-level primitives based on the send/receive programming model and a formal framework ensuring the consistency of the semantics and the specification of translating workflow models represented by Directed Acyclic Graphs (DAGs) into SWIRL workflow descriptions. Additionally, SWIRL offers rewriting rules designed to optimise execution traces, accompanied by corresponding equivalence. An open-source SWIRL compiler toolchain has been developed using the ANTLR Python3 bindings.},
+}
+
+@article{2024:eurohpc:colonnelli,
+  title        = {Cross-Facility Federated Learning},
+  author       = {Iacopo Colonnelli and
+                  Robert Birke and
+                  Giulio Malenza and
+                  Gianluca Mittone and
+                  Alberto Mulone and
+                  Jeroen Galjaard and
+                  Lydia Y. Chen and
+                  Sanzio Bassini and
+                  Gabriella Scipione and
+                  Jan Martinovi\v{c} and
+                  Vit Vondr\'{a}k and
+                  Marco Aldinucci},
+  booktitle    = {Proceedings of the First EuroHPC user day},
+  journal      = {Procedia Computer Science},
+  year         = {2024},
+  volume       = {240},
+  pages        = {3--12},
+  doi          = {10.1016/j.procs.2024.07.003},
+  issn         = {1877-0509},
+  url          = {https://iris.unito.it/retrieve/6c0092d7-c5e0-40e0-aac4-385b4f39e969/1-s2.0-S1877050924016909-main.pdf},
+  publisher    = {Elsevier},
+  address      = {Bruxelles, Belgium},
+  keywords     = {conference},
+  author+an    = {1=highlight},
+  abstract     = {In a decade, AI frontier research transitioned from the researcher's workstation to thousands of high-end hardware-accelerated compute nodes. This rapid evolution shows no signs of slowing down in the foreseeable future. While top cloud providers may be able to keep pace with this growth rate, obtaining and efficiently exploiting computing resources at that scale is a daunting challenge for universities and SMEs. This work introduces the Cross-Facility Federated Learning (XFFL) framework to bridge this compute divide, extending the opportunity to efficiently exploit multiple independent data centres for extreme-scale deep learning tasks to data scientists and domain experts. XFFL relies on hybrid workflow abstractions to decouple tasks from environment-specific technicalities, reducing complexity and enhancing reusability. In addition, Federated Learning (FL) algorithms eliminate the need to move large amounts of data between different facilities, reducing time-to-solution and preserving data privacy. The XFFL approach is empirically evaluated by training a full LLaMAv2 7B instance on two facilities of the EuroHPC JU, showing how the increased computing power completely compensates for the additional overhead introduced by two data centres.},
+}
+
+@inproceedings{2024:pdp:santimaria,
+  title        = {Benchmarking Parallelization Models through {Karmarkar} Interior-point method},
+  author       = {Santimaria, Marco Edoardo and
+                  Fonio, Samuele and
+                  Malenza, Giulio and
+                  Colonnelli, Iacopo and
+                  Aldinucci, Marco},
+  booktitle    = {Proc. of 32nd Euromicro intl. Conference on Parallel, Distributed and Network-based Processing (PDP)},
+  year         = {2024},
+  pages        = {1-8},
+  month        = mar,
+  doi          = {10.1109/PDP62718.2024.00010},
+  issn         = {2377-5750},
+  isbn         = {979-8-3503-6307-4},
+  url          = {https://iris.unito.it/retrieve/9f22d906-5a46-4a98-a6fe-780a28479d55/main.pdf},
+  publisher    = {IEEE},
+  address      = {New York City, NYC, USA},
+  location     = {Dublin, Ireland},
+  keywords     = {conference},
+  author+an    = {4=highlight},
+  abstract     = {Optimization problems are one of the main focus of scientific research. Their computational-intensive nature makes them prone to be parallelized with consistent improvements in performance. This paper sheds light on different parallel models for accelerating Karmarkar's Interior-point method. To do so, we assess parallelization strategies for individual operations within the aforementioned Karmarkar's algorithm using OpenMP, GPU acceleration with CUDA, and the recent Parallel Standard C++ Linear Algebra library (PSTL) executing both on GPU and CPU. Our different implementations yield interesting benchmark results that show the optimal approach for parallelizing interior point algorithms for general Linear Programming (LP) problems. In addition, we propose a more theoretical perspective of the parallelization of this algorithm, with a detailed study of our OpenMP implementation, showing the limits of optimizing the single operations},
+}
+
+@inproceedings{2024:spw:casella,
+  title        = {A Performance Analysis for Confidential Federated Learning},
+  author       = {Casella, Bruno and
+                  Colonnelli, Iacopo and
+                  Mittone, Gianluca and
+                  Birke, Robert and
+                  Riviera, Walter and
+                  Sciarappa, Antonio and
+                  Cavazzoni, Carlo and
+                  Aldinucci, Marco},
+  booktitle    = {Proceedings of the 2024 Deep Learning Security and Privacy Workshop, IEEE Symposium on Security and Privacy 2024},
+  year         = {2024},
+  month        = may,
+  doi          = {10.1109/SPW63631.2024.00009},
+  url          = {https://iris.unito.it/retrieve/b5877a97-2d8d-4e95-8791-0aa4a1b953b3/DLSP___CONFIDENTIAL_FL.pdf},
+  location     = {San Francisco, CA},
+  keywords     = {conference},
+  author+an    = {2=highlight},
+  abstract     = {Federated Learning (FL) has emerged as a solution to preserve data privacy by keeping the data locally on each participant's device. However, FL alone is still vulnerable to attacks that can cause privacy leaks. Therefore, it becomes necessary to take additional security measures at the cost of increasing runtimes. The Trusted Execution Environment (TEE) approach promises to offer the highest degree of security during execution. However, TEEs suffer from memory limits which prevent safe end-to-end FL training of modern deep models. State-of- the-art approaches limit secure training to selected layers, failing to avert the full spectrum of attacks or adopt layer-wise training affecting model performance. We benchmark the usage of a library OS (LibOS) to run the full, unmodified end-to-end FL training inside the TEE. We extensively evaluate and model the overhead of the different security mechanisms needed to protect the data and model during computation (TEE), communication (TLS), and storage (disk encryption). The obtained results across three datasets and two models demonstrate that LibOSes are a viable way to seamlessly inject security into FL with limited overhead (at most 2x), offering valuable guidance for researchers and developers aiming to apply FL in data-security-focused contexts.},
+}
+
+@inproceedings{2023:itadata:colonnelli,
+  title        = {Workflow Models for Heterogeneous Distributed Systems},
+  author       = {Iacopo Colonnelli},
+  booktitle    = {Proceedings of the 2nd Italian Conference on Big Data and Data Science ({ITADATA} 2023)},
+  year         = {2023},
+  volume       = {3606},
+  month        = sep,
+  url          = {https://ceur-ws.org/Vol-3606/invited77.pdf},
+  publisher    = {CEUR-WS.org},
+  location     = {Naples, Italy},
+  series       = {{CEUR} Workshop Proceedings},
+  keywords     = {conference},
+  author+an    = {1=highlight},
+  abstract     = {This article introduces a novel hybrid workflow abstraction that injects topology awareness directly into the definition of a distributed workflow model. In particular, the article briefly discusses the advantages brought by this approach to the design and orchestration of large-scale data-oriented workflows, the current level of support from state-of-the-art workflow systems, and some future research directions.},
+}
+
+@inproceedings{2023:hipc:martinelli,
+  title        = {{CAPIO}: a Middleware for Transparent {I/O} Streaming in Data-Intensive Workflows},
+  author       = {Alberto Riccardo Martinelli and
+                  Massimo Torquati and
+                  Marco Aldinucci and
+                  Iacopo Colonnelli and
+                  Barbara Cantalupo},
+  booktitle    = {2023 IEEE 30th International Conference on High Performance Computing, Data, and Analytics (HiPC)},
+  year         = {2023},
+  month        = dec,
+  doi          = {10.1109/HiPC58850.2023.00031},
+  url          = {https://iris.unito.it/retrieve/27380f37-0978-409e-a9d8-2b5e95a4bb85/CAPIO-HiPC23-preprint.pdf},
+  publisher    = {{IEEE}},
+  address      = {Goa, India},
+  keywords     = {conference},
+  author+an    = {4=highlight},
+  abstract     = {With the increasing amount of digital data available for analysis and simulation, the class of I/O-intensive HPC workflows is fated to quickly expand, further exacerbating the performance gap between computing, memory, and storage technologies. This paper introduces CAPIO (Cross-Application Programmable I/O), a middleware capable of injecting I/O streaming capabilities into file-based workflows, improving the computation-I/O overlap without the need to change the application code. The contribution is twofold: 1) at design time, a new I/O coordination language allows users to annotate workflow data dependencies with synchronization semantics; 2) at run time, a user-space middleware automatically and transparently to the user turns a workflow batch execution into a streaming execution according to the semantics expressed in the configuration file. CAPIO has been tested on synthetic benchmarks simulating typical workflow I/O patterns and two real-world workflows. Experiments show that CAPIO reduces the execution time by 10\% to 66\% for data-intensive workflows that use the file system as a communication medium.},
+}
+
+@inproceedings{2023:scw:aldinucci,
+  title        = {A Systematic Mapping Study of {Italian} Research on Workflows},
+  author       = {Marco Aldinucci and
+                  Elena Maria Baralis and
+                  Valeria Cardellini and
+                  Iacopo Colonnelli and
+                  Marco Danelutto and
+                  Sergio Decherchi and
+                  Giuseppe Di Modica and
+                  Luca Ferrucci and
+                  Marco Gribaudo and
+                  Francesco Iannone and
+                  Marco Lapegna and
+                  Doriana Medic and
+                  Giuseppa Muscianisi and
+                  Francesca Righetti and
+                  Eva Sciacca and
+                  Nicola Tonellotto and
+                  Mauro Tortonesi and
+                  Paolo Trunfio and
+                  Tullio Vardanega},
+  booktitle    = {Proceedings of the {SC} '23 Workshops of The International Conference on High Performance Computing, Network, Storage, and Analysis, {SC-W} 2023},
+  year         = {2023},
+  pages        = {2065--2076},
+  month        = nov,
+  doi          = {10.1145/3624062.3624285},
+  url          = {https://iris.unito.it/retrieve/103ccbb6-a791-4342-a809-63216c2a2795/3624062.3624285.pdf},
+  publisher    = {{ACM}},
+  address      = {Denver, CO, USA},
+  keywords     = {conference},
+  author+an    = {4=highlight},
+  abstract     = {An entire ecosystem of methodologies and tools revolves around scientific workflow management. They cover crucial non-functional requirements that standard workflow models fail to target, such as interactive execution, energy efficiency, performance portability, Big Data management, and intelligent orchestration in the Computing Continuum. Characterizing and monitoring this ecosystem is crucial to develop an informed view of current and future research directions. This work conducts a systematic mapping study of the Italian workflow research community, collecting and analyzing 25 tools and 10 applications from several scientific domains in the context of the ``National Research Centre for HPC, Big Data, and Quantum Computing'' (ICSC). The study aims to outline the main current research directions and determine how they address the critical needs of modern scientific applications. The findings highlight a variegated research ecosystem of tools, with a prominent interest in advanced workflow orchestration and still immature but promising efforts toward energy efficiency.},
+}
+
+@inproceedings{2023:risc-v:colonnelli,
+  title        = {Experimenting with {PyTorch} on {RISC-V}},
+  author       = {Iacopo Colonnelli and
+                  Robert Birke and
+                  Marco Aldinucci},
+  booktitle    = {{RISC-V Summit Europe 2023}},
+  year         = {2023},
+  month        = jun,
+  url          = {https://iris.unito.it/retrieve/429bf344-9090-42c3-809c-1b8ac320a930/2023-06-08-Iacopo-COLONNELLI-abstract.pdf},
+  address      = {Barcelona, Spain},
+  keywords     = {poster},
+  author+an    = {1=highlight},
+  abstract     = {RISC-V is an emerging instruction set architecture. Its modular and extensible open-source royalty-free design is increasingly attracting interest from both research and industry. Nowadays, different RISC-V-based boards can be bought off the shelf. However, software availability is equivalently vital in guaranteeing the RISC-V ecosystem's success. Here we contribute with the first publicly available port of PyTorch. PyTorch is one of the most popular Deep Learning libraries available today. As such, it is a crucial enabler in running state-of-the-art AI applications on RISC-V-based systems and a first step towards a fully democratic end-to-end codesign process.},
+}
+
+@inproceedings{2023:samos:fornaciari,
+  title        = {{RISC-V}-based Platforms for {HPC}: Analyzing Non-functional Properties for Future {HPC} and {Big-Data} Clusters},
+  author       = {William Fornaciari and
+                  Federico Reghenzani and
+                  Federico Terraneo and
+                  Davide Baroffio and
+                  Cecilia Metra and
+                  Martin Omana and
+                  Josie E. Rodriguez Condia and
+                  Matteo Sonza Reorda and
+                  Robert Birke and
+                  Iacopo Colonnelli and
+                  Gianluca Mittone and
+                  Marco Aldinucci and
+                  Gabriele Mencagli and
+                  Francesco Iannone and
+                  Filippo Palombi and
+                  Giuseppe Zummo and
+                  Daniele Cesarini and
+                  Federico Tesser},
+  booktitle    = {{Embedded Computer Systems: Architectures, Modeling, and Simulation - 23rd International Conference, {SAMOS} 2023}},
+  year         = {2023},
+  doi          = {10.1007/978-3-031-46077-7_26},
+  url          = {https://iris.unito.it/retrieve/b627eab0-3aa1-4fd7-8685-f47c62c792b3/SAMOS_2023_CN_HPC_FL1.pdf},
+  address      = {Samos, Greece},
+  keywords     = {conference},
+  author+an    = {10=highlight},
+  abstract     = {High-PerformanceComputing(HPC)haveevolvedtobeused to perform simulations of systems where physical experimentation is pro- hibitively impractical, expensive, or dangerous. This paper provides a general overview and showcases the analysis of non-functional properties in RISC-V-based platforms for HPCs. In particular, our analyses target the evaluation of power and energy control, thermal management, and reliability assessment of promising systems, structures, and technologies devised for current and future generation of HPC machines. The main set of design methodologies and technologies developed within the activ- ities of the Future and HPC Big Data spoke of the National Centre of HPC, Big Data and Quantum Computing project are described along with the description of the testbed for experimenting two-phase cooling approaches.},
+}
+
+@inproceedings{2023:euro-par:mittone,
+  title        = {Model-Agnostic Federated Learning},
+  author       = {Mittone, Gianluca and
+                  Riviera, Walter and
+                  Colonnelli, Iacopo and
+                  Birke, Robert and
+                  Aldinucci, Marco},
+  booktitle    = {Euro-Par 2023: Parallel Processing},
+  year         = {2023},
+  volume       = {14100},
+  pages        = {383--396},
+  month        = aug,
+  doi          = {10.1007/978-3-031-39698-4_26},
+  url          = {https://iris.unito.it/retrieve/d46fdb71-7069-465a-a235-63f1ef89ba97/MAFL_EuroPar2023.pdf},
+  publisher    = {{Springer}},
+  address      = {Limassol, Cyprus},
+  institution  = {Computer Science Department, University of Torino},
+  keywords     = {conference},
+  author+an    = {3=highlight},
+  abstract     = {Since its debut in 2016, Federated Learning (FL) has been tied to the inner workings of Deep Neural Networks (DNNs). On the one hand, this allowed its development and widespread use as DNNs proliferated. On the other hand, it neglected all those scenarios in which using DNNs is not possible or advantageous. The fact that most current FL frameworks only allow training DNNs reinforces this problem. To address the lack of FL solutions for non-DNN-based use cases, we propose MAFL (Model-Agnostic Federated Learning). MAFL marries a model-agnostic FL algorithm, AdaBoost.F, with an open industry-grade FL framework: Intel OpenFL. MAFL is the first FL system not tied to any specific type of machine learning model, allowing exploration of FL scenarios beyond DNNs and trees. We test MAFL from multiple points of view, assessing its correctness, flexibility and scaling properties up to 64 nodes. We optimised the base software achieving a 5.5x speedup on a standard FL scenario. MAFL is compatible with x86-64, ARM-v8, Power and RISC-V.},
+}
+
+@inproceedings{2023:cf:mittone,
+  title        = {Experimenting with Emerging {RISC-V} Systems for Decentralised Machine Learning},
+  author       = {Mittone, Gianluca and
+                  Tonci, Nicol{\`o} and
+                  Birke, Robert and
+                  Colonnelli, Iacopo and
+                  Medi\'{c}, Doriana and
+                  Bartolini, Andrea and
+                  Esposito, Roberto and
+                  Parisi, Emanuele and
+                  Beneventi, Francesco and
+                  Polato, Mirko and
+                  Torquati, Massimo and
+                  Benini, Luca and
+                  Aldinucci, Marco},
+  booktitle    = {20th {ACM} International Conference on Computing Frontiers ({CF} '23)},
+  year         = {2023},
+  month        = may,
+  doi          = {10.1145/3587135.3592211},
+  isbn         = {979-8-4007-0140-5/23/05},
+  url          = {https://iris.unito.it/retrieve/48e6d221-afbe-44ed-bb65-dec6ce605526/3587135.3592211.pdf},
+  publisher    = {{ACM}},
+  address      = {Bologna, Italy},
+  institution  = {Computer Science Department, University of Torino},
+  keywords     = {conference},
+  author+an    = {4=highlight},
+  abstract     = {Decentralised Machine Learning (DML) enables collaborative machine learning without centralised input data. Federated Learning (FL) and Edge Inference are examples of DML. While tools for DML (especially FL) are starting to flourish, many are not flexible and portable enough to experiment with novel systems (e.g., RISC-V), non-fully connected topologies, and asynchronous collaboration schemes. We overcome these limitations via a domain-specific language allowing to map DML schemes to an underlying middleware, i.e. the FastFlow parallel programming library. We experiment with it by generating different working DML schemes on two emerging architectures (ARM-v8, RISC-V) and the x86-64 platform. We characterise the performance and energy efficiency of the presented schemes and systems. As a byproduct, we introduce a RISC-V porting of the PyTorch framework, the first publicly available to our knowledge.},
+}
+
+@inproceedings{2023:ml4astro:colonnelli,
+  title        = {Federated Learning meets {HPC} and cloud},
+  author       = {Iacopo Colonnelli and
+                  Bruno Casella and
+                  Gianluca Mittone and
+                  Yasir Arfat and
+                  Barbara Cantalupo and
+                  Roberto Esposito and
+                  Alberto Riccardo Martinelli and
+                  Doriana Medi\'{c} and
+                  Marco Aldinucci},
+  booktitle    = {Astrophysics and Space Science Proceedings},
+  year         = {2023},
+  volume       = {60},
+  pages        = {193--199},
+  doi          = {10.1007/978-3-031-34167-0_39},
+  isbn         = {978-3-031-34167-0},
+  url          = {https://iris.unito.it/retrieve/3ac66baa-9d9a-4e9f-94a5-13700694d8aa/ML4Astro.pdf},
+  publisher    = {Springer},
+  address      = {Catania, Italy},
+  keywords     = {conference},
+  author+an    = {1=highlight},
+  abstract     = {HPC and AI are fated to meet for several reasons. This article will discuss some of them and argue why this will happen through the set of methods and technologies that underpin cloud computing. As a paradigmatic example, we present a new federated learning system that collaboratively trains a deep learning model in different supercomputing centers. The system is based on the StreamFlow workflow manager designed for hybrid cloud-HPC infrastructures.},
+}
+
+@inproceedings{2023:pdp:arfat,
+  title        = {Pooling critical datasets with Federated Learning},
+  author       = {Yasir Arfat and
+                  Gianluca Mittone and
+                  Iacopo Colonnelli and
+                  Fabrizio D'Ascenzo and
+                  Roberto Esposito and
+                  Marco Aldinucci},
+  booktitle    = {31st Euromicro International Conference on Parallel, Distributed and Network-Based Processing, {PDP} 2023},
+  year         = {2023},
+  pages        = {329--337},
+  doi          = {10.1109/PDP59025.2023.00057},
+  url          = {https://iris.unito.it/retrieve/491e22ec-3db5-4989-a063-085a199edd20/23_pdp_fl.pdf},
+  publisher    = {IEEE},
+  address      = {Napoli, Italy},
+  keywords     = {conference},
+  author+an    = {3=highlight},
+  abstract     = {Federated Learning (FL) is becoming popular in different industrial sectors where data access is critical for security, privacy and the economic value of data itself. Unlike traditional machine learning, where all the data must be globally gathered for analysis, FL makes it possible to extract knowledge from data distributed across different organizations that can be coupled with different Machine Learning paradigms. In this work, we replicate, using Federated Learning, the analysis of a pooled dataset (with AdaBoost) that has been used to define the PRAISE score, which is today among the most accurate scores to evaluate the risk of a second acute myocardial infarction. We show that thanks to the extended-OpenFL framework, which implements AdaBoost.F, we can train a federated PRAISE model that exhibits comparable accuracy and recall as the centralised model. We achieved F1 and F2 scores which are consistently comparable to the PRAISE score study of a 16- parties federation but within an order of magnitude less time.},
+}
+
+@inbook{2023:book:contaldo,
+  title        = {Bringing Cell Subpopulation Discovery on a Cloud-{HPC} Using {rCASC} and {StreamFlow}},
+  author       = {Contaldo, Sandro Gepiro and
+                  Alessandri, Luca and
+                  Colonnelli, Iacopo and
+                  Beccuti, Marco and
+                  Aldinucci, Marco},
+  booktitle    = {Single Cell Transcriptomics: Methods and Protocols},
+  year         = {2023},
+  pages        = {337--345},
+  doi          = {10.1007/978-1-0716-2756-3_17},
+  isbn         = {978-1-0716-2756-3},
+  url          = {https://datacloud.di.unito.it/index.php/s/KMfKo4m7GTGdZmF},
+  publisher    = {Springer {US}},
+  address      = {New York, NY},
+  keywords     = {book},
+  author+an    = {3=highlight},
+  abstract     = {The idea behind novel single-cell RNA sequencing (scRNA-seq) pipelines is to isolate single cells through microfluidic approaches and generate sequencing libraries in which the transcripts are tagged to track their cell of origin. Modern scRNA-seq platforms are capable of analyzing up to many thousands of cells in each run. Then, combined with massive high-throughput sequencing producing billions of reads, scRNA-seq allows the assessment of fundamental biological properties of cell populations and biological systems at unprecedented resolution.},
+}
+
+@inproceedings{2022:eage-hpc:colonnelli,
+  title        = {Hybrid Workflows For Large - Scale Scientific Applications},
+  author       = {Iacopo Colonnelli and
+                  Marco Aldinucci},
+  booktitle    = {Sixth {EAGE} High Performance Computing Workshop},
+  year         = {2022},
+  pages        = {1--5},
+  month        = sep,
+  doi          = {10.3997/2214-4609.2022615029},
+  issn         = {2214-4609},
+  url          = {https://iris.unito.it/retrieve/d79ddabb-f9d7-4a55-9f84-1528b1533ba3/Extended_Abstract.pdf},
+  publisher    = {{European Association of Geoscientists \& Engineers }},
+  address      = {Milano, Italy},
+  keywords     = {conference},
+  author+an    = {1=highlight},
+  abstract     = {Large-scale scientific applications are facing an irrevrsible transition from monolithic, high-performance oriented codes to modular and polyglot deployments of specialised (micro-)services. The reasons behind this transition are many: coupling of standard solvers with Deep Learning techniques, offloading of data analysis and visualisation to Cloud, and the advent of specialised hardware accelerators. Topology-aware Workflow Management Systems (WMSs) play a crucial role. In particular, topology-awareness allows an explicit mapping of workflow steps onto heterogeneous locations, allowing automated executions on top of hybrid architectures (e.g., cloud+HPC or classical+quantum). Plus, topology-aware WMSs can offer nonfunctional requirements OOTB, e.g. components' life-cycle orchestration, secure and efficient data transfers, fault tolerance, and cross-cluster execution of urgent workloads. Augmenting interactive Jupyter Notebooks with distributed workflow capabilities allows domain experts to prototype and scale applications using the same technological stack, while relying on a feature-rich and user-friendly web interface. This abstract will showcase how these general methodologies can be applied to a typical geoscience simulation pipeline based on the Full Wavefront Inversion (FWI) technique. In particular, a prototypical Jupyter Notebook will be executed interactively on Cloud. Preliminary data analyses and post-processing will be executed locally, while the computationally demanding optimisation loop will be scheduled on a remote HPC cluster.},
+}
+
+@article{2022:micpro:agosta,
+  title        = {Towards EXtreme scale technologies and accelerators for euROhpc hw/Sw supercomputing applications for exascale: The {TEXTAROSSA} approach},
+  author       = {Giovanni Agosta and
+                  Marco Aldinucci and
+                  Carlos Alvarez and
+                  Roberto Ammendola and
+                  Yasir Arfat and
+                  Olivier Beaumont and
+                  Massimo Bernaschi and
+                  Andrea Biagioni and
+                  Tommaso Boccali and
+                  Berenger Bramas and
+                  Carlo Brandolese and
+                  Barbara Cantalupo and
+                  Mauro Carrozzo and
+                  Daniele Cattaneo and
+                  Alessandro Celestini and
+                  Massimo Celino and
+                  Iacopo Colonnelli and
+                  Paolo Cretaro and
+                  Pasqua D'Ambra and
+                  Marco Danelutto and
+                  Roberto Esposito and
+                  Lionel Eyraud-Dubois and
+                  Antonio Filgueras and
+                  William Fornaciari and
+                  Ottorino Frezza and
+                  Andrea Galimberti and
+                  Francesco Giacomini and
+                  Brice Goglin and
+                  Daniele Gregori and
+                  Abdou Guermouche and
+                  Francesco Iannone and
+                  Michal Kulczewski and
+                  Francesca {Lo Cicero} and
+                  Alessandro Lonardo and
+                  Alberto R. Martinelli and
+                  Michele Martinelli and
+                  Xavier Martorell and
+                  Giuseppe Massari and
+                  Simone Montangero and
+                  Gianluca Mittone and
+                  Raymond Namyst and
+                  Ariel Oleksiak and
+                  Paolo Palazzari and
+                  Pier Stanislao Paolucci and
+                  Federico Reghenzani and
+                  Cristian Rossi and
+                  Sergio Saponara and
+                  Francesco Simula and
+                  Federico Terraneo and
+                  Samuel Thibault and
+                  Massimo Torquati and
+                  Matteo Turisini and
+                  Piero Vicini and
+                  Miquel Vidal and
+                  Davide Zoni and
+                  Giuseppe Zummo},
+  journal      = {Microprocessors and Microsystems},
+  year         = {2022},
+  volume       = {95},
+  pages        = {104679},
+  doi          = {10.1016/j.micpro.2022.104679},
+  url          = {https://iris.unito.it/retrieve/1dac5acd-f80e-47a9-83ee-20d89b775482/TEXTAROSSA_MICPRO_Preprint.pdf},
+  issn         = {0141-9331},
+  keywords     = {journal},
+  author+an    = {17=highlight},
+  abstract     = {In the near future, Exascale systems will need to bridge three technology gaps to achieve high performance while remaining under tight power constraints: energy efficiency and thermal control; extreme computation efficiency via HW acceleration and new arithmetic; methods and tools for seamless integration of reconfigurable accelerators in heterogeneous HPC multi-node platforms. TEXTAROSSA addresses these gaps through a co-design approach to heterogeneous HPC solutions, supported by the integration and extension of HW and SW IPs, programming models, and tools derived from European research.},
+}
+
+@incollection{2022:book:aldinucci,
+  title        = {The {DeepHealth} Toolkit: A Key European Free and Open-Source Software for Deep Learning and Computer Vision Ready to Exploit Heterogeneous {HPC} and {C}loud Architectures},
+  author       = {Marco Aldinucci and
+                  David Atienza and
+                  Federico Bolelli and
+                  M\'{o}nica Caballero and
+                  Iacopo Colonnelli and
+                  Jos\'{e} Flich and
+                  Jon Ander G\'{o}mez and
+                  David Gonz\'{a}lez and
+                  Costantino Grana and
+                  Marco Grangetto and
+                  Simone Leo and
+                  Pedro L\'{o}pez and
+                  Dana Oniga and
+                  Roberto Paredes and
+                  Luca Pireddu and
+                  Eduardo Qui\~{n}ones and
+                  Tatiana Silva and
+                  Enzo Tartaglione and
+                  Marina Zapater},
+  booktitle    = {Technologies and Applications for Big Data Value},
+  year         = {2022},
+  pages        = {183--202},
+  doi          = {10.1007/978-3-030-78307-5_9},
+  isbn         = {978-3-030-78307-5},
+  url          = {https://link.springer.com/content/pdf/10.1007/978-3-030-78307-5_9.pdf},
+  publisher    = {Springer International Publishing},
+  address      = {Cham},
+  keywords     = {book},
+  author+an    = {5=highlight},
+  abstract     = {At the present time, we are immersed in the convergence between Big Data, High-Performance Computing and Artificial Intelligence. Technological progress in these three areas has accelerated in recent years, forcing different players like software companies and stakeholders to move quickly. The European Union is dedicating a lot of resources to maintain its relevant position in this scenario, funding projects to implement large-scale pilot testbeds that combine the latest advances in Artificial Intelligence, High-Performance Computing, Cloud and Big Data technologies. The DeepHealth project is an example focused on the health sector whose main outcome is the DeepHealth toolkit, a European unified framework that offers deep learning and computer vision capabilities, completely adapted to exploit underlying heterogeneous High-Performance Computing, Big Data and cloud architectures, and ready to be integrated into any software platform to facilitate the development and deployment of new applications for specific problems in any sector. This toolkit is intended to be one of the European contributions to the field of AI. This chapter introduces the toolkit with its main components and complementary tools, providing a clear view to facilitate and encourage its adoption and wide use by the European community of developers of AI-based solutions and data scientists working in the healthcare sector and others.},
+  chapter      = {9},
+}
+
+@incollection{2022:book:quinones,
+  title        = {The {DeepHealth} {HPC} Infrastructure: Leveraging Heterogenous {HPC} and Cloud Computing Infrastructures for {IA}-based Medical Solutions},
+  author       = {Eduardo Qui\~{n}ones and
+                  Jesus Perales and
+                  Jorge Ejarque and
+                  Asaf Badouh and
+                  Santiago Marco and
+                  Fabrice Auzanneau and
+                  Fran\c{c}ois Galea and
+                  David Gonz\'{a}lez and
+                  Jos\'{e} Ram\'{o}n Herv\'{a}s and
+                  Tatiana Silva and
+                  Iacopo Colonnelli and
+                  Barbara Cantalupo and
+                  Marco Aldinucci and
+                  Enzo Tartaglione and
+                  Rafael Tornero and
+                  Jos\'{e} Flich and
+                  Jose Maria Martinez and
+                  David Rodriguez and
+                  Izan Catal\'{a}n and
+                  Jorge Garcia and
+                  Carles Hern\'{a}ndez},
+  booktitle    = {{HPC}, Big Data, and {AI} Convergence Towards Exascale: Challenge and Vision},
+  year         = {2022},
+  pages        = {191--216},
+  doi          = {10.1201/9781003176664},
+  isbn         = {978-1-0320-0984-1},
+  url          = {https://iris.unito.it/retrieve/handle/2318/1832050/912413/Preprint.pdf},
+  publisher    = {{CRC} Press},
+  address      = {Boca Raton, Florida},
+  keywords     = {book},
+  author+an    = {11=highlight},
+  abstract     = {This chapter presents the DeepHealth HPC toolkit for an efficient execution of deep learning (DL) medical application into HPC and cloud-computing infrastructures, featuring many-core, GPU, and FPGA acceleration devices. The toolkit offers to the European Computer Vision Library and the European Distributed Deep Learning Library (EDDL), developed in the DeepHealth project as well, the mechanisms to distribute and parallelize DL operations on HPC and cloud infrastructures in a fully transparent way. The toolkit implements workflow managers used to orchestrate HPC workloads for an efficient parallelization of EDDL training operations on HPC and cloud infrastructures, and includes the parallel programming models for an efficient execution EDDL inference and training operations on many-core, GPUs and FPGAs acceleration devices.},
+  chapter      = {10},
+}
+
+@article{2022:fgcs:colonnelli,
+  title        = {Distributed workflows with {Jupyter}},
+  author       = {Iacopo Colonnelli and
+                  Marco Aldinucci and
+                  Barbara Cantalupo and
+                  Luca Padovani and
+                  Sergio Rabellino and
+                  Concetto Spampinato and
+                  Roberto Morelli and
+                  Rosario {Di Carlo} and
+                  Nicol{\`o} Magini and
+                  Carlo Cavazzoni},
+  journal      = {Future Generation Computer Systems},
+  year         = {2022},
+  volume       = {128},
+  pages        = {282--298},
+  doi          = {10.1016/j.future.2021.10.007},
+  issn         = {0167-739X},
+  url          = {https://iris.unito.it/retrieve/0a925adf-795e-413e-bc2d-8d6442a57476/1-s2.0-S0167739X21003976-main.pdf},
+  keywords     = {journal},
+  author+an    = {1=highlight},
+  abstract     = {The designers of a new coordination interface enacting complex workflows have to tackle a dichotomy: choosing a language-independent or language-dependent approach. Language-independent approaches decouple workflow models from the host code's business logic and advocate portability. Language-dependent approaches foster flexibility and performance by adopting the same host language for business and coordination code. Jupyter Notebooks, with their capability to describe both imperative and declarative code in a unique format, allow taking the best of the two approaches, maintaining a clear separation between application and coordination layers but still providing a unified interface to both aspects. We advocate the Jupyter Notebooks' potential to express complex distributed workflows, identifying the general requirements for a Jupyter-based Workflow Management System (WMS) and introducing a proof-of-concept portable implementation working on hybrid Cloud-HPC infrastructures. As a byproduct, we extended the vanilla IPython kernel with workflow-based parallel and distributed execution capabilities. The proposed Jupyter-workflow (Jw) system is evaluated on common scenarios for High Performance Computing (HPC) and Cloud, showing its potential in lowering the barriers between prototypical Notebooks and production-ready implementations.},
+  addendum     = {FGCS Fall 2022 Editors' Choice},
+}
+
+@inproceedings{2021:dsd:agosta,
+  title        = {{TEXTAROSSA}: Towards EXtreme scale Technologies and Accelerators for euROhpc hw/Sw Supercomputing Applications for exascale},
+  author       = {Giovanni Agosta and
+                  William Fornaciari and
+                  Andrea Galimberti and
+                  Giuseppe Massari and
+                  Federico Reghenzani and
+                  Federico Terraneo and
+                  Davide Zoni and
+                  Carlo Brandolese and
+                  Massimo Celino and
+                  Francesco Iannone and
+                  Paolo Palazzari and
+                  Giuseppe Zummo and
+                  Massimo Bernaschi and
+                  Pasqua D'Ambra and
+                  Sergio Saponara and
+                  Marco Danelutto and
+                  Massimo Torquati and
+                  Marco Aldinucci and
+                  Yasir Arfat and
+                  Barbara Cantalupo and
+                  Iacopo Colonnelli and
+                  Roberto Esposito and
+                  Alberto Riccardo Martinelli and
+                  Gianluca Mittone and
+                  Olivier Beaumont and
+                  Berenger Bramas and
+                  Lionel Eyraud-Dubois and
+                  Brice Goglin and
+                  Abdou Guermouche and
+                  Raymond Namyst and
+                  Samuel Thibault and
+                  Antonio Filgueras and
+                  Miquel Vidal and
+                  Carlos Alvarez and
+                  Xavier Martorell and
+                  Ariel Oleksiak and
+                  Michal Kulczewski and
+                  Alessandro Lonardo and
+                  Piero Vicini and
+                  Francesco Lo Cicero and
+                  Francesco Simula and
+                  Andrea Biagioni and
+                  Paolo Cretaro and
+                  Ottorino Frezza and
+                  Pier Stanislao Paolucci and
+                  Matteo Turisini and
+                  Francesco Giacomini and
+                  Tommaso Boccali and
+                  Simone Montangero and
+                  Roberto Ammendola},
+  booktitle    = {Proc. of the 24th Euromicro Conference on Digital System Design ({DSD})},
+  year         = {2021},
+  month        = aug,
+  doi          = {10.1109/DSD53832.2021.00051},
+  url          = {https://iris.unito.it/retrieve/e27ce433-b81e-2581-e053-d805fe0acbaa/21_DSD_textarossa_preprint.pdf},
+  publisher    = {IEEE},
+  address      = {Palermo, Italy},
+  keywords     = {conference},
+  author+an    = {21=highlight},
+  abstract     = {To achieve high performance and high energy efficiency on near-future exascale computing systems, three key technology gaps needs to be bridged. These gaps include: energy efficiency and thermal control; extreme computation efficiency via HW acceleration and new arithmetics; methods and tools for seamless integration of reconfigurable accelerators in heterogeneous HPC multi-node platforms. TEXTAROSSA aims at tackling this gap through a co-design approach to heterogeneous HPC solutions, supported by the integration and extension of HW and SW IPs, programming models and tools derived from European research.},
+}
+
+@inproceedings{2021:enea:aldinucci,
+  title        = {Practical Parallelizazion of a {Laplace} Solver with {MPI}},
+  author       = {Aldinucci, Marco and
+                  Cesare, Valentina and
+                  Colonnelli, Iacopo and
+                  Martinelli, Alberto Riccardo and
+                  Mittone, Gianluca and
+                  Cantalupo, Barbara},
+  booktitle    = {ENEA CRESCO in the fight against COVID-19},
+  year         = {2021},
+  pages        = {21--24},
+  publisher    = {ENEA},
+  keywords     = {conference},
+  author+an    = {3=highlight},
+  abstract     = {This work exposes a practical methodology for the semi-automatic parallelization of existing code. We show how a scientific sequential code can be parallelized through our approach. The obtained parallel code is only slightly different from the starting sequential one, providing an example of how little re-designing our methodology involves. The performance of the parallelized code, executed on the CRESCO6 cluster, is then exposed and discussed. We also believe in the educational value of this approach and suggest its use as a teaching device for students.},
+}
+
+@inproceedings{2021:enea:colonnelli,
+  title        = {Bringing AI pipelines onto cloud-{HPC}: setting a baseline for accuracy of {COVID-19} diagnosis},
+  author       = {Colonnelli, Iacopo and
+                  Cantalupo, Barbara and
+                  Spampinato, Concetto and
+                  Pennisi, Matteo and
+                  Aldinucci, Marco},
+  booktitle    = {ENEA CRESCO in the fight against COVID-19},
+  year         = {2021},
+  doi          = {10.5281/zenodo.5151511},
+  url          = {https://iris.unito.it/retrieve/handle/2318/1796029/779853/21_AI-pipelines_ENEA-COVID19.pdf},
+  publisher    = {ENEA},
+  keywords     = {conference},
+  author+an    = {1=highlight},
+  abstract     = {HPC is an enabling platform for AI. The introduction of AI workloads in the HPC applications basket has non-trivial consequences both on the way of designing AI applications and on the way of providing HPC computing. This is the leitmotif of the convergence between HPC and AI. The formalized definition of AI pipelines is one of the milestones of HPC-AI convergence. If well conducted, it allows, on the one hand, to obtain portable and scalable applications. On the other hand, it is crucial for the reproducibility of scientific pipelines. In this work, we advocate the StreamFlow Workflow Management System as a crucial ingredient to define a parametric pipeline, called ``CLAIRE COVID-19 Universal Pipeline'', which is able to explore the optimization space of methods to classify COVID-19 lung lesions from CT scans, compare them for accuracy, and therefore set a performance baseline. The universal pipeline automatizes the training of many different Deep Neural Networks (DNNs) and many different hyperparameters. It, therefore, requires a massive computing power, which is found in traditional HPC infrastructure thanks to the portability-by-design of pipelines designed with StreamFlow. Using the universal pipeline, we identified a DNN reaching over 90\% accuracy in detecting COVID-19 lesions in CT scans.},
+}
+
+@article{2021:ajc:de-filippo,
+  title        = {Benefit of Extended Dual Antiplatelet Therapy Duration in Acute Coronary Syndrome Patients Treated with Drug Eluting Stents for Coronary Bifurcation Lesions (from the {BIFURCAT} Registry)},
+  author       = {Ovidio De Filippo and
+                  Jeehoon Kang and
+                  Francesco Bruno and
+                  Jung-Kyu Han and
+                  Andrea Saglietto and
+                  Han-Mo Yang and
+                  Giuseppe Patti and
+                  Kyung-Woo Park and
+                  Radoslaw Parma and
+                  Hyo-Soo Kim and
+                  Leonardo De Luca and
+                  Hyeon-Cheol Gwon and
+                  Mario Iannaccone and
+                  Woo Jung Chun and
+                  Grzegorz Smolka and
+                  Seung-Ho Hur and
+                  Enrico Cerrato and
+                  Seung Hwan Han and
+                  Carlo di Mario and
+                  Young Bin Song and
+                  Javier Escaned and
+                  Ki Hong Choi and
+                  Gerard Helft and
+                  Joon-Hyung Doh and
+                  Alessandra Truffa Giachet and
+                  Soon-Jun Hong and
+                  Saverio Muscoli and
+                  Chang-Wook Nam and
+                  Guglielmo Gallone and
+                  Davide Capodanno and
+                  Daniela Trabattoni and
+                  Yoichi Imori and
+                  Veronica Dusi and
+                  Bernardo Cortese and
+                  Antonio Montefusco and
+                  Federico Conrotto and
+                  Iacopo Colonnelli and
+                  Imad Sheiban and
+                  Gaetano Maria de Ferrari and
+                  Bon-Kwon Koo and
+                  Fabrizio D'Ascenzo},
+  journal      = {The American Journal of Cardiology},
+  year         = {2021},
+  doi          = {10.1016/j.amjcard.2021.07.005},
+  issn         = {0002-9149},
+  url          = {https://iris.unito.it/retrieve/e27ce432-2c15-2581-e053-d805fe0acbaa/Manuscript%20revised%2018621%20ODF.pdf},
+  keywords     = {journal},
+  author+an    = {37=highlight},
+  abstract     = {Optimal dual antiplatelet therapy (DAPT) duration for patients undergoing percutaneous coronary intervention (PCI) for coronary bifurcations is an unmet issue. The BIFURCAT registry was obtained by merging two registries on coronary bifurcations. Three groups were compared in a two-by-two fashion: short-term DAPT (< 6 months), intermediate-term DAPT (6-12 months) and extended DAPT (>12 months). Major adverse cardiac events (MACE) (a composite of all-cause death, myocardial infarction (MI), target-lesion revascularization and stent thrombosis) were the primary endpoint. Single components of MACE were the secondary endpoints. Events were appraised according to the clinical presentation: chronic coronary syndrome (CCS) versus acute coronary syndrome (ACS). 5537 patients (3231 ACS, 2306 CCS) were included. After a median follow-up of 2.1 years (IQR 0.9-2.2), extended DAPT was associated with a lower incidence of MACE compared with intermediate-term DAPT (2.8\% versus 3.4\%, adjusted HR 0.23 [0.1-0.54], p <0.001), driven by a reduction of all-cause death in the ACS cohort. In the CCS cohort, an extended DAPT strategy was not associated with a reduced risk of MACE. In conclusion, among real-world patients receiving PCI for coronary bifurcation, an extended DAPT strategy was associated with a reduction of MACE in ACS but not in CCS patients.},
+}
+
+@article{2021:jpdc:aldinucci,
+  title        = {Practical Parallelization of Scientific Applications with {OpenMP, OpenACC and MPI}},
+  author       = {Aldinucci, Marco and
+                  Cesare, Valentina and
+                  Colonnelli, Iacopo and
+                  Martinelli, Alberto Riccardo and
+                  Mittone, Gianluca and
+                  Cantalupo, Barbara and
+                  Cavazzoni, Carlo and
+                  Drocco, Maurizio},
+  journal      = {Journal of Parallel and Distributed Computing},
+  year         = {2021},
+  volume       = {157},
+  pages        = {13--29},
+  doi          = {10.1016/j.jpdc.2021.05.017},
+  url          = {https://iris.unito.it/retrieve/handle/2318/1792557/770851/Practical_Parallelization_JPDC_preprint.pdf},
+  keywords     = {journal},
+  author+an    = {3=highlight},
+  abstract     = {This work aims at distilling a systematic methodology to modernize existing sequential scientific codes with a little re-designing effort, turning an old codebase into modern code, i.e., parallel and robust code. We propose a semi-automatic methodology to parallelize scientific applications designed with a purely sequential programming mindset, possibly using global variables, aliasing, random number generators, and stateful functions. We demonstrate that the same methodology works for the parallelization in the shared memory model (via OpenMP), message passing model (via MPI), and General Purpose Computing on GPU model (via OpenACC). The method is demonstrated parallelizing four real-world sequential codes in the domain of physics and material science. The methodology itself has been distilled in collaboration with MSc students of the Parallel Computing course at the University of Torino, that applied it for the first time to the project works that they presented for the final exam of the course. Every year the course hosts some special lectures from industry representatives, who present how they use parallel computing and offer codes to be parallelizeda.},
+}
+
+@inproceedings{2021:parma-ditam:colonnelli,
+  title        = {{HPC Application Cloudification: The StreamFlow Toolkit}},
+  author       = {Colonnelli, Iacopo and
+                  Cantalupo, Barbara and
+                  Esposito, Roberto and
+                  Pennisi, Matteo and
+                  Spampinato, Concetto and
+                  Aldinucci, Marco},
+  booktitle    = {12th Workshop on Parallel Programming and Run-Time Management Techniques for Many-core Architectures and 10th Workshop on Design Tools and Architectures for Multicore Embedded Computing Platforms (PARMA-DITAM 2021)},
+  year         = {2021},
+  volume       = {88},
+  pages        = {5:1--5:13},
+  doi          = {10.4230/OASIcs.PARMA-DITAM.2021.5},
+  issn         = {2190-6807},
+  isbn         = {978-3-95977-181-8},
+  url          = {https://drops.dagstuhl.de/opus/volltexte/2021/13641/pdf/OASIcs-PARMA-DITAM-2021-5.pdf},
+  publisher    = {Schloss Dagstuhl -- Leibniz-Zentrum f{\"u}r Informatik},
+  address      = {Dagstuhl, Germany},
+  series       = {Open Access Series in Informatics (OASIcs)},
+  keywords     = {conference},
+  author+an    = {1=highlight},
+  abstract     = {Finding an effective way to improve accessibility to High-Performance Computing facilities, still anchored to SSH-based remote shells and queue-based job submission mechanisms, is an open problem in computer science. This work advocates a cloudification of HPC applications through a cluster-as-accelerator pattern, where computationally demanding portions of the main execution flow hosted on a Cloud Finding an effective way to improve accessibility to High-Performance Computing facilities, still anchored to SSH-based remote shells and queue-based job submission mechanisms, is an open problem in computer science. This work advocates a cloudification of HPC applications through a cluster-as-accelerator pattern, where computationally demanding portions of the main execution flow hosted on a Cloud infrastructure can be offloaded to HPC environments to speed them up. We introduce StreamFlow, a novel Workflow Management System that supports such a design pattern and makes it possible to run the steps of a standard workflow model on independent processing elements with no shared storage. We validated the proposed approach's effectiveness on the CLAIRE COVID-19 universal pipeline, i.e. a reproducible workflow capable of automating the comparison of (possibly all) state-of-the-art pipelines for the diagnosis of COVID-19 interstitial pneumonia from CT scans images based on Deep Neural Networks (DNNs).},
+}
+
+@article{2021:lancet:dascenzo,
+  title        = {Machine learning-based prediction of adverse events following an acute coronary syndrome {(PRAISE)}: a modelling study of pooled datasets},
+  author       = {Fabrizio D'Ascenzo and
+                  Ovidio {De Filippo} and
+                  Guglielmo Gallone and
+                  Gianluca Mittone and
+                  Marco Agostino Deriu and
+                  Mario Iannaccone and
+                  Albert Ariza-Sol\'e and
+                  Christoph Liebetrau and
+                  Sergio Manzano-Fern\'andez and
+                  Giorgio Quadri and
+                  Tim Kinnaird and
+                  Gianluca Campo and
+                  Jose Paulo {Simao Henriques} and
+                  James M Hughes and
+                  Alberto Dominguez-Rodriguez and
+                  Marco Aldinucci and
+                  Umberto Morbiducci and
+                  Giuseppe Patti and
+                  Sergio Raposeiras-Roubin and
+                  Emad Abu-Assi and
+                  Gaetano Maria {De Ferrari} and
+                  Francesco Piroli and
+                  Andrea Saglietto and
+                  Federico Conrotto and
+                  Pierluigi Omed\'e and
+                  Antonio Montefusco and
+                  Mauro Pennone and
+                  Francesco Bruno and
+                  Pier Paolo Bocchino and
+                  Giacomo Boccuzzi and
+                  Enrico Cerrato and
+                  Ferdinando Varbella and
+                  Michela Sperti and
+                  Stephen B. Wilton and
+                  Lazar Velicki and
+                  Ioanna Xanthopoulou and
+                  Angel Cequier and
+                  Andres Iniguez-Romo and
+                  Isabel {Munoz Pousa} and
+                  Maria {Cespon Fernandez} and
+                  Berenice {Caneiro Queija} and
+                  Rafael Cobas-Paz and
+                  Angel Lopez-Cuenca and
+                  Alberto Garay and
+                  Pedro Flores Blanco and
+                  Andrea Rognoni and
+                  Giuseppe {Biondi Zoccai} and
+                  Simone Biscaglia and
+                  Ivan Nunez-Gil and
+                  Toshiharu Fujii and
+                  Alessandro Durante and
+                  Xiantao Song and
+                  Tetsuma Kawaji and
+                  Dimitrios Alexopoulos and
+                  Zenon Huczek and
+                  Jose Ramon {Gonzalez Juanatey} and
+                  Shao-Ping Nie and
+                  Masa-aki Kawashiri and
+                  Iacopo Colonnelli and
+                  Barbara Cantalupo and
+                  Roberto Esposito and
+                  Sergio Leonardi and
+                  Walter {Grosso Marra} and
+                  Alaide Chieffo and
+                  Umberto Michelucci and
+                  Dario Piga and
+                  Marta Malavolta and
+                  Sebastiano Gili and
+                  Marco Mennuni and
+                  Claudio Montalto and
+                  Luigi {Oltrona Visconti} and
+                  Yasir Arfat},
+  journal      = {The Lancet},
+  year         = {2021},
+  volume       = {397},
+  number       = {10270},
+  pages        = {199--207},
+  doi          = {10.1016/S0140-6736(20)32519-8},
+  issn         = {0140-6736},
+  url          = {https://www.researchgate.net/profile/James_Hughes3/publication/348501148_Machine_learning-based_prediction_of_adverse_events_following_an_acute_coronary_syndrome_PRAISE_a_modelling_study_of_pooled_datasets/links/6002a81ba6fdccdcb858b6c2/Machine-learning-based-prediction-of-adverse-events-following-an-acute-coronary-syndrome-PRAISE-a-modelling-study-of-pooled-datasets.pdf},
+  keywords     = {journal},
+  author+an    = {59=highlight},
+  abstract     = {Background The accuracy of current prediction tools for ischaemic and bleeding events after an acute coronary syndrome (ACS) remains insufficient for individualised patient management strategies. We developed a machine learning-based risk stratification model to predict all-cause death, recurrent acute myocardial infarction, and major bleeding after ACS. Methods Different machine learning models for the prediction of 1-year post-discharge all-cause death, myocardial infarction, and major bleeding (defined as Bleeding Academic Research Consortium type 3 or 5) were trained on a cohort of 19826 adult patients with ACS (split into a training cohort [80},
+}
+
+@article{2021:tetc:colonnelli,
+  title        = {{StreamFlow}: cross-breeding cloud with {HPC}},
+  author       = {Iacopo Colonnelli and
+                  Barbara Cantalupo and
+                  Ivan Merelli and
+                  Marco Aldinucci},
+  journal      = {{IEEE} {T}ransactions on {E}merging {T}opics in {C}omputing},
+  year         = {2021},
+  volume       = {9},
+  number       = {4},
+  pages        = {1723--1737},
+  doi          = {10.1109/TETC.2020.3019202},
+  url          = {https://arxiv.org/pdf/2002.01558},
+  keywords     = {journal},
+  author+an    = {1=highlight},
+  abstract     = {Workflows are among the most commonly used tools in a variety of execution environments. Many of them target a specific environment; few of them make it possible to execute an entire workflow in different environments, e.g. Kubernetes and batch clusters. We present a novel approach to workflow execution, called StreamFlow, that complements the workflow graph with the declarative description of potentially complex execution environments, and that makes it possible the execution onto multiple sites not sharing a common data space. StreamFlow is then exemplified on a novel bioinformatics pipeline for single cell transcriptomic data analysis workflow.},
+}
+
+@inproceedings{2019:pdp:viviani,
+  title        = {Deep Learning at Scale},
+  author       = {Paolo Viviani and
+                  Maurizio Drocco and
+                  Daniele Baccega and
+                  Iacopo Colonnelli and
+                  Marco Aldinucci},
+  booktitle    = {Proc. of 27th Euromicro Intl. Conference on Parallel Distributed and network-based Processing (PDP)},
+  year         = {2019},
+  pages        = {124--131},
+  doi          = {10.1109/EMPDP.2019.8671552},
+  url          = {https://iris.unito.it/retrieve/e27ce42d-dc93-2581-e053-d805fe0acbaa/19_deeplearning_PDP.pdf},
+  publisher    = {IEEE},
+  address      = {Pavia, Italy},
+  keywords     = {conference},
+  author+an    = {4=highlight},
+  abstract     = {This work presents a novel approach to distributed training of deep neural networks (DNNs) that aims to overcome the issues related to mainstream approaches to data parallel training. Established techniques for data parallel training are discussed from both a parallel computing and deep learning perspective, then a different approach is presented that is meant to allow DNN training to scale while retaining good convergence properties. Moreover, an experimental implementation is presented as well as some preliminary results.},
+}
+
+@inproceedings{2020:pdp:cesare,
+  title        = {Practical Parallelization of Scientific Applications},
+  author       = {Valentina Cesare and
+                  Iacopo Colonnelli and
+                  Marco Aldinucci},
+  booktitle    = {Proc. of 28th Euromicro Intl. Conference on Parallel Distributed and network-based Processing (PDP)},
+  year         = {2020},
+  pages        = {376--384},
+  doi          = {10.1109/PDP50117.2020.00064},
+  url          = {https://iris.unito.it/retrieve/handle/2318/1735377/601141/2020_looppar_PDP.pdf},
+  publisher    = {IEEE},
+  address      = {V{\"a}ster{\aa}s, Sweden},
+  keywords     = {conference},
+  author+an    = {2=highlight},
+  abstract     = {This work aims at distilling a systematic methodology to modernize existing sequential scientific codes with a limited re-designing effort, turning an old codebase into modern code, i.e., parallel and robust code. We propose an automatable methodology to parallelize scientific applications designed with a purely sequential programming mindset, thus possibly using global variables, aliasing, random number generators, and stateful functions. We demonstrate the methodology by way of an astrophysical application, where we model at the same time the kinematic profiles of 30 disk galaxies with a Monte Carlo Markov Chain (MCMC), which is sequential by definition. The parallel code exhibits a 12 times speedup on a 48-core platform.},
+}
+
+@inproceedings{2019:pdp:drocco,
+  title        = {Accelerating spectral graph analysis through wavefronts of linear algebra operations},
+  author       = {Maurizio Drocco and
+                  Paolo Viviani and
+                  Iacopo Colonnelli and
+                  Marco Aldinucci and
+                  Marco Grangetto},
+  booktitle    = {Proc. of 27th Euromicro Intl. Conference on Parallel Distributed and network-based Processing (PDP)},
+  year         = {2019},
+  pages        = {9--16},
+  doi          = {10.1109/EMPDP.2019.8671640},
+  url          = {https://iris.unito.it/retrieve/1dbda063-41c1-4b02-820c-6362a8e7e954/19_wavefront_PDP.pdf},
+  publisher    = {IEEE},
+  address      = {Pavia, Italy},
+  keywords     = {conference},
+  author+an    = {3=highlight},
+  abstract     = {The wavefront pattern captures the unfolding of a parallel computation in which data elements are laid out as a logical multidimensional grid and the dependency graph favours a diagonal sweep across the grid. In the emerging area of spectral graph analysis, the computing often consists in a wavefront running over a tiled matrix, involving expensive linear algebra kernels. While these applications might benefit from parallel heterogeneous platforms (multi-core with GPUs),programming wavefront applications directly with high-performance linear algebra libraries yields code that is complex to write and optimize for the specific application. We advocate a methodology based on two abstractions (linear algebra and parallel pattern-based run-time), that allows to develop portable, self-configuring, and easy-to-profile code on hybrid platforms.},
+  date-modified = {2024-08-18 14:45:22 +0200},
+}
+
+@inproceedings{2019:acaces:colonnelli,
+  title        = {A model-based approach to scientific workflows},
+  author       = {Iacopo Colonnelli and
+                  Marco Aldinucci},
+  booktitle    = {Advanced Computer Architecture and Compilation for High-performance Embedded Systems (ACACES 2019)},
+  year         = {2019},
+  month        = jul,
+  address      = {Fiuggi, Italy},
+  keywords     = {poster},
+  author+an    = {1=highlight},
+}
+
+@inproceedings{2025:qce:rocco,
+  title        = {Dynamic Solutions for Hybrid Quantum-{HPC} Resource Allocation},
+  author       = {Roberto Rocco and
+                  Simone Rizzo and
+                  Matteo Barbieri and
+                  Gabriella Bettonte and
+                  Elisabetta Boella and
+                  Fulvio Ganz and
+                  Sergio Iserte and
+                  Antonio J. Pe{\~{n}}a and
+                  Petter Sand{\aa}s and
+                  Alberto Scionti and
+                  Olivier Terzo and
+                  Chiara Vercellino and
+                  Giacomo Vitali and
+                  Paolo Viviani and
+                  Jonathan Frassineti and
+                  Sara Marzella and
+                  Daniele Ottaviani and
+                  Iacopo Colonnelli and
+                  Daniele Gregori},
+  booktitle    = {2025 {IEEE} International Conference on Quantum Computing and Engineering (QCE)},
+  year         = {2025},
+  pages        = {34--40},
+  month        = sep,
+  doi          = {10.1109/QCE65121.2025.10289},
+  url          = {https://iris.unito.it/retrieve/47e89e49-136a-48ff-beeb-63cee8bdceab/Preprint.pdf},
+  publisher    = {{IEEE}},
+  location     = {Albuquerque, NM, USA},
+  keywords     = {conference},
+  author+an    = {18=highlight},
+  abstract     = {The integration of quantum computers within classical High-Performance Computing (HPC) infrastructures is receiving increasing attention, with the former expected to serve as accelerators for specific computational tasks. However, combining HPC and quantum computers presents significant technical challenges, including resource allocation. This paper presents a novel malleability-based approach, alongside a workflow-based strategy, to optimize resource utilization in hybrid HPC-quantum workloads. With both these approaches, we can release classical resources when computations are offloaded to the quantum computer and reallocate them once quantum processing is complete. Our experiments with a hybrid HPC-quantum use case show the benefits of dynamic allocation, highlighting the potential of those solutions.},
+}
+
+@inproceedings{2025:scw:santimaria,
+  title        = {Overcoming Dynamic {I/O} Boundaries: a Double-Sided Streaming Methodology with dispel4py and {CAPIO}},
+  author       = {Santimaria, Marco Edoardo and
+                  Filgueira, Rosa and
+                  Medi{\'c}, Doriana and
+                  Colonnelli, Iacopo and
+                  Aldinucci, Marco},
+  booktitle    = {Workshops of the International Conference for High Performance Computing, Networking, Storage and Analysis (SC Workshops '25)},
+  year         = {2025},
+  pages        = {2269–-2280},
+  month        = nov,
+  doi          = {10.1145/3731599.3767577},
+  url          = {https://iris.unito.it/retrieve/cd42cb39-cf55-4f1f-ae6c-bf57dae86ff9/3731599.3767577.pdf},
+  publisher    = {ACM},
+  location     = {St Louis, MO, USA},
+  keywords     = {conference},
+  author+an    = {4=highlight},
+  abstract     = {This work introduces a novel double-sided streaming methodology that combines control-plane and data-plane streaming. Our goal is to implement the long-advocated separation of concerns in workflow orchestration without introducing artificial boundaries in their execution. Our approach is exemplified by the integration of control-plane streaming provided by dispel4py and the transparent data-plane streaming provided by CAPIO. Our integration eliminates file synchronization barriers without requiring modifications to existing workflow logic. To support this, we extend CAPIO with a new commit rule that allows streaming over dynamically generated file sets, enabling hybrid workflows that blend in-memory dataflows with file-based communication. We validate our approach using a real-world seismic cross-correlation workflow, achieving performance improvements between 23},
+}
+
+@phdthesis{2022:thesis:colonnelli,
+  title        = {Workflow models for heterogeneous distributed systems},
+  author       = {Colonnelli, Iacopo},
+  school       = {University of Turin},
+  year         = {2022},
+  month        = may,
+  doi          = {10.5281/zenodo.7135483},
+  publisher    = {Zenodo},
+  address      = {Turin, Italy},
+  keywords     = {thesis},
+  author+an    = {1=highlight},
+  abstract     = {This article introduces a novel hybrid workflow abstraction that injects topology awareness directly into the definition of a distributed workflow model. In particular, the article briefly discusses the advantages brought by this approach to the design and orchestration of large-scale data-oriented workflows, the current level of support from state-of-the-art workflow systems, and some future research directions.},
+  addendum     = {ITADATA 2023 Best PhD Thesis},
+}
+
+@mastersthesis{2017:thesis:colonnelli,
+  title        = {Design of an high-performance tracking algorithm optimised for the Inner Tracking System of the {ALICE} experiment},
+  author       = {Colonnelli, Iacopo},
+  school       = {Polytechnic University of Turin},
+  year         = {2017},
+  address      = {Turin, Italy},
+  keywords     = {thesis},
+  author+an    = {1=highlight},
+}

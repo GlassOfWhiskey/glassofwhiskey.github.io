@@ -1,0 +1,62 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+\moderncvcolor{blue}
+\definecolor{color2}{RGB}{56, 115, 178}
+\moderncvstyle{casual}
+
+\usepackage[scale=0.75]{geometry}
+\usepackage{eurosym}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage[
+  style        = ieee,
+  backend      = biber,
+  defernumbers = true,
+  doi          = true,
+  giveninits   = true,
+  maxbibnames  = 99,
+  isbn         = false,
+  url          = false,
+  sorting      = ydnt
+]{biblatex}
+
+\addbibresource{publications.bib}
+
+% Use "1." label format instead of "[1]"
+\DeclareFieldFormat{labelnumberwidth}{#1.}
+
+\renewcommand*{\mkbibnamegiven}[1]{%
+  \ifitemannotation{highlight}
+    {\textcolor{color2}{\textbf{#1}}}
+    {#1}}
+
+\renewcommand*{\mkbibnamefamily}[1]{%
+  \ifitemannotation{highlight}
+    {\textcolor{color2}{\textbf{#1}}}
+    {#1}}
+
+\renewbibmacro*{addendum+pubstate}{%
+  \textcolor{color2}{\textbf{\printfield{addendum}}}%
+  \newunit\newblock
+  \printfield{pubstate}}
+
+\defbibheading{cvsection}[\bibname]{\section{#1}}
+
+\name{\Huge\textcolor{color2}{$personal.first$}}{\Huge\textcolor{color2}{$personal.last$}}
+\address{$personal.address1$}{$personal.address2$}
+\email{$personal.email$}
+\homepage{$personal.homepage$}
+
+\begin{document}
+\makecvtitle
+
+\nocite{*}
+
+\printbibliography[keyword=journal,title={Journal articles},heading=cvsection]
+\printbibliography[keyword=conference,title={Conference proceedings},heading=cvsection]
+\printbibliography[keyword=book,title={Book chapters},heading=cvsection]
+\printbibliography[keyword=poster,title={Posters},heading=cvsection]
+\printbibliography[keyword=thesis,title={Theses},heading=cvsection]
+
+\end{document}

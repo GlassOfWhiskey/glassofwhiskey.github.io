@@ -1,0 +1,306 @@
+teaching:
+  courses:
+    - start:       "2023/2024"
+      end:         "2025/2026"
+      role:        Lecturer
+      course:      "Computer Science"
+      institution: "University of Turin, Drug Science and Technology Dept."
+      kind:        "Undergraduate course"
+      duration:    "16h of lectures, 16h of exercises"
+
+    - year:        "2023/2024"
+      role:        Lecturer
+      course:      "Methods and tools for HPC and convergent computing"
+      institution: "University of Turin, Computer Science Dept."
+      kind:        "PhD course"
+      modules:
+        - name:     "Cloud computing"
+          duration: "4h of lectures, 4h of hands-on tutorial"
+
+  masters:
+    - years:       [2025, 2026]
+      role:        "Invited lecturer"
+      program:     "Master in High-Performance Computing"
+      institution: "SISSA, Trieste, Italy"
+      modules:
+        - name:     "Hybrid workflows for large-scale AI"
+          duration: "10h of lectures, 10h of hands-on tutorial"
+
+    - years:       [2024]
+      role:        "Invited lecturer"
+      program:     "CUAP Data Steward for Open Science"
+      institution: "University of Turin, Italy"
+      modules:
+        - name:     "Software environments for research: reproducibility, virtual environments, workflows"
+          duration: "8h of lectures"
+
+    - years:       ["2023/2024"]
+      role:        "Invited lecturer"
+      program:     "Medicina di Precisione tra cultura e società: Genomica, Bioinformatica, AI e Management"
+      institution: "Università Campus Bio-Medico di Roma, Rome, Italy"
+      modules:
+        - name:     "High-performance computing"
+          duration: "8h of lectures, 8h of hands-on tutorial"
+      description: >-
+        Supervision of a student's final project titled "SNV
+        Analysis Workflow in CWL, with hybrid deployment on HPC and local
+        using StreamFlow."
+
+    - years:       ["2022/2023"]
+      role:        "Invited lecturer"
+      program:     "Cloud Computing per Intelligenza Artificiale e Internet of Things"
+      institution: "University of Turin, Italy"
+      modules:
+        - name:     "DevOps & Automation"
+          duration: "8 hours lecturing, 2 hours of hands-on tutorial"
+        - name:     "Containerization platforms & Virtualization"
+          duration: "18h of lectures, 18h of hands-on tutorial"
+
+  schools:
+    - year:        2025
+      role:        "Invited lecturer"
+      program:     "Advanced Topics in Machine Learning: Machine Learning Operations MLOps"
+      institution: "Technical University of Denmark, Copenhagen"
+      modules:
+        - name:     "Federated Learning: a gentle introduction to federated optimization"
+          duration: "1.5h of lectures, 1.5h of hands-on tutorial"
+
+    - year:        2024
+      role:        "Invited lecturer"
+      program:     "Advanced School on Applied Machine Learning"
+      institution: "ICTP, Trieste, Italy"
+      modules:
+        - name:     "Dynamic hybrid workflows for deep learning on high-performance computing infrastructures"
+          duration: "1.5h of lectures"
+
+    - year:        2023
+      role:        "Teaching assistant"
+      program:     "National Summer School on High Performance Computing"
+      institution: "University of Pavia, Italy"
+      modules:
+        - name:     "Workflows for future high-performance-computing"
+          duration: "1.5h of lectures, 1.5h of hands-on tutorial"
+
+    - year:        2022
+      role:        "Teaching assistant"
+      program:     "DeepHealth Winter School"
+      institution: "University of Turin, Italy"
+      modules:
+        - name:     "High-performance computing"
+          duration: "1.5h of hands-on tutorial"
+
+  mentorships:
+    - year:        "2025/2026"
+      role:        Co-supervisor
+      kind:        "Bachelor's thesis"
+      topic:       "Cloud-Oriented Workflow Scalability"
+      institution: "University of Turin"
+      student:     "Alessandro Laurato"
+      abstract: >-
+        This thesis addresses the challenge of workflow scalability in cloud-HPC
+        environments, focusing on extending StreamFlow on Kubernetes. In
+        particular, it examines the limitations of autoscaling policies based solely
+        on infrastructure-level metrics and proposes a solution driven by
+        application-level metrics that reflect the actual state of the workflow. By
+        integrating KEDA, resource allocation becomes dynamic: workers are
+        scaled according to the real workload, improving the overall efficiency of
+        the system. Experimental results show that this approach significantly
+        reduces execution time compared to sequential execution and, when
+        compared to static maximum parallelism, lowers computational costs
+        while maintaining strong performance.
+
+    - year:        "2024/2025"
+      role:        Supervisor
+      kind:        "Bachelor's thesis"
+      topic:       "Transparent user-space networking"
+      institution: "University of Turin"
+      student:     "Elsa Francesca Ionita"
+      abstract: >-
+        The development of network applications requires a thorough understanding
+        of the interactions between processes and the underlying network stack.
+        Modern frameworks such as DPDK and F-Stack provide tools for moving
+        certain networking functionalities from kernel space to user space,
+        enabling new approaches to implementing client-server communication.
+        This work explores these possibilities through a combination of
+        theoretical analysis and practical experimentation. First, DPDK and
+        F-Stack were studied to gain an understanding of the principles behind
+        network programming. Next, two processes—a server and a client—were
+        developed in kernel space to examine socket-based communication
+        mechanisms. Finally, the processes were migrated to user space within
+        F-Stack, with targeted modifications introduced to ensure proper
+        functionality and interaction between them. The study demonstrates how
+        applications traditionally implemented in kernel space can be adapted to
+        run in user space using F-Stack, while providing practical insights into
+        the behavior and management of network processes in this environment.
+        The results contribute to a broader understanding of user-space
+        programming and offer practical guidance for developing applications
+        that take advantage of its capabilities.
+
+    - year:        "2024/2025"
+      role:        Co-supervisor
+      kind:        "Master's thesis"
+      topic:       "Distributed workflows in Rust"
+      institution: "University of Turin"
+      student:     "Tommaso Foglio Bonda"
+      abstract: >-
+        This thesis presents the implementation of a Rust compilation target
+        for SWIRL, an intermediate representation for distributed scientific
+        workflows, and compares its performance with the original Python
+        implementation. The work focuses on the execution of distributed
+        workflows and shows how Rust's systems programming features can
+        improve performance in specific distributed computing scenarios. The
+        thesis also provides a detailed discussion of the architectural decisions
+        behind the Rust target implementation. Two modules, “Orchestra” and
+        “swirl-rs,” are introduced. They are used respectively for low-level
+        communication and for integration with SWIRL-specific concepts.
+        Extensive experiments conducted on HPC systems showed that the Rust
+        implementation achieves roughly a 30% performance improvement over the
+        existing Python version. Although this gain may appear modest at first
+        glance, it does not account for additional advantages typically
+        associated with compiled languages, such as a smaller memory footprint,
+        lower runtime overhead, and reduced reliance on runtime dependencies.
+        After identifying communication costs as a performance bottleneck, a
+        broadcast communication protocol—available only in the Rust
+        implementation—was introduced. This addition led to performance
+        improvements of up to 400% for certain workflows. While these results
+        are in line with expectations, even greater performance gains are
+        anticipated at larger scales, where Rust's multithreading capabilities
+        can be fully exploited.
+
+    - start:       2023
+      role:        Co-supervisor
+      kind:        "PhD student"
+      topic:       "End-to-end confidential workflows (working title)"
+      institution: "University of Turin"
+      student:     "Lorenzo Brescia"
+
+    - start:       2023
+      role:        Co-supervisor
+      kind:        "PhD student"
+      topic:       "Large-scale workflow orchestration (working title)"
+      institution: "University of Turin"
+      student:     "Alberto Mulone"
+
+    - year:        "2023/2024"
+      role:        Supervisor
+      kind:        "Bachelor's thesis"
+      topic:       "Syscall Intercept: RISC-V porting"
+      institution: "University of Turin"
+      student:     "Ottavio Monticelli"
+      abstract: >-
+        In recent years, RISC-V has been driving the Open Hardware revolution,
+        with promising applications ranging from edge devices to HPC
+        infrastructures. However, the software ecosystem has struggled to keep
+        pace with the rapid adoption of RISC-V, leaving several libraries still
+        unavailable for this architecture. This thesis presents a complete port
+        of the syscall_intercept library, originally developed by Intel PMEM for
+        x86_64, to the RISC-V 64 ISA. The library provides a low-level interface
+        for intercepting Linux system calls in user space by hot-patching the libc
+        machine code within a process's memory space. It serves as the low-level
+        user-space interface for several HPC file systems, including MadFS, which
+        achieved first place in the IO500 rankings in 2023. Because the core logic
+        of syscall_intercept is implemented directly in assembly, the project also
+        provides an excellent case study for examining the technical and
+        methodological challenges involved in developing a high-performance port
+        for RISC-V.
+
+    - year:        "2023/2024"
+      role:        Supervisor
+      kind:        "Bachelor's thesis"
+      topic:       "Human--machine interface for visualization, debugging, and editing of HPC workflows"
+      institution: "University of Turin"
+      student:     "Pierluigi Boscaglia"
+      abstract: >-
+        In recent years, in the field of High-Performance Computing (HPC),
+        computational notebooks have proven highly valuable for workflow
+        management, as they enable the integration of different execution
+        environments within a single interface, thereby facilitating interactive
+        analysis, monitoring, and task execution on distributed resources. Their
+        purpose is to simplify and accelerate user interactions while minimizing
+        errors that may arise during workflow organization, which—particularly due
+        to recent advances in Deep Learning—has become increasingly complex to
+        manage. This thesis contributes to the field of interactivity by extending
+        the functionality of the web-based environment JupyterLab through the
+        development of a frontend extension aimed at improving the usability of
+        custom Jupyter Notebooks designed to manage and execute large-scale
+        scientific applications.
+
+    - year:        "2023/2024"
+      role:        Supervisor
+      kind:        "Professional Master's final project"
+      topic:       "SNV Analysis Workflow in CWL, with hybrid deployment on HPC and local using StreamFlow"
+      institution: "Università Campus Bio-Medico di Roma"
+      student:     "Stefano Marangoni"
+
+    - year:        "2023/2024"
+      role:        Co-supervisor
+      kind:        "Bachelor's thesis"
+      topic:       "Human--machine interface for visualization, debugging, and editing of CWL workflows"
+      institution: "University of Turin"
+      student:     "Matteo Bleve"
+      abstract: >-
+        The aim of this thesis is to describe the development of the first version
+        of an open-source web application called CWL-GUI, built using the React
+        library and designed to visualize, create, and edit workflows written in
+        Common Workflow Language (CWL). The application was developed in response
+        to the need for open-source tools capable of making workflow management
+        more intuitive and accessible through a graphical user interface. The use
+        of React provides the project with a responsive, high-performance user
+        interface. In addition, integration with CWL enables workflows to be
+        defined in a standardized and interoperable way, facilitating their sharing
+        across different systems. Finally, the open-source approach encourages
+        adoption and continuous development through collaboration among developers
+        and contributions from the community. This also creates opportunities for
+        future extensions of the application’s functionality and the integration of
+        new technologies.
+
+    - year:        "2022/2023"
+      role:        Co-supervisor
+      kind:        "Master's thesis"
+      topic:       "Trusted computation for the execution of distributed workflows"
+      institution: "University of Turin"
+      student:     "Lorenzo Brescia"
+      abstract: >-
+        The massive use of data for computations in various scientific fields
+        has increasingly moved the focus toward protecting sensitive information.
+        Although the adoption of Trusted Execution Environments (TEEs) has grown
+        over time, there is still no method for automating trusted generic
+        workflows within such environments. In general, the execution, of a
+        distributed workflow in which multiple parties participate in the
+        computation, requires setting the boundaries within which data has
+        guaranteed confidentiality and integrity. This thesis aimed to investigate
+        the design and implementation of a framework that allows a remote user to
+        configure a generic workflow to execute all steps within TEEs established
+        inside a remote host (e.g., a Cloud Service Provider). The relying party
+        gains trust toward the remote TEE through remote attestation and by
+        specifying a trust relationship with the hardware manufacturer that
+        supplied the remote machines. Machines with state-of-the-art Trusted
+        Computing hardware features, such as Intel Software Guard Extensions (SGX)
+        processors, were used to aim the goal. Therefore, workflow steps are
+        executed through Gramine, a Library Operating System (LibOS) that allows
+        SGX to be integrated to run unmodified applications, making it possible to
+        configure complex generic workflows.
+
+    - year:        "2022/2023"
+      role:        Co-supervisor
+      kind:        "Master's thesis"
+      topic:       "Porting the variant calling pipeline for NGS data in cloud-HPC environment"
+      institution: "University of Turin"
+      student:     "Alberto Mulone"
+      abstract: >-
+        In recent years, we have understood the importance of analyzing and
+        sequencing human genetic variation. A relevant aspect that emerged from
+        the Covid-19 pandemic was the need to obtain results very quickly; this
+        involved using High-Performance Computing (HPC) environments to execute
+        the Next Generation Sequencing (NGS) pipeline. However, HPC is not
+        always the most suitable environment for the entire execution of a
+        pipeline, especially when it involves many heterogeneous tools. The
+        ability to execute parts of the pipeline on different environments can
+        lead to higher performance but also cheaper executions.
+        In this work, we show the design and optimization process that led us
+        to a state-of-the-art Variant Calling hybrid workflow based on the
+        StreamFlow Workflow Management System (WfMS). We also compare
+        StreamFlow with Snakemake, an established WfMS targeting HPC
+        facilities, observing comparable performance on single environments
+        and satisfactory improvements with a hybrid cloud-HPC configuration.
+

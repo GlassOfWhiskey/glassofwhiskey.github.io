@@ -1,0 +1,195 @@
+{{ define "main" }}
+{{- $proj := hugo.Data.cv.projects -}}
+{{- $conf := hugo.Data.cv.conferences -}}
+{{- $ed   := hugo.Data.cv.editorial -}}
+{{- $rev  := hugo.Data.cv.review -}}
+<div>
+  <h1 class="page-title">Activities</h1>
+
+  {{- /* ── Research Projects ── */}}
+  {{ if or $proj.european $proj.national }}
+  <section class="section">
+    <h2 class="section-heading" id="research-projects">Research Projects <a class="heading-anchor" href="#research-projects" aria-label="Link to this section">#</a></h2>
+
+    {{ if $proj.european }}
+    <div class="subsection">
+      <h3 class="subsection-heading" id="european-projects">European Projects <a class="heading-anchor" href="#european-projects" aria-label="Link to this section">#</a></h3>
+      {{- $ongoing := slice -}}
+      {{- $dated   := slice -}}
+      {{- range $proj.european -}}
+        {{- if .end -}}{{- $dated = $dated | append . -}}{{- else -}}{{- $ongoing = $ongoing | append . -}}{{- end -}}
+      {{- end -}}
+      {{- $ongoing = sort $ongoing "start" "desc" -}}
+      {{- $dated   = sort $dated   "end"   "desc" -}}
+      <div class="entry-list">
+        {{- range $ongoing | append $dated -}}
+        {{- $period := printf "%v" .start -}}{{ if .end }}{{- $period = print $period "–" .end -}}{{- else -}}{{- $period = print $period "–present" -}}{{- end -}}
+        {{ partial "list-entry.html" (dict
+          "period" $period
+          "title"   .acronym
+          "subtitle" .name
+          "subject" .funding
+          "label"   .role
+          "desc"    .description
+          "badge"   .achievement
+        ) }}
+        {{- end }}
+      </div>
+    </div>
+    {{ end }}
+
+    {{ if $proj.national }}
+    <div class="subsection">
+      <h3 class="subsection-heading" id="national-projects">National Projects <a class="heading-anchor" href="#national-projects" aria-label="Link to this section">#</a></h3>
+      {{- $ongoing := slice -}}
+      {{- $dated   := slice -}}
+      {{- range $proj.national -}}
+        {{- if .end -}}{{- $dated = $dated | append . -}}{{- else -}}{{- $ongoing = $ongoing | append . -}}{{- end -}}
+      {{- end -}}
+      {{- $ongoing = sort $ongoing "start" "desc" -}}
+      {{- $dated   = sort $dated   "end"   "desc" -}}
+      <div class="entry-list">
+        {{- range $ongoing | append $dated -}}
+        {{- $period := printf "%v" .start -}}{{ if .end }}{{- $period = print $period "–" .end -}}{{- else -}}{{- $period = print $period "–present" -}}{{- end -}}
+        {{ partial "list-entry.html" (dict
+          "period" $period
+          "title"   .acronym
+          "subtitle" .name
+          "subject" .funding
+          "label"   .role
+          "desc"    .description
+          "badge"   .achievement
+        ) }}
+        {{- end }}
+      </div>
+    </div>
+    {{ end }}
+
+  </section>
+  {{ end }}
+
+  {{- /* ── Conference Service ── */}}
+  {{ if or $conf.chairs $conf.committee }}
+  <section class="section">
+    <h2 class="section-heading" id="conference-service">Conference Service <a class="heading-anchor" href="#conference-service" aria-label="Link to this section">#</a></h2>
+
+    {{ if $conf.chairs }}
+    <div class="subsection">
+      <h3 class="subsection-heading" id="chairpersonships">Chairpersonships <a class="heading-anchor" href="#chairpersonships" aria-label="Link to this section">#</a></h3>
+      <div class="entry-list">
+        {{- range sort $conf.chairs "year" "desc" -}}
+        {{- $loc := .location }}{{ partial "list-entry.html" (dict
+          "period"  (printf "%v" .year)
+          "title"   (partial "fmt-text.html" .acronym | safeHTML)
+          "subtitle" (partial "fmt-text.html" .name | safeHTML)
+          "label"   .role
+          "meta"    $loc
+          "desc"    (partial "fmt-text.html" .description | safeHTML)
+        ) }}
+        {{- end }}
+      </div>
+    </div>
+    {{ end }}
+
+    {{ if $conf.committee }}
+    <div class="subsection">
+      <h3 class="subsection-heading" id="program-committee">Program Committee Memberships <a class="heading-anchor" href="#program-committee" aria-label="Link to this section">#</a></h3>
+      <div class="entry-list">
+        {{- range $conf.committee -}}
+        {{ partial "list-entry.html" (dict
+          "period"  (partial "render-years.html" .years)
+          "title"   .acronym
+          "subtitle" .name
+        ) }}
+        {{- end }}
+      </div>
+    </div>
+    {{ end }}
+
+  </section>
+  {{ end }}
+
+  {{- /* ── Editorial Activity ── */}}
+  {{ if $ed }}
+  {{- /* Two-pass sort: ongoing (no end) by start desc, then dated by end desc */}}
+  {{- $ed_ongoing := slice -}}
+  {{- $ed_dated   := slice -}}
+  {{- range $ed -}}
+    {{- if .end -}}
+      {{- $ed_dated = $ed_dated | append . -}}
+    {{- else -}}
+      {{- $ed_ongoing = $ed_ongoing | append . -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $ed_ongoing = sort $ed_ongoing "start" "desc" -}}
+  {{- $ed_dated   = sort $ed_dated   "end"   "desc" -}}
+  {{- $ed_all     := $ed_ongoing | append $ed_dated -}}
+  <section class="section">
+    <h2 class="section-heading" id="editorial">Editorial Activity <a class="heading-anchor" href="#editorial" aria-label="Link to this section">#</a></h2>
+    <div class="entry-list">
+      {{- range $ed_all -}}
+      {{- $period := "" -}}
+      {{- if .start -}}
+        {{- $period = printf "%v" .start -}}
+        {{- if .end -}}
+          {{- $period = print $period "–" .end -}}
+        {{- else -}}
+          {{- $period = print $period "–present" -}}
+        {{- end -}}
+      {{- end -}}
+      {{- $title := .journal -}}
+      {{- if .issue }}{{ $title = printf "Special Issue on %s" .issue }}{{ end -}}
+      {{- $pub := .publisher -}}
+      {{ partial "list-entry.html" (dict
+        "period"  $period
+        "title"   $title
+        "subject" .journal
+        "label"   .role
+        "meta"    $pub
+      ) }}
+      {{- end }}
+    </div>
+  </section>
+  {{ end }}
+
+  {{- /* ── Review Activity ── */}}
+  {{ if $rev }}
+  <section class="section">
+    <h2 class="section-heading" id="review">Review Activity <a class="heading-anchor" href="#review" aria-label="Link to this section">#</a></h2>
+
+    {{ if $rev.projects }}
+    <div class="subsection">
+      <h3 class="subsection-heading" id="review-projects">Research Projects <a class="heading-anchor" href="#review-projects" aria-label="Link to this section">#</a></h3>
+      <div class="entry-list">
+        {{- range sort $rev.projects "year" "desc" -}}
+        {{ partial "list-entry.html" (dict
+          "period"  (printf "%v" .year)
+          "title"   .title
+          "desc"    .description
+        ) }}
+        {{- end }}
+      </div>
+    </div>
+    {{ end }}
+
+    {{ if $rev.journals }}
+    <div class="subsection">
+      <h3 class="subsection-heading" id="review-journals">Scientific Journals <a class="heading-anchor" href="#review-journals" aria-label="Link to this section">#</a></h3>
+      <div class="entry-list">
+        {{- range $rev.journals -}}
+        {{ partial "list-entry.html" (dict
+          "period"  "&nbsp;"
+          "title"   .title
+          "label"   .editor
+          "meta"    (printf "ISSN %s" .issn)
+        ) }}
+        {{- end }}
+      </div>
+    </div>
+    {{ end }}
+
+  </section>
+  {{ end }}
+
+</div>
+{{ end }}

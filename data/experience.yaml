@@ -1,0 +1,36 @@
+experience:
+  - start:       2023
+    title:       "Assistant Professor (RTD-A)"
+    org:         "University of Turin"
+    description: >-
+      Recipient of a 5-year contract as Assistant Professor at the Computer
+      Science Department.
+
+  - start:       2022
+    end:         2023
+    title:       "Postdoctoral researcher"
+    org:         "University of Turin"
+    description: >-
+      Recipient of a research contract in the field of scientific workflow
+      management systems, with a specific focus on distributed workflow
+      modeling, in the context of the ACROSS European Project (G.A. 955648,
+      total budget: €8M).
+
+  - start:       2021
+    end:         2022
+    title:       "Research engineer"
+    org:         "University of Turin"
+    description: >-
+      Recipient of a research scholarship in the field of scientific workflow
+      management systems, with a specific focus on distributed workflow
+      modeling.
+
+  - start:       2015
+    end:         2018
+    title:       "Technical team leader"
+    org:         "Aktive Reply Srl"
+    location:    "Turin"
+    description: >-
+      Implementation of a Java-based learning management system on top of
+      Liferay, a modular open source framework mainly based on the OSGi
+      standard.
