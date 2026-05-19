@@ -10,7 +10,3 @@ disableKinds:
 
 enableRobotsTXT: true
 
-markup:
-  goldmark:
-    renderer:
-      unsafe: true
