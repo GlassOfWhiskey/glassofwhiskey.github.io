@@ -37,7 +37,7 @@ jobs:
 
       - name: Cache TinyTeX
         id: cache-tinytex
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
           path: ~/.TinyTeX
           key: tinytex-${{ runner.os }}-v1-${{ hashFiles('pandoc/templates/moderncv.latex') }}
