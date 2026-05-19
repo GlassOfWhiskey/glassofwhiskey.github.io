@@ -8,6 +8,7 @@
   {{- end -}}
 </title>
 <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ hugo.Data.cv.personal.bio | truncate 200 }}{{ end }}">
+<meta name="google-site-verification" content="oSPQaC5tOUBOEmnCUKp4A1GQHKBaKabojWXnZlh_9AM" />
 
 {{- $img := "/pictures/picture.jpg" -}}
 {{- $title := cond .IsHome .Site.Title (printf "%s — %s" .Title .Site.Title) -}}
