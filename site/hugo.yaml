@@ -7,7 +7,6 @@ disableKinds:
   - taxonomy
   - term
   - rss
-  - sitemap
 
 enableRobotsTXT: true
 
