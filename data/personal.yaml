@@ -1,14 +1,18 @@
 personal:
   first:         Iacopo
   last:          Colonnelli
+  acm:           "99660075913"
   address1:      "Computer Science Dept."
   address2:      "University of Turin, Italy"
+  dblp:          "237/8287"
   email:         "iacopo.colonnelli@unito.it"
-  homepage:      "glassofwhiskey.github.io"
   github:        GlassOfWhiskey
-  orcid:         "0000-0001-9290-2017"
   googlescholar: yFutTsMAAAAJ
+  homepage:      "glassofwhiskey.github.io"
+  ieee:          "37086802952"
   linkedin:      iacopo-colonnelli-13867815b
+  orcid:         "0000-0001-9290-2017"
+  researchgate:  "Iacopo-Colonnelli"
   scopus:        "57208128139"
   wos:           AAK-3784-2021
   photo:         "pictures/picture"
