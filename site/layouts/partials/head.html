@@ -49,6 +49,18 @@
 {{- with hugo.Data.cv.personal.wos }}
   {{- $sameAs = $sameAs | append (printf "https://www.webofscience.com/wos/author/record/%s" .) -}}
 {{- end -}}
+{{- with hugo.Data.cv.personal.dblp }}
+  {{- $sameAs = $sameAs | append (printf "https://dblp.org/pid/%s" .) -}}
+{{- end -}}
+{{- with hugo.Data.cv.personal.acm }}
+  {{- $sameAs = $sameAs | append (printf "https://dl.acm.org/profile/%s" .) -}}
+{{- end -}}
+{{- with hugo.Data.cv.personal.ieee }}
+  {{- $sameAs = $sameAs | append (printf "https://ieeexplore.ieee.org/author/%s" .) -}}
+{{- end -}}
+{{- with hugo.Data.cv.personal.researchgate }}
+  {{- $sameAs = $sameAs | append (printf "https://www.researchgate.net/profile/%s" .) -}}
+{{- end -}}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
