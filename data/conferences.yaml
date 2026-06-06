@@ -1,6 +1,11 @@
 conferences:
   chairs:
   - year: 2026
+    role: Workshop chair
+    acronym: eScience 2026
+    name: 22^nd^ IEEE International eScience Conference (eScience 2026)
+    location: Naples, Italy
+  - year: 2026
     role: Posters and demo chair
     acronym: Euro-Par 2026
     name: 32^nd^ International European Conference on Parallel and Distributed Computing
@@ -63,6 +68,7 @@ conferences:
   - years:
     - 2024
     - 2025
+    - 2026
     acronym: SC
     name: International Conference for High Performance Computing, Networking, Storage,
       and Analysis
@@ -115,6 +121,7 @@ conferences:
     - 2021
     - 2022
     - 2023
+    - 2026
     acronym: Euro-Par
     name: International European Conference on Parallel and Distributed Computing
   - years:

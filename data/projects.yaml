@@ -68,6 +68,12 @@ projects:
         by the EC Innovation Radar initiative.
 
   national:
+    - start:       2026
+      role:        Participant
+      acronym:     ECHO-TWIN
+      name:        "Edge-Cloud-HPC Optimized Twins based on Workflow-enhanced Inference Networks"
+      funding:     "PN RIC 2021-2027 Grant program, total budget: €6M"
+
     - start:       2024
       end:         2025
       role:        Participant
