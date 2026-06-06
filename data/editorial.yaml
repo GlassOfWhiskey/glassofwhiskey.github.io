@@ -1,4 +1,11 @@
 editorial:
+  - start:       2026
+    role:        "Guest editor"
+    journal:     "Future Generation Computer Systems"
+    publisher:   Elsevier
+    issue: >-
+      High-Performance Scientific Workflows in the Compute Continuum
+  
   - start:       2025
     role:        "Subject area editor"
     journal:     "Parallel Computing"
