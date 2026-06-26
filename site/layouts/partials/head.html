@@ -61,6 +61,9 @@
 {{- with hugo.Data.cv.personal.researchgate }}
   {{- $sameAs = $sameAs | append (printf "https://www.researchgate.net/profile/%s" .) -}}
 {{- end -}}
+{{- with hugo.Data.cv.personal.hipeac }}
+  {{- $sameAs = $sameAs | append (printf "https://www.hipeac.net/~%s" .) -}}
+{{- end -}}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
