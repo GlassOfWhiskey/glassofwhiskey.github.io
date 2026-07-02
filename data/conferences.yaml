@@ -137,6 +137,20 @@ conferences:
     name: International Conference on Image Processing Theory, Tools and Applications
   talks:
     invited:
+    - year: 2026
+      role: Invited speaker
+      acronym: PASC 2026
+      name: Panel on the Evolution of Workflow Management Software in Service of Scientific Discovery
+      location: Bern, Switzerland
+      author: Iacopo Colonnelli
+      url: https://datacloud.di.unito.it/index.php/s/iijiXrsXgrM9fdM
+    - year: 2026
+      role: Invited speaker
+      acronym: "Dal PNRR al Futuro: un'Infrastruttura di Ricerca e Innovazione per un Impatto Reale"
+      name: Future-proof Workflow Orchestration with StreamFlow
+      location: Bologna, Italy
+      author: Iacopo Colonnelli
+      url: https://datacloud.di.unito.it/index.php/s/QpGfCtwe7gHNLLN
     - year: 2024
       role: Keynote speaker
       acronym: WSCC 2024
@@ -158,6 +172,7 @@ conferences:
       url: https://datacloud.di.unito.it/index.php/s/PkqYA3p38XLKgrt
     - year: 2024
       role: Invited speaker
+      acronym: 'ELISE Wrap Up Conference & ELLIS Community Event'
       name: Cross-Facility Federated Learning - Part II
       location: Helsinki, Finland
       author: Iacopo Colonnelli, Robert Birke, Giulio Malenza, Gianluca Mittone, Alberto
@@ -165,6 +180,7 @@ conferences:
       url: https://datacloud.di.unito.it/index.php/s/7HonBpcWPxotXLX
     - year: 2024
       role: Invited speaker
+      acronym: Workshop on workflow languages for HEP analysis
       name: CWL in the HPC Ecosystem
       location: CERN, Meyrin, Switzerland
       author: Iacopo Colonnelli
@@ -185,6 +201,7 @@ conferences:
       url: https://datacloud.di.unito.it/index.php/s/NHWWzMMaQgAsA52
     - year: 2023
       role: Invited speaker
+      acronym: Human Brain Project Summit 2023
       name: Standardised Workflows at EBRAINS
       location: Marseille, France
       author: Sofia Karvounari, Eleni Mathioulaki, Michael R. Crusoe, Iacopo Colonnelli
@@ -216,6 +233,7 @@ conferences:
       url: https://datacloud.di.unito.it/index.php/s/CMCd5LiZeXsxwEg
     - year: 2022
       role: Invited speaker
+      acronym: NVIDIA HPC Roundtable
       name: 'CINI HPC-KTT: HPC Key Technologies and Tools National Lab'
       location: Casalecchio di Reno, Italy
       author: Iacopo Colonnelli, Marco Aldinucci
@@ -291,13 +309,30 @@ conferences:
         and streamline execution workflows.
       url: https://datacloud.di.unito.it/index.php/s/xT58tKdAjJDKy59
     - location: Milan, Italy
-      name: 2025 ICSC Spoke 1 Event
-    - acronym: EuroHPC 2024
+      acronym: 2025 ICSC Spoke 1 Event
+      name: Cross-Platform Full Waveform Inversion (CPFWI)
+      author: Iacopo Colonnelli
+      url: https://datacloud.di.unito.it/index.php/s/3kbBHf39RaFCA9X
+    - acronym: EuroHPC User Day 2024
       location: Amsterdam, Netherlands
       name: Towards a European AI Platform
       author: Petr Taborsky, Iacopo Colonnelli, Krzysztof Kurowski, Rakesh Sarma,
         Niels Henrik Pontoppidan, Branislav Jansík, Nicki Skafte Detlefsen, Jens Egholm
         Pedersen, Rasmus Larsen, Lars Kai Hansen
+      abstract: >-
+        The rapid advancements in AI and Machine Learning necessitate a robust computational infrastructure
+        to support cutting-edge research and industrial applications. From the academic and industrial AI
+        community perspective, voiced in the recent ELISE project, the European AI platform is recommended
+        to center around the EuroHPC growing ecosystem. It should be user-driven, easily accessible,
+        powerful, and compliant with European regulations. AI-optimized and dedicated supercomputers for
+        the European AI community are also coming, in addition to upgrading partitions of existing EuroHPC
+        systems to 'AI enabled' stage. Related calls have been initiated in September 2024. Further,
+        conventional EuroHPC systems are suggested to be extended with quantum computing, edge AI, and
+        neuromorphic computing to cater to AI models deployed on network edge devices and sustainability in
+        the long run. The challenges are presented in three case studies, ranging from training Transformers
+        on HPC to LLMs trained federally across three different Euro HPC systems to recent results on hybrid
+        classical-quantum application. This paper concludes with case studies results-informed next steps
+        believed to benefit AI practitioners and the broader AI community.
       url: https://datacloud.di.unito.it/index.php/s/nbk6YiABGsZXPp4
     - acronym: CWLCon 2024
       location: Amsterdam, Netherlands
@@ -309,17 +344,34 @@ conferences:
         actually is, which Working Groups already exist in the CWL community, and how anybody can create a
         new officially recognized Working Group. Then, the presentation will explore the CWL4HPC Working
         Group, using it as an example of how a CWL Working Group can actually work.
-    - acronym: EuroHPC 2023
+    - acronym: EuroHPC User Day 2023
       location: Bruxelles, Belgium
       name: Cross-Facility Federated Learning
       author: Iacopo Colonnelli, Robert Birke, Giulio Malenza, Gianluca Mittone, Alberto
         Mulone, Marco Aldinucci, Valerio Basile, Marco Antonio Stranisci, Viviana
         Patti, Jeroen Galjaard, Lydia Y. Chen, Sanzio Bassini, Massimiliano Guarrasi,
         Gabriella Scipione, Jan Martinovič, Vit Vondrák
+      abstract: >-
+        In a decade, AI frontier research transitioned from the researcher's workstation to thousands of
+        high-end hardware-accelerated compute nodes. This rapid evolution shows no signs of slowing down in
+        the foreseeable future. While top cloud providers may be able to keep pace with this growth rate,
+        obtaining and efficiently exploiting computing resources at that scale is a daunting challenge for
+        universities and SMEs. This work introduces the Cross-Facility Federated Learning (XFFL) framework
+        to bridge this compute divide, extending the opportunity to efficiently exploit multiple independent
+        data centres for extreme-scale deep learning tasks to data scientists and domain experts. XFFL
+        relies on hybrid workflow abstractions to decouple tasks from environment-specific technicalities,
+        reducing complexity and enhancing reusability. In addition, Federated Learning (FL) algorithms
+        eliminate the need to move large amounts of data between different facilities, reducing
+        time-to-solution and preserving data privacy. The XFFL approach is empirically evaluated by training
+        a full LLaMAv2 7B instance on two facilities of the EuroHPC JU, showing how the increased computing
+        power completely compensates for the additional overhead introduced by two data centres.
       url: https://datacloud.di.unito.it/index.php/s/DDAz4QkJP3WZ68M
     - location: Denver, CO, USA
-      name: '2023 Workflows Community BoF: Modern Workflows for Continuum and Cross-Facility
+      acronym: '2023 Workflows Community BoF: Modern Workflows for Continuum and Cross-Facility
         Computing'
+      name: 'Orchestrating Multi-Domain Workflows: The ACROSS Approach'
+      author: Alberto Scionti, Iacopo Colonnelli,
+      url: https://datacloud.di.unito.it/index.php/s/rJXcDBK4mLmS8yz
     - acronym: WORKS 2023
       location: Denver, CO, USA
       name: A Systematic Mapping Study of Italian Research on Workflows
@@ -343,7 +395,10 @@ conferences:
         interest in advanced workflow orchestration and still immature but promising efforts toward energy
         efficiency.
     - location: Pisa, Italy
-      name: 2023 CINI HPC-KTT National Assembly
+      acronym: 2023 CINI HPC-KTT National Assembly
+      name: 'ACROSS: HPC Big Data Artificial Intelligence Cross Stack Platform Towards Exascale'
+      author: Iacopo Colonnelli
+      url: https://datacloud.di.unito.it/index.php/s/yzq3sEkT4oiNHpc
     - acronym: EAGE 2022
       location: Milan, Italy
       name: Hybrid Workflows For Large-Scale Scientific Applications
@@ -372,8 +427,49 @@ conferences:
       author: Iacopo Colonnelli, Barbara Cantalupo, Doriana Medić, Marco Aldinucci
       url: https://datacloud.di.unito.it/index.php/s/ienbcA2DJ26aioE
     - location: Malaga, Spain
-      name: J on The Beach 2022
+      acronym: JOTB 2022
+      name: Distributed workflows with Jupyter
+      author: Iacopo Colonnelli
+      abstract: >-
+        This workshop explores Jupyter Notebooks and its potential to express complex
+        workflows and coordinate their distributed execution, powered by the Jupyter workflow
+        kernel developed at University of Torino. In particular, the workshop will be composed
+        of two main units. The first part will cover a general introduction to literate computing
+        and Jupyter workflows, exploring their features and limitations in terms of portability,
+        reproducibility, and ease of use by domain experts. Then, the second part will explore
+        their capability to express distributed applications and to automatically optimize their
+        distributed execution. In both parts, a theoretical introduction will be followed by
+        hands-on exercises.
+      url: https://datacloud.di.unito.it/index.php/s/om89q55S6ePf2Ji
+    - location: Malaga, Spain
+      acronym: JOTB 2022
+      name: 'OpenDeepHealth: Crafting a Deep Learning Platform as a Service with Kubernetes'
+      author: Iacopo Colonnelli, Dario Tranchitella
+      abstract: >-
+        Did you ever see a Distributed Deep-Learning Platform as a Service? Sure not, it's challenging! Join
+        this session to discover OpenDeepHealth, a PaaS built on top of Kubernetes and designed from principles
+        with a multi-tenancy first approach!
+        OpenDeepHealth (ODH) is a hybrid HPC/cloud infrastructure designed and developed by the University of
+        Torino in the DeepHealth European project. The goal was to provide a self-service platform for Deep
+        Learning, allowing domain experts to bring their own data and run training and inference workflows in
+        a multi-tenant container-native environment. Kubernetes, the de-facto standard for container
+        orchestration, is the perfect framework for building such a distributed system, optimising resource
+        usage and allowing a horizontal scaling of the infrastructure.
+        StreamFlow, the ODH workflow engine, can schedule and coordinate different workflow steps on top of a
+        diverse set of execution environments, ranging from single Pods to entire HPC centres. As a result,
+        each step of a complex Data Analysis pipeline can be scheduled on the most efficient infrastructure.
+        At the same time, the underlying run-time layer automatically takes care of workers' lifecycle, data
+        transfers, and fault-tolerance aspects. ODH implements a novel form of multi-tenancy called
+        "HPC Secure Multi-Tenancy,"" specifically designed to support AI applications on critical data.
+        Thanks to Capsule, the multi-tenant Kubernetes operator, ODH can enforce multi-tenancy at the cluster
+        level, avoiding privilege escalations and exploits, minimising operational costs, and enforcing custom
+        policies to access external HPC facilities. Finally, ODH provides multi-tenant distributed Jupyter
+        Notebooks as a service through the Dossier platform. This feature gives domain experts a high-level,
+        well-known programming model to write portable and reproducible Deep Learning pipelines, augmenting
+        standard notebooks with resource segregation, data protection and computation offloading capabilities.
+      url: https://datacloud.di.unito.it/index.php/s/n6J7STNnwdyqtET
     - location: Rome, Italy
+      acronym: Workshop GARR 2020
       name: 'JupyterFlow: Jupyter Notebooks su larga scala'
       author: Iacopo Colonnelli, Sergio Rabellino
       abstract: >-
@@ -386,7 +482,10 @@ conferences:
         nodi HPC.
       url: https://datacloud.di.unito.it/index.php/s/ASPEmyXAj5QscgC
     - location: Rome, Italy
-      name: Workshop GARR 2019
+      name: 'Un approccio dichiarativo a workflow e pipeline di micro-servizi'
+      acronym: Workshop GARR 2019
+      author: Iacopo Colonnelli
+      url: https://datacloud.di.unito.it/index.php/s/kZqyiQnBEQNdXJe
     - acronym: PDP 2019
       location: Pavia, Italy
       name: Deep Learning at Scale
