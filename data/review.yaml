@@ -1,10 +1,16 @@
 review:
   projects:
     - year:        2026
+      title:       "DoE ASCR Early Career Research Program"
+      description: >-
+        Reviewer of three project proposals under the "2026 ASCR ECRP"
+        funding program of the US Department of Energy (DoE).
+
+    - year:        2026
       title:       "StandICT.eu 2029"
       description: >-
         Member of the external pool of evaluators (EPE) that reviews
-        proposals o the StandICT.eu 2029 Fellowship Programme.
+        proposals of the StandICT.eu 2029 Fellowship Programme.
 
     - year:        2025
       title:       "SNSF Ambizione"
@@ -20,13 +26,13 @@ review:
         €2.6M).
 
     - year:        2023
-      title:       "2023 CINECA ISCRA program"
+      title:       "CINECA ISCRA program"
       description: >-
         Reviewer of two project proposals under the "Italian SuperComputing
         Resource Allocation" (ISCRA) initiative of the CINECA consortium.
 
     - year:        2022
-      title:       "2022 IFAB Call for Projects"
+      title:       "IFAB Call for Projects"
       description: >-
         Reviewer of three project proposals under the "2022 IFAB Call for
         Projects" funding program of the International Foundation Big Data and
