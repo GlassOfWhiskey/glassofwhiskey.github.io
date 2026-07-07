@@ -285,6 +285,11 @@ conferences:
         encrypted file system). We reach over 92% accuracy in diagnosing COVID pneumonia.
       url: https://datacloud.di.unito.it/index.php/s/AkQLbPpEEtDzbbm
     regular:
+    - acronym: HiPEAC 2026
+      location: Kraków, Poland
+      name: 'Embracing modular supercomputers with hybrid workflows: the SPECFEM3D success story'
+      author: Iacopo Colonnelli, Emanuele Casarotti, Piero Lanucara
+      url: https://datacloud.di.unito.it/index.php/s/387XMWzCgJmrkSB
     - acronym: eScience 2025
       location: Chicago, IL, USA
       name: 'BookedSlurm: meeting user needs for advanced resource reservations in Slurm'

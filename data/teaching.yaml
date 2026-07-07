@@ -8,7 +8,8 @@ teaching:
       kind:        "Undergraduate course"
       duration:    "16h of lectures, 16h of exercises"
 
-    - year:        "2023/2024"
+    - start:       "2023/2024"
+      end:         "2025/2026"
       role:        Lecturer
       course:      "Methods and tools for HPC and convergent computing"
       institution: "University of Turin, Computer Science Dept."
@@ -90,6 +91,58 @@ teaching:
           duration: "1.5h of hands-on tutorial"
 
   mentorships:
+    - year:        "2025/2026"
+      role:        Supervisor
+      kind:        "Bachelor's thesis"
+      topic:       "Development of a CAPIO container connector"
+      institution: "University of Turin"
+      student:     "Marco Rossignoli"
+      abstract: >-
+        In High-Performance Computing (HPC), containerization platforms like Docker
+        have not been as widely adopted as in other software sectors, primarily due to
+        security and performance concerns. A common approach to mitigating I/O
+        bottlenecks in containers is deploying specialized middleware libraries;
+        however, most existing solutions require rewriting the application's source
+        code. CAPIO bypasses this limitation by offering file- streaming capabilities
+        through transparent injection into existing software. This thesis introduces
+        a method to integrate CAPIO with existing Docker containers by developing a
+        lightweight, two-component connector. Finally, a performance evaluation
+        comparing native execution on the host against a containerized deployment shows
+        that, while parallel execution faces localized synchronization bottlenecks at
+        this scale, the automated connector itself adds negligible overhead, confirming
+        its viability for containerized HPC workflows.
+    - year:        "2025/2026"
+      role:        Supervisor
+      kind:        "Bachelor's thesis"
+      topic:       "Implementation and Validation of the RISC-V Compressed Extension in the ARES Simulator"
+      institution: "University of Turin"
+      student:     "Valeria Cancarini"
+      abstract: >-
+        The gap between processor performance and memory latency makes code density
+        a relevant factor in embedded systems, where program memory is often limited
+        and may have high access times. In this context, the RISC-V Compressed
+        extension, referred to as the C extension, introduces compact 16-bit encodings
+        for many frequent 32-bit instructions, reducing executable size with changes
+        concentrated mainly in the fetch and decode stages. This thesis presents the
+        implementation of RISC-V Compressed support in the open-source ARES simulator,
+        originally based on RV32IM. The work required extending the fetch, decode,
+        execute, and disassembler modules. To analyze the dynamic effects of
+        compression, a parametric instruction cache model was also integrated, with
+        support for next-line prefetching. The experimental evaluation compares RV32IM
+        and RV32IMC binaries using the Embench and DoomGeneric benchmarks. The results
+        show that the C extension systematically reduces code size and can decrease
+        instruction cache misses. However, the performance benefit depends on the actual
+        behavior of the program. Improvements emerge especially in workloads with a large
+        instruction working set, such as the DOOM engine logic considered without
+        rendering. Conversely, many realistic workloads, particularly embedded ones,
+        spend most of their time in hot loops that already reside in cache both with
+        compressed and uncompressed code, limiting the impact on execution time. On the
+        Embench benchmarks, RV32IMC reduces the .text section by between 20.10% and 32.21%.
+        In the experimental model used, namely 1 cycle per instruction, a fully associative
+        cache, and a miss penalty of 50 cycles, the average reduction in simulated clock
+        cycles ranges from 6.16% to 32.57%, depending on the cache size. Furthermore, the
+        minimum instruction cache capacity required to remain within 5% of the best observed
+        result is reduced by up to 41.67%, with an average reduction of 19.01%.
     - year:        "2025/2026"
       role:        Co-supervisor
       kind:        "Bachelor's thesis"
