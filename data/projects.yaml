@@ -1,5 +1,11 @@
 projects:
   european:
+    - start:       2027
+      role:        Principal investigator
+      acronym:     CoWORKER
+      name:        "Centre of Excellence on Workflow Orchestration, Regularisation, Knowledge Enablement, and Retrospection"
+      funding:     "EuroHPC JU, total budget: €3M"
+
     - start:       2025
       role:        Participant
       acronym:     IT4LIA
