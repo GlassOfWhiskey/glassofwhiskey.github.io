@@ -234,7 +234,10 @@ end
 --- Ongoing entries (start with no end) always sort first (key = 9999).
 --- Otherwise the maximum 4-digit year found in year/end fields is used.
 local function sort_key(e)
-  if e.start ~= nil and e["end"] == nil then return 9999 end
+  if e.start ~= nil and e["end"] == nil then
+    local sy = tonumber(tostring(e.start):match("%d%d%d%d")) or 0
+    return 99990000 + sy
+  end
   local s = ""
   if e.year   ~= nil then s = s .. m(e.year) end
   if e["end"] ~= nil then s = s .. m(e["end"]) end
@@ -247,12 +250,23 @@ local function sort_key(e)
   return max_y
 end
 
---- Return a copy of arr sorted by sort_key descending.
+--- Return a copy of arr sorted by sort_key descending, then by start year
+--- descending, then by original position (stable).
 local function sort_desc(arr)
   local copy = {}
-  for _, v in ipairs(arr) do table.insert(copy, v) end
-  table.sort(copy, function(a, b) return sort_key(a) > sort_key(b) end)
-  return copy
+  for i, v in ipairs(arr) do table.insert(copy, {orig = i, val = v}) end
+  table.sort(copy, function(a, b)
+    local ka = sort_key(a.val)
+    local kb = sort_key(b.val)
+    if ka ~= kb then return ka > kb end
+    local sa = tonumber(tostring(a.val.start):match("%d%d%d%d")) or 0
+    local sb = tonumber(tostring(b.val.start):match("%d%d%d%d")) or 0
+    if sa ~= sb then return sa > sb end
+    return a.orig < b.orig
+  end)
+  local result = {}
+  for _, item in ipairs(copy) do table.insert(result, item.val) end
+  return result
 end
 
 --- Return a copy of arr sorted by max year in .years array descending.
