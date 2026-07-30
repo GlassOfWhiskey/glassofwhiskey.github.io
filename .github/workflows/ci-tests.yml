@@ -51,7 +51,7 @@ jobs:
           echo "$HOME/.TinyTeX/bin/x86_64-linux" >> "$GITHUB_PATH"
           "$HOME/.TinyTeX/bin/x86_64-linux/tlmgr" install \
             moderncv eurosym geometry \
-            fontawesome5 microtype xcolor \
+            fontawesome6 microtype xcolor \
             url hyperref etoolbox xpatch \
             lm tools collection-fontsrecommended \
             pgf biblatex biblatex-ieee biber.x86_64-linux

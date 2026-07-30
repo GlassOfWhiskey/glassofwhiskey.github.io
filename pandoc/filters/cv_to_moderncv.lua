@@ -345,8 +345,6 @@ function Pandoc(doc)
     L("")
   end
 
-  L("\\pagebreak")
-
   -- ── Research activity ─────────────────────────────────────────────────────
   L("\\section{Research activity}")
   L("")

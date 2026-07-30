@@ -1,5 +1,16 @@
 awards:
   - year:        2026
+    title:       "National Scientific Qualification as Associate Professor for Computer Science and Computer Engineering"
+    org:         "Italian Ministry of University and Research"
+    description: >-
+      I have been awarded the Italian National Scientific Qualification (ASN)
+      for the position of Associate Professor in the scientific disciplinary
+      sectors 01/B1 (Computer Science) and 09/H1 (Information Processing Systems).
+      The ASN certifies that the candidate meets the national standards of
+      scientific and academic excellence required for appointment as an
+      Associate Professor in Italy.
+
+  - year:        2026
     title:       "Global Young Scientists Summit"
     org:         "National University of Singapore"
     description: >-
