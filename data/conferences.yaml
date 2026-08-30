@@ -58,6 +58,10 @@ conferences:
   committee:
   - years:
     - 2026
+    acronym: CANOPIE-HPC
+    name: International Workshop on Containers and New Orchestration Paradigms for Isolated Environments in HPC
+  - years:
+    - 2026
     acronym: Middleware
     name: ACM/IFIP International Middleware Conference
   - years:
@@ -129,6 +133,7 @@ conferences:
     - 2020
     - 2024
     - 2025
+    - 2026
     acronym: HiPC
     name: IEEE International Conference on High Performance Computing, Data, and Analytics
   - years:
@@ -265,7 +270,7 @@ conferences:
         resources like HPC facilities. Plus, they can plug their computing nodes in a BYOD fashion.
         Notebooks are interpreted as distributed workflows, where each cell is a task that one can offload
         to a different location in charge of its execution.
-      url: https://datacloud.di.unito.it/index.php/s/RNqTGmTqWS66qHT
+      url: https://datacloud.di.unito.it/index.php/s/Taz8qtzmkmn9ffT
     - year: 2021
       role: Invited speaker
       acronym: CWLCon 2021

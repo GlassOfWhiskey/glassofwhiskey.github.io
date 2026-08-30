@@ -72,12 +72,15 @@ validate: cv.yaml
 # ── Hugo site data (generated, gitignored) ────────────────────────────────────
 
 site/data/cv.yaml: cv.yaml
+	mkdir -p site/data
 	cp cv.yaml site/data/cv.yaml
 
 site/data/publications.yaml: publications.bib scripts/bib_to_yaml.py
+	mkdir -p site/data
 	uv run python scripts/bib_to_yaml.py publications.bib site/data/publications.yaml
 
 site/data/teaching.yaml: data/teaching.yaml
+	mkdir -p site/data
 	cp data/teaching.yaml site/data/teaching.yaml
 
 site/static/pictures/picture.jpg: pictures/picture.jpg
