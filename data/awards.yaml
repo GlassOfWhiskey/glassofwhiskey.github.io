@@ -1,5 +1,16 @@
 awards:
   - year:        2026
+    title:       "TCHPC Early Career Researchers Award for Excellence in High Performance Computing"
+    org:         "IEEE Computer Society Technical Community on High Performance Computing (TCHPC)"
+    description: >-
+      Selected as one of the three recipients of the 2026 IEEE TCHPC ECR Award.
+      The award recognizes up to three researchers each year, selected internationally,
+      who have made exceptional, influential, and potentially long-lasting contributions
+      to the field of high-performance computing (HPC). It is intended for researchers in
+      the early stages of their scientific careers who, as of January 1, 2026, are within
+      five years of having earned their PhD.
+
+  - year:        2026
     title:       "National Scientific Qualification as Associate Professor for Computer Science and Computer Engineering"
     org:         "Italian Ministry of University and Research"
     description: >-
