@@ -145,6 +145,18 @@ conferences:
     invited:
     - year: 2026
       role: Invited speaker
+      acronym: eScience 2026
+      name: The European Centre of Excellence on Workflow Orchestration, Regularisation, Knowledge
+        Enablement, and Retrospection
+      location: Naples, Italy
+      author: Iacopo Colonnelli, Marco Aldinucci, Gabriel Antoniu, Rosa M. Badia, Sara Bozzi, Silvina
+        Caíno-Lores, Barbara Cantalupo, Michael R. Crusoe, Sagar Dolas, Rosa Filgueira, Daniele
+        Gregori, Tim Kok, Jakob Lüttgau, Giuseppe Melfi, Raffaele Montella, Alberto Mulone, Silvana
+        Muscella, Simone Rizzo, Roberto Rocco, Marco Edoardo Santimaria, Gabriella Scipione, Raül
+        Sirvent, Giuseppe Trotta, Marius van den Beek, Marco Verdicchio
+      url: https://datacloud.di.unito.it/index.php/s/4J5oKMgbMZ28jcE
+    - year: 2026
+      role: Invited speaker
       acronym: PASC 2026
       name: Panel on the Evolution of Workflow Management Software in Service of Scientific Discovery
       location: Bern, Switzerland
