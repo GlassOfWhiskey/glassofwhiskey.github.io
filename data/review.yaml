@@ -62,6 +62,10 @@ review:
       editor: "Hindawi"
       issn:   "1098-111X"
 
+    - title:  "Journal of Biomedical and Health Informatics"
+      editor: "IEEE"
+      issn:   "2168-2208"
+
     - title:  "Journal of Parallel and Distributed Computing"
       editor: "Elsevier"
       issn:   "1096-0848"
