@@ -1,3 +1,24 @@
+@article{2026:jlamp:klaim,
+  author       = {Marco Aldinucci and
+                  Andrea Bracciali and
+                  Iacopo Colonnelli and
+                  Doriana Medi\'{c} and
+                  Alberto Mulone and
+                  Luca Roversi and
+                  Marco Edoardo Santimaria},
+  author+an    = {3=highlight},
+  title        = {{Hard-KLAIM}: Hardening {MCP}-enabled agentic workflows with a locality-aware type-and-effect system for trace safety},
+  journal      = {Journal of Logical and Algebraic Methods in Programming},
+  volume       = {152},
+  pages        = {101191},
+  year         = {2027},
+  issn         = {2352-2208},
+  doi          = {10.1016/j.jlamp.2026.101191},
+  url          = {https://iris.unito.it/retrieve/7193ff65-0214-443e-8f1c-97891887d0cb/1-s2.0-S2352220826000830-main.pdf},
+  keywords     = {journal},
+  abstract     = {Large language model (LLM)-based hosts can use the Model Context Protocol (MCP) to invoke workflow-facing tools that inspect artefacts, propose changes, submit executions, and expose data across distributed localities. Although each tool call may be authorised individually, their composition can still produce unsafe behaviour: executing a change other than the approved proposal, amplifying capabilities, losing provenance, or exposing information without regard to its sources. We present Hard-KLAIM, a locality-aware type-and-effect extension of KLAIM(A Kernel Language for Agents Interaction and Mobility), together with an operational semantics for this boundary. An agentic delegate comprises an LLM, its execution context and tool interfaces, a fixed declared capability set, and a protocol state that progresses from proposal through commitment to execution. Immutable dynamic bindings, typed tool effects, exact proposal identifiers, prefix-sensitive admissibility, and trace-derived stages connect proposal, approval, commitment, execution, and exposure without duplicating control state. We prove one-step provenance-and-authority confinement and derive finite-trace safety by induction. Every reachable configuration that satisfies the initial well-formedness and administrative-closure conditions preserves deterministic monotone stages, single assignment and unique production, conservative provenance, exact proposal–approval–commitment binding, capability non-amplification, source-closed exposure, and boundary fidelity. This guarantee concerns traces at the agent–tool–workflow boundary, rather than the internal reasoning of the LLM, and depends on authoritative declarations, conservative tool schemas, faithful runtime adapters, and administrative closure. The results are supported by JANJI-ROCQ, a complete mechanised formalisation in the Rocq proof assistant. Constructing the proofs exposed missing premises and intermediate results; the resulting refinements were incorporated into the Hard-KLAIM calculus and its mathematical presentation.}
+}
+
 @article{2026:micpro:dare,
   author       = {Giovanni Agosta and
                   Marco Aldinucci and

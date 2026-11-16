@@ -74,6 +74,12 @@ projects:
         by the EC Innovation Radar initiative.
 
   national:
+    - start:       2027
+      role:        "Local principal investigator and work package leader"
+      acronym:     RADIAte
+      name:        "Rupture Across DIverse scAles: A multidisciplinary framework from HPC computational seismology to societal impact"
+      funding:     "PRIN 2026 Hybrid Grant program, total budget: €1.5M"
+
     - start:       2026
       role:        Participant
       acronym:     ECHO-TWIN
