@@ -1,7 +1,13 @@
 teaching:
   courses:
+    - start:       "2026/2027"
+      role:        Lecturer
+      course:      "Programming 1"
+      institution: "University of Turin, Computer Science Dept."
+      kind:        "Undergraduate course"
+      duration:    "30h of lab"
+
     - start:       "2023/2024"
-      end:         "2025/2026"
       role:        Lecturer
       course:      "Computer Science"
       institution: "University of Turin, Drug Science and Technology Dept."
@@ -9,7 +15,6 @@ teaching:
       duration:    "16h of lectures, 16h of exercises"
 
     - start:       "2023/2024"
-      end:         "2025/2026"
       role:        Lecturer
       course:      "Methods and tools for HPC and convergent computing"
       institution: "University of Turin, Computer Science Dept."
@@ -94,7 +99,31 @@ teaching:
     - year:        "2025/2026"
       role:        Supervisor
       kind:        "Bachelor's thesis"
-      topic:       "Development of a CAPIO container connector"
+      topic:       "Design and Development of a Kubernetes CSI Driver Based on CAPIO"
+      institution: "University of Turin"
+      student:     "Yuri Cona"
+      abstract: >-
+        In cloud-native environments, scientific workflows are commonly executed in
+        containers orchestrated by Kubernetes, where data exchange between dependent
+        tasks typically relies on shared network file systems such as NFS or CephFS.
+        However, these solutions can introduce significant I/O bottlenecks due to
+        network latency, bandwidth limitations, and synchronization overhead. CAPIO
+        addresses these limitations by transparently replacing disk-based data exchange
+        with shared-memory or MPI communication, enabling efficient data streaming
+        between applications. This thesis presents the design and development of a
+        Kubernetes Container Storage Interface (CSI) driver that integrates CAPIO into
+        Kubernetes, allowing users to manage CAPIO volumes through standard Kubernetes
+        resources. The driver supports both single-node and multi-node deployments,
+        leveraging the Kubeflow MPI Operator to orchestrate distributed CAPIO instances.
+        Finally, an experimental evaluation comparing CAPIO against traditional NFS-based
+        shared storage demonstrates that CAPIO in streaming mode achieves faster data
+        exchange, particularly when producers and consumers run on the same node and, for
+        files of 256 MiB or larger, also across different nodes.
+
+    - year:        "2025/2026"
+      role:        Supervisor
+      kind:        "Bachelor's thesis"
+      topic:       "Development of a CAPIO Container Connector"
       institution: "University of Turin"
       student:     "Marco Rossignoli"
       abstract: >-
@@ -111,6 +140,7 @@ teaching:
         that, while parallel execution faces localized synchronization bottlenecks at
         this scale, the automated connector itself adds negligible overhead, confirming
         its viability for containerized HPC workflows.
+
     - year:        "2025/2026"
       role:        Supervisor
       kind:        "Bachelor's thesis"
@@ -143,6 +173,7 @@ teaching:
         cycles ranges from 6.16% to 32.57%, depending on the cache size. Furthermore, the
         minimum instruction cache capacity required to remain within 5% of the best observed
         result is reduced by up to 41.67%, with an average reduction of 19.01%.
+
     - year:        "2025/2026"
       role:        Co-supervisor
       kind:        "Bachelor's thesis"

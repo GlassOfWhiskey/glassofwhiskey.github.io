@@ -37,6 +37,7 @@ projects:
         results of the project.
 
     - start:       2021
+      end:         2026
       role:        Participant
       acronym:     EUPILOT
       name:        "Pilot using independent, local and open technologies"
